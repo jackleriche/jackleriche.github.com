@@ -1,13 +1,22 @@
-/* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
+/*
+-------------------------------------------------------
+
+
+	
+
+
+
+
+-------------------------------------------------------
+*/
+
+
+
 
     body {
       padding-bottom: 40px;
       color: #5a5a5a;
     }
-
-
 
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
@@ -22,44 +31,14 @@
       margin-top: 20px;
       margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
     }
-    .navbar-wrapper .navbar {
 
+    .navbar-inner {
+	    /* margin-left: 15%;  until logo / char comes in */
+	    margin-top: 3%;
     }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
-
-
-
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Carousel base class */
+    
     .carousel {
-      margin-bottom: 60px;
+	    margin-bottom: 0;
     }
 
     .carousel .container {
@@ -77,7 +56,7 @@
     }
 
     .carousel .item {
-      height: 500px;
+      height: 350px;
     }
     .carousel img {
       position: absolute;
@@ -91,8 +70,8 @@
       background-color: transparent;
       position: static;
       max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
+      padding: 0 20px 0 10px;
+      margin-top: 150px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
@@ -107,57 +86,58 @@
 
 
 
-    /* MARKETING CONTENT
-    -------------------------------------------------- */
+    /* content */
+    body > .content { 
+    	margin-top: 20px; 
+    }
+    
+    
+    /* blog post */
+    .blog-holder article { 
+	    padding-left: 40px;
+	    padding-top: 5px;
+	    position: relative; 
+	    border-left: solid 1px #ccc;
+   }
+   
+   .blog-holder time {
+	   position: absolute; 
+	   left: -15px;
+	   top: 10px;
+	   width: 30px; 
+	   background: white;
+	   color: #ccc 
+   }
+   
+   .blog-holder h3 {
+	   margin-top: 0;
+   }
 
-    /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: normal;
-    }
-    .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+    /* strip */
+	.strip { 
+		background: url('/img/border.png') repeat-y;
+		position: fixed;
+		right: auto;
+		width: 10px;
+		height: 100%;
+		background-position: 0 100%;
+	}    
 
 
-    /* Featurettes
-    ------------------------- */
-
-    .featurette-divider {
-      margin: 80px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
-
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
-
-    /* Thin out the marketing headings */
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
+	/* Font */
+	h1, h2, h3, h4, h5, a, p { font-family: 'Ubuntu', sans-serif; font-weight: 300; }
+	
+	h2 { font-size: 32px; }
+	h3 { font-size: 26px; }
+	
+	
+	a { color: #fea002; }
+	a:hover { background: #fea002; color: white; text-decoration: none; }
 
 
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
-
     @media (max-width: 979px) {
 
       .container.navbar-wrapper {
@@ -189,8 +169,6 @@
         margin: 0 auto 20px;
       }
     }
-
-
     @media (max-width: 767px) {
 
       .navbar-inner {
