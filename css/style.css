@@ -36,6 +36,9 @@
 	    /* margin-left: 15%;  until logo / char comes in */
 	    margin-top: 3%;
     }
+    .navbar .nav { 
+	    margin: 0 0 0 10px; 
+    }
     
     .carousel {
 	    margin-bottom: 0;
@@ -70,7 +73,7 @@
       background-color: transparent;
       position: static;
       max-width: 550px;
-      padding: 0 20px 0 10px;
+      padding: 0 20px 0 42px;
       margin-top: 150px;
     }
     .carousel-caption h1,
@@ -88,7 +91,7 @@
 
     /* content */
     body > .content { 
-    	margin-top: 20px; 
+    	margin-top: 40px; 
     }
     
     
@@ -109,7 +112,7 @@
 	   color: #ccc 
    }
    
-   .blog-holder h3 {
+   .blog-holder h2 {
 	   margin-top: 0;
    }
 
