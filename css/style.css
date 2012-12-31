@@ -14,7 +14,6 @@
 
 
     body {
-      padding-bottom: 40px;
       color: #5a5a5a;
     }
 
@@ -94,11 +93,32 @@
     	margin-top: 40px; 
     }
     
+    /* sidebar */
+    #tweet ul { 
+	    margin: 0;
+	    list-style: none;
+    }
+    #tweet ul li {
+	    margin-bottom: 1em;
+    }
+    
+    figure img {
+	    margin-bottom: 10px;
+    }
+    
+    aside section {
+	    padding: 10px 0;
+	    border-top: double #5A5A5A;
+	    margin-bottom: 20px;
+    }
+    
+    aside section h3 {
+	    margin-top: 0;
+    }
     
     /* blog post */
     .blog-holder article { 
 	    padding-left: 40px;
-	    padding-top: 5px;
 	    position: relative; 
 	    border-left: solid 1px #ccc;
    }
@@ -109,7 +129,8 @@
 	   top: 10px;
 	   width: 30px; 
 	   background: white;
-	   color: #ccc 
+	   color: #ccc;
+	   text-align: center;
    }
    
    .blog-holder h2 {
@@ -125,6 +146,15 @@
 		height: 100%;
 		background-position: 0 100%;
 	}    
+	
+	.footer { 
+		margin-top: 40px; 
+		background: #333;
+	}
+	
+	.footer .container {
+		padding-top: 10px;
+	}
 
 
 	/* Font */
@@ -134,14 +164,28 @@
 	h3 { font-size: 26px; }
 	
 	
+	
 	a { color: #fea002; }
 	a:hover { background: #fea002; color: white; text-decoration: none; }
 
 
+	footer { 
+		color: #fff; 
+
+	}
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
     @media (max-width: 979px) {
+    
+    	body {
+	    	padding: 0;
+    	}
+    	
+    	.container {
+	    	padding-left: 20px;
+	    	padding-right: 20px;
+    	}
 
       .container.navbar-wrapper {
         margin-bottom: 0;
@@ -151,15 +195,18 @@
         border-radius: 0;
         margin: -20px 0;
       }
-
-      .carousel .item {
-        height: 500px;
-      }
       .carousel img {
         width: auto;
-        height: 500px;
+      }
+      
+      .strip {
+	      display: none;
       }
 
+      .content .row > section {
+	      margin-bottom: 4em;
+      }
+      
       .featurette {
         height: auto;
         padding: 0;
@@ -182,15 +229,7 @@
         margin-left: -20px;
         margin-right: -20px;
       }
-      .carousel .container {
 
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
       .carousel-caption {
         width: 65%;
         padding: 0 70px;
