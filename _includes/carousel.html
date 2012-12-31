@@ -1,18 +1,16 @@
-<div id="myCarousel" class="carousel slide">
+<div class="carousel slide">
 	<div class="carousel-inner">
+		{% if post.featured == true %}
     	<div class="item active">
         	<img src="/img/slide1.jpeg" alt="">
         	<div class="container">
             	<div class="carousel-caption">
-	            	<h1>Welcome</h1>
-	            	<p class="lead">New site design</p>
+	            	<h1>{% post.Title %}</h1>
+	            	<p class="lead">New fwefwesite design</p>
 	            	<a class="btn btn-large btn-primary" href="#">Read More</a>
 	            </div>
 	        </div>
 	    </div>
+	    {% endif %}
 	</div>
-      <!-- remove controls untill more posts are available
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
--->
 </div><!-- /.carousel -->

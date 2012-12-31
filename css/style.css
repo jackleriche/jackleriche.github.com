@@ -31,10 +31,6 @@
       margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
     }
 
-    .navbar-inner {
-	    /* margin-left: 15%;  until logo / char comes in */
-	    margin-top: 3%;
-    }
     .navbar .nav { 
 	    margin: 0 0 0 10px; 
     }
@@ -58,14 +54,14 @@
     }
 
     .carousel .item {
-      height: 350px;
+      height: 300px;
     }
     .carousel img {
       position: absolute;
       top: 0;
       left: 0;
       min-width: 100%;
-      height: 500px;
+      height: 300px;
     }
 
     .carousel-caption {
@@ -73,7 +69,7 @@
       position: static;
       max-width: 550px;
       padding: 0 20px 0 42px;
-      margin-top: 150px;
+      margin-top: 100px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
@@ -108,9 +104,17 @@
     
     aside section {
 	    padding: 10px 0;
-	    border-top: double #5A5A5A;
-	    margin-bottom: 20px;
+	    border-bottom: double #5A5A5A;
     }
+    
+    aside section:first-of-type {
+	    padding-top: 0;
+    }
+    
+    aside section:last-of-type {
+	    border-bottom: none;
+    }
+    
     
     aside section h3 {
 	    margin-top: 0;
@@ -121,6 +125,7 @@
 	    padding-left: 40px;
 	    position: relative; 
 	    border-left: solid 1px #ccc;
+	    margin-bottom: 20px;
    }
    
    .blog-holder time {
