@@ -60,6 +60,12 @@
     header.main section .fixed p {
 	    text-align: center;
     }
+    header.main section .fixed time a, 
+    header.main section .fixed h1 a,  
+    header.main section .fixed p a{
+    	color: #5a5a5a;
+	    text-shadow: 1px 1px 1px black;
+    }    
     header.main section .fixed time a {
 	    font-size: 14px;
 	    line-height: 1.8;
@@ -76,12 +82,16 @@
     header.main section .fixed p a {
 	    
     }
-    header.main section .fixed a {
-	    color: white;
-    }
+    
     header.main section .fixed a:hover {
 	    background: none;
     }
+    header.main section .white time a, 
+    header.main section .white h1 a,  
+    header.main section .white p a{
+	    color: white;
+	    text-shadow: 1px 1px 3px #5a5a5a;
+    } 
     
     
     
@@ -178,7 +188,7 @@
 	
 	a { color: #fea002; }
 	a:hover { background: #fea002; color: white; text-decoration: none; }
-
+	a.home:hover { background: none; }
 
 	footer { 
 		color: #fff; 
