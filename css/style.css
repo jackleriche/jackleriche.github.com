@@ -43,10 +43,10 @@
     }
     
     header.main section .fixed {
-	    position: fixed;
+	    /* position: fixed; */
 	    top: 250px;
 	    left: 50%;
-	    margin-left: -580px;
+	    /* margin-left: -580px; */
     }
     header.main section .fixed time, 
     header.main section .fixed h1,  
