@@ -174,9 +174,7 @@
     -------------------------------------------------- */
     
     @media (max-width: 1200px) {
-	    header.main section .fixed{
-		    margin-left: -480px;
-	    }
+	    
     }
     @media (max-width: 979px) {
     
@@ -188,9 +186,7 @@
 	    	padding-left: 20px;
 	    	padding-right: 20px;
     	}
-    	header.main section .fixed{
-		    margin-left: -360px;
-	    }
+    	
 
       .container.navbar-wrapper {
         margin-bottom: 0;
