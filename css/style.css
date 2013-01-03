@@ -21,6 +21,7 @@
     /* $header */
     header.main {
 	    position: relative;
+	    z-index: 5;
     }
     
     header.main nav {
@@ -29,22 +30,28 @@
 	    border-bottom: solid 1px #5a5a5a;    
 	    top: 0;
 	    opacity: 1;
+	    position: fixed;
+	    left: 50%;
+	    margin-left: -580px;
 	    
     }
-    /* fixed for desktop parralax */
-    header.main nav.fixed {
-	    position: fixed;
-    }
     header.main section {
-	    height: 600px;
-	    margin-top: -110px;
-	    background: #babaf5;
-	    padding-top: 110px;	    
+	    height: 400px;
+	    padding-top: 200px;	  
+	    background-size: 100%; 
+    }
+    
+    /* individual banners */
+    header.main section.bridge {
+	    background: url(../img/backgrounds/second-chance.jpg);
+    }
+    header.main section.ubuntu {
+	    background: url(../img/backgrounds/new.jpg)
     }
     
     header.main section .fixed {
 	    /* position: fixed; */
-	    top: 250px;
+	    top: 350px;
 	    left: 50%;
 	    /* margin-left: -580px; */
     }
@@ -53,22 +60,27 @@
     header.main section .fixed p {
 	    text-align: center;
     }
-    header.main section .fixed time {
+    header.main section .fixed time a {
 	    font-size: 14px;
 	    line-height: 1.8;
 	    letter-spacing: 4px;
-	    width: 100%;
 	    display: block;
     }
-    header.main section .fixed h1 {
+    header.main section .fixed h1 a {
 	    line-height: .9;
 	    letter-spacing: -2px;
 	    width: 100%;
 	    font-weight: 800;
 	    font-size: 96px;
     }
-    header.main section .fixed p {
+    header.main section .fixed p a {
 	    
+    }
+    header.main section .fixed a {
+	    color: white;
+    }
+    header.main section .fixed a:hover {
+	    background: none;
     }
     
     
@@ -138,9 +150,12 @@
 		background: url('/img/border.png') repeat-y;
 		position: fixed;
 		right: auto;
+		top: 0;
 		width: 10px;
-		height: 100%;
+		margin-top: -40%;
+		height: 200%;
 		background-position: 0 100%;
+		z-index: 0;
 	}    
 	
 	.footer { 
@@ -174,7 +189,7 @@
     -------------------------------------------------- */
     
     @media (max-width: 1200px) {
-	    
+	    header.main nav { margin-left: -480px;}
     }
     @media (max-width: 979px) {
     
@@ -187,6 +202,9 @@
 	    	padding-right: 20px;
     	}
     	
+    	header.main nav {
+	    	margin-left: -380px;
+    	}
 
       .container.navbar-wrapper {
         margin-bottom: 0;
@@ -225,6 +243,10 @@
       .navbar-inner {
         margin: -20px;
       }
+      header.main nav {
+	    	margin-left: 0;
+	    	position: static;
+	  }
 
       .carousel {
         margin-left: -20px;

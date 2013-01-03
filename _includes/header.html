@@ -2,15 +2,16 @@
 	<nav class="container">
 		<p><a href="/" title="home">Home</a></p>
 	</nav>
-	<section>
-		<div class="container fixed">
-			{% for post in site.posts %}
-			{% if post.featured == true %}
-			<time>{{ post.date | date: "%d %b, %Y" }}</time>
-			<h1>{{ post.title }}</h1>
-			<p>{{ post.introText }}</p>
-			{% endif %} 				
-			{% endfor %}	
-		</div>
+	{% for post in site.posts %}
+	{% if post.featured == true %}
+	<section class="{{ post.background }}">
+	    <div class="container fixed {{ post.text-color }} ">
+	    	<time><a href="{{ post.url }}" title="{{ post.title }}">{{ post.date | date: "%d %b, %Y" }}</a></time>
+	    	<h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
+	    	<p><a href="{{ post.url }}" title="{{ post.title }}">{{ post.introText }}</a></p>	
+	    </div>
 	</section>
+	{% endif %} 				
+	{% endfor %}
 </header>
+
