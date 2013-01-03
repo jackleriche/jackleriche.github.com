@@ -1,18 +1,16 @@
-<div class="navbar-wrapper">
-	<div class="container">
-	    <div class="navbar navbar-inverse">
-    	    <div class="navbar-inner">
-	    		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		    		<span class="icon-bar"></span>
-		    		<span class="icon-bar"></span>
-		    		<span class="icon-bar"></span>
-		    	</a>
-		    	<div class="nav-collapse collapse">
-			    	<ul class="nav">
-				    	<li class="active"><a href="/">Home</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
-			</div><!-- /.navbar-inner -->
-		</div><!-- /.navbar -->
-	</div> <!-- /.container -->
-</div><!-- /.navbar-wrapper -->
+<header class="main">
+	<nav class="container">
+		<p><a href="/" title="home">Home</a></p>
+	</nav>
+	<section>
+		<div class="container fixed">
+			{% for post in site.posts %}
+			{% if post.featured == true %}
+			<time>{{ post.date | date: "%d %b, %Y" }}</time>
+			<h1>{{ post.title }}</h1>
+			<p>{{ post.introText }}</p>
+			{% endif %} 				
+			{% endfor %}	
+		</div>
+	</section>
+</header>
