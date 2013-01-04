@@ -58,6 +58,7 @@
 	        <div class="row">
 	        	<section class="blog-holder span9">
 	        		{{ content }}
+                                <p>word count : {{ page.content | number_of_words }}</p>
 	        	</section>
 	    		{% include sidebar.html %}
 	        </div>
