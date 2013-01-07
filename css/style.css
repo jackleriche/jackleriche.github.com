@@ -213,7 +213,7 @@
     	}
     	
     	header.main nav {
-	    	margin-left: -380px;
+    		margin-left: 0;
 	    	position: static;
     	}
 
@@ -254,11 +254,6 @@
       .navbar-inner {
         margin: -20px;
       }
-      header.main nav {
-	    	margin-left: 0;
-	    	position: static;
-	    	
-	  }
 
       .carousel {
         margin-left: -20px;
