@@ -214,6 +214,7 @@
     	
     	header.main nav {
 	    	margin-left: -380px;
+	    	position: static;
     	}
 
       .container.navbar-wrapper {
@@ -256,6 +257,7 @@
       header.main nav {
 	    	margin-left: 0;
 	    	position: static;
+	    	
 	  }
 
       .carousel {
