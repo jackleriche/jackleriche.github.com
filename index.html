@@ -1,6 +1,20 @@
 ---
-layout: boom
+layout: default
 title: Home
 page-class: homepage
 ---
 
+
+{% for post in site.posts %}
+
+{% if post.featured == false %}
+<article>
+	<time>{{ post.date | date: "%d %b, %Y" }}</time>
+	<h2><a href="{{ post.url }}" title="post__title">{{ post.title }}</a></h2>
+	<p>{{ post.introText }}</p>
+	<p><a href="{{ post.url }}" title="post__title">Read More..</a></p>
+</article>
+{% endif %}
+
+
+{% endfor %}

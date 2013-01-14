@@ -39,6 +39,7 @@
 	    height: 400px;
 	    padding-top: 200px;	  
 	    background-size: 100%; 
+	    background-repeat: no-repeat;
     }
     
     /* individual banners */
@@ -101,6 +102,8 @@
     body > .content { 
     	margin-top: 40px; 
     }
+    
+    .word-count { margin-top: 4em; }
     
     /* sidebar */
     #tweet ul { 
@@ -200,6 +203,12 @@
     
     @media (max-width: 1200px) {
 	    header.main nav { margin-left: -480px;}
+	    
+	    header.main section {
+			height: 320px;
+			padding-top: 170px;   
+	    }
+	    
     }
     @media (max-width: 979px) {
     
@@ -216,6 +225,13 @@
     		margin-left: 0;
 	    	position: static;
     	}
+    	
+    	header.main section .fixed h1 a { font-size: 2em; }
+    	
+    	header.main section {
+      		padding: 100px 0;
+      		height: auto;	  
+      	}
 
       .container.navbar-wrapper {
         margin-bottom: 0;
@@ -250,28 +266,20 @@
       }
     }
     @media (max-width: 767px) {
+	    
+	    
+	  header.main section .fixed h1 a { font-size: 1em; }
 
       .navbar-inner {
         margin: -20px;
       }
+      
+      header.main section {
+      	padding: 30px;
+      	height: auto;	  
+	  }
 
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
+      
 
       .marketing .span4 + .span4 {
         margin-top: 40px;
