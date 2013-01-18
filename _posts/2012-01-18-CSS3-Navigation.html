@@ -40,25 +40,25 @@ background: bridge
 &lt;/header&gt;</pre>
 <p>Nice and semantic.</p>
 <p>Firstly you should create you'r usual method for dropdown menus, by absolute positioning the second level &lt;li&gt;'s relative to the first level, then hide the second level nav with a display: none; and show on first-level :hover. Pretty normal stuff.</p>
-<pre class="prettyprint lang-css">	/* start with some general reset styles - cab with the eric Meyre way */
-	* { padding: 0; margin: 0; background: none; border: none; }
-	a { text-decoration: none; font-family:"Helvetica Neue"; font-weight: thin; font-size: 0.9em; }
+<pre class="prettyprint lang-css">	
+/* start with some general reset styles */
+* { padding: 0; margin: 0; background: none; border: none; }
+a { text-decoration: none; font-family:"Helvetica Neue"; font-weight: thin; font-size: 0.9em; }
 
-	/* now to whack the "site" in the middle */
-	body { width: 30em; margin: 5em auto; background: #fff;  }
+/* now to whack the "site" in the middle */
+body { width: 30em; margin: 5em auto; background: #fff;  }
 
-	/* now to put the list horizontal */
-	nav {  display: inline-block; }
-	nav ul { position: relative; }
-	nav ul li { list-style: none; float:left; line-height: 2em; position: relative; margin: 0 1em;  }
-	nav ul li a { color: #45b9e7; }
+/* now to put the list horizontal */
+nav {  display: inline-block; }
+nav ul { position: relative; }
+nav ul li { list-style: none; float:left; line-height: 2em; position: relative; margin: 0 1em;  }
+nav ul li a { color: #45b9e7; }
 
-
-	/* level 2 */
-	nav ul ul:before { content: " ";  display: block; position: absolute; top: -0.5em; left: 32%; z-index: 10; border-width: 0 0.5em 0.5em; /* vary these values to change the angle of the vertex */
-	 border-style:solid; border-color:#45b9e7 transparent; width:0;}
-	nav ul li ul { display:none; position: absolute; left:-2.5em; top:2.3em; }
-	nav ul li:hover ul { display:block; -moz-box-shadow: 0.2em 0.2em 1em #45b9e7; box-shadow: 0em 0em 1em #45b9e7; }
+/* level 2 */
+nav ul ul:before { content: " ";  display: block; position: absolute; top: -0.5em; left: 32%; z-index: 10; border-width: 0 0.5em 0.5em; /* vary these values to change the angle of the vertex */
+  border-style:solid; border-color:#45b9e7 transparent; width:0;}
+nav ul li ul { display:none; position: absolute; left:-2.5em; top:2.3em; }
+nav ul li:hover ul { display:block; -moz-box-shadow: 0.2em 0.2em 1em #45b9e7; box-shadow: 0em 0em 1em #45b9e7; }
 </pre>
 <p>So far so good, not much learnt though.. Now for the awesomeness that is pseudo elements/classes</p>
 <p>You might of been wondering what that funny looking css rule which ended in :before was.. </p>
@@ -68,29 +68,32 @@ background: bridge
 <p>The point was created by using the border-width property, by giving some sides a border-width of 0 and others a width of half the height/width of the element you can achieve different sided triangles, this is annoying to get right, and may take you a few times. I tend to just google 'CSS3 triangle' or visit Chris Coyiers CSS-Tricks site to get reference.</p>
 <p>The content property may be new to you, and in most cases I would suggest NEVER using this as it spits in the face of 'Separation of Duties' rule that we as front end developers work so hard to abide by! However in this case it is used simply as a firefox hack, and its not actually doing anything anyway. </p>
 <p>Using this same technique, we can actually achieve a ribbon type effect by using both :before and :after , which is exactly what we do on the second level &lt;li&gt;'s</p>
-<pre class="prettyprint lang-css">	/* so far so good, pretty standard code here - nothing at all special */
-	/* putting some nice borders on and creating a electrifying background colour */
-	nav ul li ul { background: #45b9e7; width: 10.15em; padding: 0.5em 0;
-		border-radius: 0.4em; 
-		-moz-border-radius: 0.4em;
-		-webkit-border-radius: 0.4em;
+<pre class="prettyprint lang-css">
+/* so far so good, pretty standard code here - nothing at all special */
+/* putting some nice borders on and creating a electrifying background colour */
+nav ul li ul { background: #45b9e7; width: 10.15em; padding: 0.5em 0;
+	border-radius: 0.4em; 
+	-moz-border-radius: 0.4em;
+	-webkit-border-radius: 0.4em;
 	
-		/* add some awesome shadow to the mix */
-		box-shadow:0 0px 10px white;
-		-moz-box-shadow:0 0px 10px white;
-		-webkit-box-shadow:0 0px 10px white;
-	}
-	nav ul li ul li { margin:0; padding: 0; width: 10em; display:block; }
-	nav ul li ul li a { float:none; padding: 0 1em; margin: 0; width: 10em; display: block; color: white; position: relative; left: -0.4em; font-weight: 200; }
-	nav ul li ul li a:hover { background: #fbfa7c; color: #45b9e7; text-decoration: none; font-weight: bold;  }
-	nav ul li ul li a:hover:before { content: " ";  display: block; position: absolute; bottom: -0.4em; left:0; z-index: 10; border-width: 0.4em 0 0 0.4em; /* vary these values to change the angle of the vertex */
-	    border-style:solid;
-	    border-color:#f3961c transparent;
-	    width:0;}
-	nav ul li ul li a:hover:after { content: " "; display: block; position: absolute; bottom: -0.4em; right:0; z-index: 10; border-width: 0.4em 0.4em 0 0; /* vary these values to change the angle of the vertex */
-	    border-style:solid;
-	    border-color:#f3961c transparent;
-	    width:0;}
+	/* add some awesome shadow to the mix */
+	box-shadow:0 0px 10px white;
+	-moz-box-shadow:0 0px 10px white;
+	-webkit-box-shadow:0 0px 10px white;
+}
+nav ul li ul li { margin:0; padding: 0; width: 10em; display:block; }
+nav ul li ul li a { float:none; padding: 0 1em; margin: 0; width: 10em; display: block; color: white; position: relative; left: -0.4em; font-weight: 200; }
+nav ul li ul li a:hover { background: #fbfa7c; color: #45b9e7; text-decoration: none; font-weight: bold;  }
+nav ul li ul li a:hover:before { content: " ";  display: block; position: absolute; bottom: -0.4em; left:0; z-index: 10; border-width: 0.4em 0 0 0.4em; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:#f3961c transparent;
+  width:0;
+}
+nav ul li ul li a:hover:after { content: " "; display: block; position: absolute; bottom: -0.4em; right:0; z-index: 10; border-width: 0.4em 0.4em 0 0; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:#f3961c transparent;
+  width:0;
+}
 </pre>
 <p>So here we used the :before as the lef side and the :after as the right, again using the simple border-width hack to get triangles, changed the color of each element to a darker shade yellow, to give the perception of a 3D ribbon, absolutely positioned them to each side respectively and dropped them down a below the original element.</p>
 <p>Now to add a dash of box-shadow on the &lt;ul&gt; element and we're good to go.</p>
