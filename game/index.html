@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+	<title>demo game</title>	
+	
+	<style>
+	
+  	canvas { 
+  	   position: absolute;
+    }
+    canvas#dice {
+      top: 220px;
+      left: 440px;
+      background: white;
+    }
+	
+	
+	</style>
+	<script src="src/IwgIncludes.js" type="text/javascript"></script>
+	
+	<script src="src/thirdParty/createJS/easel.js"></script>
+	<script src="src/thirdParty/createJS/Tween.js"></script>
+	<script src="src/thirdParty/createJS/Ease.js"></script>
+	<script src="src/thirdParty/createJS/filters/ColorFilter.js"></script>
+	<script src="src/thirdParty/filterSprite.js"></script>
+	<script src="src/lib/Board.js"></script>
+	<script src="src/lib/Dice.js"></script>
+	<script src="src/lib/Counter.js"></script>
+	<script src="src/lib/Legend.js"></script>
+	
+	
+	<!-- Need to look into initializing game -->
+	<script src="src/MainGameClassFile.js"></script>
+	
+</head>
+<body onload="init()">
+
+
+  
+  <canvas id="game" height="500" width="700">
+    you don't have canvas support, please upgrade your browser
+  </canvas>
+  
+  <canvas id="dice" height="50" width="50"></canvas>
+
+
+
+</body>
+</html>
