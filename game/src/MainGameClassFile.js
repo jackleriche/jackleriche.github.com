@@ -38,7 +38,7 @@ function init() {
 	];
 	
 	var data = {
-		"images": ["/src/imports/img/tokens-minigames.png"],
+		"images": ["http://jackleriche.com/game/src/imports/img/tokens-minigames.png"],
 		"frames": [
 			[2, 2, 60, 60, 0, 62, -2],
       [66, 2, 60, 60, 0, 62, -2],
@@ -104,7 +104,7 @@ function init() {
   var boardXY = [3,4,5];
       
   var bgClip;
-  bgClip = new createjs.Bitmap("/src/imports/img/mm-bg.png");
+  bgClip = new createjs.Bitmap("http://jackleriche.com/game/src/imports/img/mm-bg.png");
   stage.addChild(bgClip);
 
   var board = new Board(0);
