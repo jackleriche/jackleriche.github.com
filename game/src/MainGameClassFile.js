@@ -51,7 +51,7 @@ function init() {
 	]
 	
 	var data = {
-		"images": ["http://www.jackleriche.com/src/imports/img/tokens-minigames.png"],
+		"images": ["http://jackleriche.com/src/imports/img/tokens-minigames.png"],
 		"frames": [
 			[2, 2, 60, 60, 0, 62, -2],
      		[66, 2, 60, 60, 0, 62, -2],
@@ -117,21 +117,21 @@ function init() {
   	var boardXY = [3,4,5];
       
   	var bgClip;
-  	bgClip = new createjs.Bitmap("http://www.jackleriche.com/src/imports/img/mm-bg.png");
+  	bgClip = new createjs.Bitmap("http://jackleriche.com/src/imports/img/mm-bg.png");
   	stage.addChild(bgClip);
 	
   	// legend 'frig' background 
-  	var legendClip = new createjs.Bitmap('http://www.jackleriche.com/src/imports/img/legend_prizes.png');
+  	var legendClip = new createjs.Bitmap('http://jackleriche.com/src/imports/img/legend_prizes.png');
   	legendClip.x = 632;
   	legendClip.y = 65;
   	stage.addChild(legendClip);
 	
-  	var legendBonusClip = new createjs.Bitmap('http://www.jackleriche.com/src/imports/img/bonusLegend.png');
+  	var legendBonusClip = new createjs.Bitmap('http://jackleriche.com/src/imports/img/bonusLegend.png');
   	legendBonusClip.x = 632;
   	legendBonusClip.y = 390;
   	stage.addChild(legendBonusClip);
 	
-  	var caveatClip = new createjs.Bitmap('http://www.jackleriche.com/src/imports/img/caveat.png');
+  	var caveatClip = new createjs.Bitmap('http://jackleriche.com/src/imports/img/caveat.png');
   	caveatClip.x = 0;
   	caveatClip.y = 438;
   	stage.addChild(caveatClip);
@@ -147,7 +147,7 @@ function init() {
  	diceStage.x = 394;
  	diceStage.y = 178;
 
- 	var diceClip = new createjs.Bitmap('http://www.jackleriche.com/src/imports/img/dice.png');
+ 	var diceClip = new createjs.Bitmap('http://jackleriche.com/src/imports/img/dice.png');
 
  	diceStage.addChild(diceClip);
 

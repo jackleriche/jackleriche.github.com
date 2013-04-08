@@ -6,7 +6,7 @@
     function Counter(){
     
         var counterSS = new createjs.SpriteSheet({
-            "images": ["http://www.jackleriche.com/src/imports/img/butterfly.png"],
+            "images": ["http://jackleriche.com/src/imports/img/butterfly.png"],
             "frames": [
                 [0, 0, 128, 64, 0, 160, 26],
                 [128, 0, 128, 64, 0, 160, 26],
