@@ -50,7 +50,9 @@
                         
                         if (string == legend._legendRows[i][1][j].children[1].currentAnimation ) {
                             // do stuff
-                            legend._legendRows[i][1][j].children[0].alpha = 1;
+                            legend._legendRows[i][1][j].children[1].alpha = 0;
+
+
                         }
                     }
                 }

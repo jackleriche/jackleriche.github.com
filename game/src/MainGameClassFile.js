@@ -51,7 +51,69 @@ function init() {
 	]
 	
 	var data = {
-		"images": ["hhttp://jackleriche.com/game/src/imports/img/tokens-minigames.png"],
+		"images": ["http://jackleriche.com/game/src/imports/img/tokens-minigames.png"],
+		"frames": [
+			[2, 2, 60, 60, 0, 62, -2],
+     		[66, 2, 60, 60, 0, 62, -2],
+	      	[130, 2, 60, 60, 0, 62, -2],
+	      	[194, 2, 60, 60, 0, 62, -2],
+	      	[258, 2, 60, 60, 0, 62, -2],
+	      	[322, 2, 60, 60, 0, 62, -2],
+	      	[386, 2, 60, 60, 0, 62, -2],
+	      	[450, 2, 60, 60, 0, 62, -2],
+	      	[514, 2, 60, 60, 0, 62, -2],
+	      	[578, 2, 60, 60, 0, 62, -2],
+	      	[642, 2, 60, 60, 0, 62, -2],
+	      	[706, 2, 60, 60, 0, 62, -2],
+	      	[770, 2, 60, 60, 0, 62, -2],
+	      	[834, 2, 60, 60, 0, 62, -2],
+	      	[898, 2, 60, 60, 0, 62, -2],
+	      	[962, 2, 60, 60, 0, 62, -2],
+	      	[1026, 2, 60, 60, 0, 62, -2],
+	      	[1090, 2, 60, 60, 0, 62, -2],
+	      	[1154, 2, 60, 60, 0, 62, -2],
+	      	[1218, 2, 60, 60, 0, 62, -2],
+	      	[1282, 2, 60, 60, 0, 62, -2],
+	      	[1346, 2, 60, 60, 0, 62, -2],
+	      	[1410, 2, 60, 60, 0, 62, -2],
+	      	[1474, 2, 60, 60, 0, 62, -2],
+	      	[1538, 2, 60, 60, 0, 62, -2],
+	      	[1602, 2, 60, 60, 0, 62, -2],
+	      	[1666, 2, 60, 60, 0, 62, -2]
+	    ],
+	    "animations": {
+	      	"t5": {"frames": [0]},
+	      	"t23": {"frames": [20]},
+	      	"t7": {"frames": [2]},
+	      	"t11": {"frames": [6]},
+	      	"t16": {"frames": [11]},
+	      	"t6": {"frames": [1]},
+	      	"noWin": {"frames": [25]},
+	      	"t17": {"frames": [7]},
+	      	"t14": {"frames": [9]},
+	      	"t12": {"frames": [12]},
+	      	"t25": {"frames": [24]},
+	      	"t21": {"frames": [18]},
+	      	"t24": {"frames": [21]},
+	      	"t9": {"frames": [4]},
+	      	"t8": {"frames": [3]},
+	      	"t3": {"frames": [13]},
+	      	"t10": {"frames": [5]},
+	      	"t0": {"frames": [26]},
+	      	"t15": {"frames": [10]},
+	      	"t4": {"frames": [14]},
+	      	"t18": {"frames": [15]},
+	      	"t20": {"frames": [17]},
+	      	"t1": {"frames": [22]},
+	      	"t19": {"frames": [16]},
+	      	"t2": {"frames": [23]},
+	      	"t13": {"frames": [8]},
+	      	"t22": {"frames": [19]}
+	    }
+	};
+
+	var legendTokenSheet = {
+		"images": ["http://jackleriche.com/game/src/imports/img/tokens-minigames-blank.png"],
 		"frames": [
 			[2, 2, 60, 60, 0, 62, -2],
      		[66, 2, 60, 60, 0, 62, -2],
@@ -113,6 +175,7 @@ function init() {
 	};
 
 	var spriteSheet = new createjs.SpriteSheet(data);
+	var legendSheet = new createjs.SpriteSheet(legendTokenSheet);
 	
   	var boardXY = [3,4,5];
       
@@ -168,7 +231,7 @@ function init() {
 	
 	// Legend setup
  	var legend = new Legend();
-	var legendSquare = 38;
+	var legendSquare = 37;
 	
 	function setupLegend() {
 		
@@ -193,16 +256,17 @@ function init() {
 				legendXstart -= legendSquare;
 				var string = "t" + boardLegend[legendNum][i][j];	
 				// create container for the sprite sheet
-				tokenContainer = createLegendTile(string, x, y );	
-				legendRow.push(tokenContainer);		
+				tokenContainerRevealed = createLegendTile( string, x, y, spriteSheet );
+				tokenContainer = createLegendTile(string, x, y, legendSheet );
+				legendRow.push(tokenContainer);	
+
 			}		
 			legend.pushLegendRow(prizeValue,legendRow)	
 		}
-		legend.updateLegend();
 		
 	}
 
-	function createLegendTile(j, x, y) {
+	function createLegendTile(j, x, y, s) {
 		
 		var container = new createjs.Container();
 		var bg = new createjs.Shape();
@@ -218,7 +282,7 @@ function init() {
 		//icon.createFilter("mask", [cf]);
 		
 		// add the icon
-    var icon = new createjs.BitmapAnimation(spriteSheet);
+    var icon = new createjs.BitmapAnimation(s);
 		icon.gotoAndStop(j);
 		icon.x = x;
 		icon.y = y;
@@ -262,8 +326,9 @@ function init() {
 				var x = xStart;
 				xStart += legendSquare;
 				var string = "t" + bonusLegendArray[i][0];	
+				tokenContainerReveal = createLegendTile(string, x, y, spriteSheet);
+				tokenContainer = createLegendTile(string, x, y, legendSheet );	
 
-				tokenContainer = createLegendTile(string, x, y );	
 				legendRow.push(tokenContainer);		
 			}		
 			bonusLegend.pushLegendRow(prizeValue,legendRow)	
