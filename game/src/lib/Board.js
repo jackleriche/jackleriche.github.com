@@ -59,7 +59,7 @@
 		 ]
 
 	  var spriteSheet = new createjs.SpriteSheet({  	   
-	   "images": ["http://jackleriche.com/src/imports/img/tokens-minigames.png"],
+	   "images": ["http://jackleriche.com/game/src/imports/img/tokens-minigames.png"],
 	   "frames": [
         [2, 2, 60, 60, 0, 62, -2],
         [66, 2, 60, 60, 0, 62, -2],
@@ -122,7 +122,7 @@
     
     
     var SnakesAndLaddersSpriteSheet = new createjs.SpriteSheet({
-      "images": ["http://jackleriche.com/src/imports/img/snakes-ladders.png"], 
+      "images": ["http://jackleriche.com/game/src/imports/img/snakes-ladders.png"], 
       "frames": [
         [0, 0, 512, 512, 0, 512, 0], 
         [512, 0, 512, 512, 0, 512, 0], 
