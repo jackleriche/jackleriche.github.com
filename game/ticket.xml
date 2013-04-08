@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ticket>
+	<outcome prizeTier="20" amount="5.00"/>
+	<params wT="1" bN="1" Xssets="moneyMeadow_mg0.swf"/>
+	<turn name="turn0" d0="4" d1="6" bP="11" tT="5"/>
+	<turn name="turn1" d0="6" d1="4" bP="21" tT="16"/>
+	<turn name="turn2" d0="3" d1="1" bP="25" tT="10"/>
+	<turn name="turn3" d0="3" d1="1" bP="29" tT="1" eP="15" eTT="11"/>
+	<turn name="turn4" d0="1" d1="1" bP="17" tT="1" eP="2" eTT="9"/>
+	<turn name="turn5" d0="6" d1="4" bP="12" tT="4" mgR="25"/>
+	<turn name="turn6" d0="1" d1="1" bP="14" tT="19" wT="3" wP="5"/>
+	<turn name="turn7" d0="5" d1="4" bP="23" tT="2" eP="33" eTT="0"/>
+	<turn name="turn8" d0="6" d1="2" bP="41" tT="8"/>
+</ticket>

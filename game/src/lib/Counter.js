@@ -6,7 +6,7 @@
     function Counter(){
     
         var counterSS = new createjs.SpriteSheet({
-            "images": ["http://jackleriche.com/game/src/imports/img/butterfly.png"],
+            "images": ["http://www.jackleriche.com/src/imports/img/butterfly.png"],
             "frames": [
                 [0, 0, 128, 64, 0, 160, 26],
                 [128, 0, 128, 64, 0, 160, 26],
@@ -119,26 +119,35 @@
         createjs.Ticker.setFPS(24);
         createjs.Ticker.addListener(stage);
 	   	
-        var demoNum = 0;
-    
-        function moveCounterNext(to) {
-            demoNum++;	  
-            if (to === demoNum) {
+        var tileNum = 0;
+        this.to = 0;   
+        _to = 0;
+
+        Counter.prototype.startMove = function() {
+
+            _to = this.to;
+            // start the static methods
+            moveCounterNext(this);            
+        } 
+        
+        var moveCounterNext = function(t){
+
+            if (tileNum >= _to ){
+                // callback function                
                 return false;
             }
-            if (Board.tokenObjects[demoNum]) {
-                moveCounterTo(Board.tokenObjects[demoNum].x + 144, Board.tokenObjects[demoNum].y + 25, false);
-            }  		
+            tileNum++;
+
+            if (Board.tokenObjects[tileNum]) {
+                moveCounterTo(Board.tokenObjects[tileNum].x + 144, Board.tokenObjects[tileNum].y + 25, false);
+            }
         }
-	   	
-        function moveCounterTo(sqX, sqY, direct) {
-    
+        var moveCounterTo = function(sqX, sqY, direct) {
             createjs.Tween.get(counterToken).wait(800).call(moveCounterNext);
-            createjs.Tween.get(counterToken).to({x:sqX,y:sqY,scaleX:1,scaleY:1,alpha:1},500,createjs.Ease.backIn);  
+            createjs.Tween.get(counterToken).to({x:sqX,y:sqY,scaleX:1,scaleY:1,alpha:1},500,createjs.Ease.backIn);
         }
-    
-        moveCounterNext(5);
-    
+
+        //moveCounterNext(5);
     }
 
     window.Counter = Counter;

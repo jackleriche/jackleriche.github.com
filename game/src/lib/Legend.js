@@ -38,21 +38,24 @@
          * @param legendDelay - Number of frames to delay the legend reveal run by
          * @return number - the accumulated reveal delay
          **/
-        this.updateLegend = function( item, legendDelay ) {
+        Legend.prototype.updateLegend = function( legend, item, legendDelay) {
 
-            
+            string = "t" + item;
 
+            var reveal = setTimeout(function(){
 
-
-
-
-
-
-        }
-	
-
-		
-
+                for ( i = 0; i < legend._legendRows.length; i++ ){
+                    // im in the legend rows 
+                    for ( j = 0; j < legend._legendRows[i][1].length; j++ ){
+                        
+                        if (string == legend._legendRows[i][1][j].children[1].currentAnimation ) {
+                            // do stuff
+                            legend._legendRows[i][1][j].children[0].alpha = 1;
+                        }
+                    }
+                }
+            }, legendDelay);
+        }	
 	}
 
 	window.Legend = Legend;

@@ -24,15 +24,15 @@
   function getRandomRoll () {
       return Math.floor(Math.random() * (6 - 1 + 1)) + 1;
   }
-  
-  Dice.prototype.drawDice = function() {
+
+  Dice.prototype.drawDice = function(face) {
   
     // dice objects
-    dice1 = new createjs.Text(this.dice1, "36px Arial", color);
-    dice2 = new createjs.Text(this.dice2, "36px Arial", color);
+    dice = new createjs.Text(face, "36px Arial", color);
+ //   dice2 = new createjs.Text(this.dice2, "36px Arial", color);
     
     // return array with both dice objects
-    return [dice1, dice2] ;
+    return dice;
     
   }
   

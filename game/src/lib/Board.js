@@ -7,9 +7,11 @@
 	  var tokensClip = new Image();
 	  var spriteSheet;
 	  var isRight = true;
-	  var tileWidth = 53;
+	  var tileWidth = 52;
 	  var boardTiles = [];
-	  
+
+    this.tileContainerArray = [];	  
+
 	  var tileChange = [
 	   // array tiles that need to be removed for snakes and ladders
 	   [ 5, 9, 18, 26, 29, 36 ],
@@ -17,8 +19,8 @@
 	   [ 1, 20, 22, 32, 39, 43 ]  
 	  ];
 	  
-	  Board.tokenObjects = [];
-	  
+    // array for each board tile
+	  Board.tokenObjects = []; 
 	  
 	  
 	  this.boards = [
@@ -57,7 +59,7 @@
 		 ]
 
 	  var spriteSheet = new createjs.SpriteSheet({  	   
-	   "images": ["http://jackleriche.com/game/src/imports/img/tokens-minigames.png"],
+	   "images": ["http://www.jackleriche.com/src/imports/img/tokens-minigames.png"],
 	   "frames": [
         [2, 2, 60, 60, 0, 62, -2],
         [66, 2, 60, 60, 0, 62, -2],
@@ -120,7 +122,7 @@
     
     
     var SnakesAndLaddersSpriteSheet = new createjs.SpriteSheet({
-      "images": ["http://jackleriche.com/game/src/imports/img/snakes-ladders.png"], 
+      "images": ["http://www.jackleriche.com/src/imports/img/snakes-ladders.png"], 
       "frames": [
         [0, 0, 512, 512, 0, 512, 0], 
         [512, 0, 512, 512, 0, 512, 0], 
@@ -189,7 +191,7 @@
     		
     		var container = new createjs.Container();
     		var bg = new createjs.Shape();
-        bg.graphics.beginFill('#f9d400').drawRect(0, 0, 53, 53).endFill();
+        bg.graphics.beginFill('#f9d400').drawRect(0, 0, 52, 52).endFill();
       
         // give the tile an id
         container.id = "tileSq"+i;
@@ -219,8 +221,6 @@
     		tokenBG.filters = [removeRedFilter];
     		//tokenBG.cache(0,0, tokenBG.width, tokenBG.height); // color filters don't change the bounds.
   
-    		
-
     		// give the tile an ID;
         container.id = "boardSq"+i;
         container.sqNum = i;
@@ -283,18 +283,13 @@
   		
    		// Board is typically 7 x 7 grid, however have used the array length 
 		  for( var i = 0; i < mainBoard.length; i++) {
-		  
-		  
-		  
-		  
-		    
+		
 		    var icon = createBoardToken(i, this);
 		    var container = createTile(i);
-		    stage.addChild(container, icon);
-		    
-		    
-		    
-		    
+        this.tileContainerArray.push(container);
+
+        stage.addChild(container, icon);
+		     
 		  }
       
       stage.addChild(overlay(boardNum));

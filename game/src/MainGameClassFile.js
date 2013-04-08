@@ -1,6 +1,9 @@
 function init() {
+	
+	
+	
 	var game = document.getElementById('game');
-  stage = new createjs.Stage(game);
+  	stage = new createjs.Stage(game);
   
 	var boardLegend = [
 		// board 0
@@ -36,101 +39,135 @@ function init() {
 			[7,17,16,11,6,9]
 		]
 	];
+
+	var moves = [
+		[5,2,3],
+		[14,3,6],
+		[17,2,1],
+		[25,4,4],
+		[36,6,5],
+		[41,1,4],
+		[47,5,1]
+	]
 	
 	var data = {
-		"images": ["http://jackleriche.com/game/src/imports/img/tokens-minigames.png"],
+		"images": ["http://www.jackleriche.com/src/imports/img/tokens-minigames.png"],
 		"frames": [
 			[2, 2, 60, 60, 0, 62, -2],
-      [66, 2, 60, 60, 0, 62, -2],
-      [130, 2, 60, 60, 0, 62, -2],
-      [194, 2, 60, 60, 0, 62, -2],
-      [258, 2, 60, 60, 0, 62, -2],
-      [322, 2, 60, 60, 0, 62, -2],
-      [386, 2, 60, 60, 0, 62, -2],
-      [450, 2, 60, 60, 0, 62, -2],
-      [514, 2, 60, 60, 0, 62, -2],
-      [578, 2, 60, 60, 0, 62, -2],
-      [642, 2, 60, 60, 0, 62, -2],
-      [706, 2, 60, 60, 0, 62, -2],
-      [770, 2, 60, 60, 0, 62, -2],
-      [834, 2, 60, 60, 0, 62, -2],
-      [898, 2, 60, 60, 0, 62, -2],
-      [962, 2, 60, 60, 0, 62, -2],
-      [1026, 2, 60, 60, 0, 62, -2],
-      [1090, 2, 60, 60, 0, 62, -2],
-      [1154, 2, 60, 60, 0, 62, -2],
-      [1218, 2, 60, 60, 0, 62, -2],
-      [1282, 2, 60, 60, 0, 62, -2],
-      [1346, 2, 60, 60, 0, 62, -2],
-      [1410, 2, 60, 60, 0, 62, -2],
-      [1474, 2, 60, 60, 0, 62, -2],
-      [1538, 2, 60, 60, 0, 62, -2],
-      [1602, 2, 60, 60, 0, 62, -2],
-      [1666, 2, 60, 60, 0, 62, -2]
-    ],
-    "animations": {
-      "t5": {"frames": [0]},
-      "t23": {"frames": [20]},
-      "t7": {"frames": [2]},
-      "t11": {"frames": [6]},
-      "t16": {"frames": [11]},
-      "t6": {"frames": [1]},
-      "noWin": {"frames": [25]},
-      "t17": {"frames": [7]},
-      "t14": {"frames": [9]},
-      "t12": {"frames": [12]},
-      "t25": {"frames": [24]},
-      "t21": {"frames": [18]},
-      "t24": {"frames": [21]},
-      "t9": {"frames": [4]},
-      "t8": {"frames": [3]},
-      "t3": {"frames": [13]},
-      "t10": {"frames": [5]},
-      "t0": {"frames": [26]},
-      "t15": {"frames": [10]},
-      "t4": {"frames": [14]},
-      "t18": {"frames": [15]},
-      "t20": {"frames": [17]},
-      "t1": {"frames": [22]},
-      "t19": {"frames": [16]},
-      "t2": {"frames": [23]},
-      "t13": {"frames": [8]},
-      "t22": {"frames": [19]}
-    }
+     		[66, 2, 60, 60, 0, 62, -2],
+	      	[130, 2, 60, 60, 0, 62, -2],
+	      	[194, 2, 60, 60, 0, 62, -2],
+	      	[258, 2, 60, 60, 0, 62, -2],
+	      	[322, 2, 60, 60, 0, 62, -2],
+	      	[386, 2, 60, 60, 0, 62, -2],
+	      	[450, 2, 60, 60, 0, 62, -2],
+	      	[514, 2, 60, 60, 0, 62, -2],
+	      	[578, 2, 60, 60, 0, 62, -2],
+	      	[642, 2, 60, 60, 0, 62, -2],
+	      	[706, 2, 60, 60, 0, 62, -2],
+	      	[770, 2, 60, 60, 0, 62, -2],
+	      	[834, 2, 60, 60, 0, 62, -2],
+	      	[898, 2, 60, 60, 0, 62, -2],
+	      	[962, 2, 60, 60, 0, 62, -2],
+	      	[1026, 2, 60, 60, 0, 62, -2],
+	      	[1090, 2, 60, 60, 0, 62, -2],
+	      	[1154, 2, 60, 60, 0, 62, -2],
+	      	[1218, 2, 60, 60, 0, 62, -2],
+	      	[1282, 2, 60, 60, 0, 62, -2],
+	      	[1346, 2, 60, 60, 0, 62, -2],
+	      	[1410, 2, 60, 60, 0, 62, -2],
+	      	[1474, 2, 60, 60, 0, 62, -2],
+	      	[1538, 2, 60, 60, 0, 62, -2],
+	      	[1602, 2, 60, 60, 0, 62, -2],
+	      	[1666, 2, 60, 60, 0, 62, -2]
+	    ],
+	    "animations": {
+	      	"t5": {"frames": [0]},
+	      	"t23": {"frames": [20]},
+	      	"t7": {"frames": [2]},
+	      	"t11": {"frames": [6]},
+	      	"t16": {"frames": [11]},
+	      	"t6": {"frames": [1]},
+	      	"noWin": {"frames": [25]},
+	      	"t17": {"frames": [7]},
+	      	"t14": {"frames": [9]},
+	      	"t12": {"frames": [12]},
+	      	"t25": {"frames": [24]},
+	      	"t21": {"frames": [18]},
+	      	"t24": {"frames": [21]},
+	      	"t9": {"frames": [4]},
+	      	"t8": {"frames": [3]},
+	      	"t3": {"frames": [13]},
+	      	"t10": {"frames": [5]},
+	      	"t0": {"frames": [26]},
+	      	"t15": {"frames": [10]},
+	      	"t4": {"frames": [14]},
+	      	"t18": {"frames": [15]},
+	      	"t20": {"frames": [17]},
+	      	"t1": {"frames": [22]},
+	      	"t19": {"frames": [16]},
+	      	"t2": {"frames": [23]},
+	      	"t13": {"frames": [8]},
+	      	"t22": {"frames": [19]}
+	    }
 	};
 
 	var spriteSheet = new createjs.SpriteSheet(data);
 	
-  var boardXY = [3,4,5];
+  	var boardXY = [3,4,5];
       
-  var bgClip;
-  bgClip = new createjs.Bitmap("http://jackleriche.com/game/src/imports/img/mm-bg.png");
-  stage.addChild(bgClip);
+  	var bgClip;
+  	bgClip = new createjs.Bitmap("http://www.jackleriche.com/src/imports/img/mm-bg.png");
+  	stage.addChild(bgClip);
+	
+  	// legend 'frig' background 
+  	var legendClip = new createjs.Bitmap('http://www.jackleriche.com/src/imports/img/legend_prizes.png');
+  	legendClip.x = 632;
+  	legendClip.y = 65;
+  	stage.addChild(legendClip);
+	
+  	var legendBonusClip = new createjs.Bitmap('http://www.jackleriche.com/src/imports/img/bonusLegend.png');
+  	legendBonusClip.x = 632;
+  	legendBonusClip.y = 390;
+  	stage.addChild(legendBonusClip);
+	
+  	var caveatClip = new createjs.Bitmap('http://www.jackleriche.com/src/imports/img/caveat.png');
+  	caveatClip.x = 0;
+  	caveatClip.y = 438;
+  	stage.addChild(caveatClip);
+	
+	
+  	var board = new Board(0);
+  	board.setupBoard();
+  	var counter = new Counter();
 
-  var board = new Board(0);
-  board.setupBoard();
-  var counter = new Counter();
+ 	var dice = new Dice();
+ 	diceStage = new createjs.Container();
 
-  dice = document.getElementById('dice');
-  diceStage = new createjs.Stage(dice);
+ 	diceStage.x = 394;
+ 	diceStage.y = 178;
 
-  var dice = new Dice();
+ 	var diceClip = new createjs.Bitmap('http://www.jackleriche.com/src/imports/img/dice.png');
 
-  // dice position
-  var d0 = dice.drawDice()[0];
-  d0.x = 0;
-  d0.y = 0;
-  diceStage.addChild(d0);
+ 	diceStage.addChild(diceClip);
 
-  var d1 = dice.drawDice()[1];
-  d1.x = 30;
-  d1.y = 0;
-  diceStage.addChild(d1);
+ 	stage.addChild(diceStage);
 
-  diceStage.update();
+ 	// dice position
+ 	var d0 = dice.drawDice(0);
+ 	d0.x = 26;
+ 	d0.y = 30;
+ 	diceStage.addChild(d0);
+
+ 	var d1 = dice.drawDice(0);
+ 	d1.x = 75;
+ 	d1.y = 35;
+ 	diceStage.addChild(d1);
+
+ 	
 	
 	// Legend setup
-  var legend = new Legend();
+ 	var legend = new Legend();
 	var legendSquare = 38;
 	
 	function setupLegend() {
@@ -161,7 +198,7 @@ function init() {
 			}		
 			legend.pushLegendRow(prizeValue,legendRow)	
 		}
-			legend.updateLegend();
+		legend.updateLegend();
 		
 	}
 
@@ -233,55 +270,84 @@ function init() {
 		}
 		bonusLegend.updateLegend();
 
-		//snakes t3
-		;
-		
-		
-		for ( var i = 0; i < bonusLegend.length; i++ ) {
-			// add tile height only after first one
-			if ( i > 0) {
-				y += bonusLegendTile;		
-				// reset x 
-				x = 555;		
-			}
-			
-			for ( var j = 0; j < bonusLegend[i].numTiles; j++) {
-				// make container
-				var container = new createjs.Container();
-				
-				// filter
-				var cf = new createjs.ColorFilter(0.47, 0.24, 0.04,1);
-				spriteSheet.createFilter("mask", [cf]);
-				
-				var bg = new createjs.Shape();
-				var icon = new createjs.BitmapAnimation(spriteSheet);
-				
-				// use correct tile icons
-				if ( bonusLegend[i].type === 'snakes') {
-					string = "t1";
-				} else {
-					string = "t2";
-				}
-				icon.gotoAndStop(string);
-				// add bonus legend tile width to x
-				icon.x = x;
-				x += bonusLegendTile;
-				icon.y = y;
-				
-				icon.scaleX = 0.65;
-				icon.scaleY = 0.65;
-			
-				
-				container.addChild( bg, icon );
-				stage.addChild(container);
-			}
-			
-		}
+		//for ( var i = 0; i < bonusLegend.length; i++ ) {
+		//	// add tile height only after first one
+		//	if ( i > 0) {
+		//		y += bonusLegendTile;		
+		//		// reset x 
+		//		x = 555;		
+		//	}
+		//	
+		//	for ( var j = 0; j < bonusLegend[i].numTiles; j++) {
+		//		// make container
+		//		var container = new createjs.Container();
+		//		
+		//		// filter
+		//		var cf = new createjs.ColorFilter(0.47, 0.24, 0.04,1);
+		//		spriteSheet.createFilter("mask", [cf]);
+		//		
+		//		var bg = new createjs.Shape();
+		//		var icon = new createjs.BitmapAnimation(spriteSheet);
+		//		
+		//		// use correct tile icons
+		//		if ( bonusLegend[i].type === 'snakes') {
+		//			string = "t1";
+		//		} else {
+		//			string = "t2";
+		//		}
+		//		icon.gotoAndStop(string);
+		//		// add bonus legend tile width to x
+		//		icon.x = x;
+		//		x += bonusLegendTile;
+		//		icon.y = y;
+		//		
+		//		icon.scaleX = 0.65;
+		//		icon.scaleY = 0.65;
+		//	
+		//		
+		//		container.addChild( bg, icon );
+		//		stage.addChild(container);
+		//	}
+		//	
+		//}
 		
 	}
 
 	setupLegend();
 	setupBonusLegend();
-	stage.update();	
-	counter.moveCounterTo(5);
+	stage.update();
+
+	noMoves = 0;
+ 	diceStage.onClick = function rollDice() {
+ 		
+ 		var go  = moves[noMoves];
+ 		d0.text = go[1];
+ 		d1.text = go[2];
+ 		noMoves++;
+
+ 		// call Counter Move
+ 		counter.to = go[0];
+ 		
+ 		// fetch the token value on end destination square
+ 		tokenNum = board.boards[board.boardNum][counter.to];
+
+ 		//console.log(Board.tokenObjects);
+
+ 		
+
+ 		// delay the callback to fire once counter has moved
+ 		var delay = (go[1] + go[2]) * 800;
+
+ 		var reveal = setTimeout( function(){
+ 			board.tileContainerArray[go[0]].children[0].alpha = 1
+ 		}, delay);
+ 		
+ 		counter.startMove(go[0], legend.updateLegend( legend, tokenNum, delay) );
+ 		
+ 		
+	}
+
+	console.log(stage);
+
 }
+
