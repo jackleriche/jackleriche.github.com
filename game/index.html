@@ -9,15 +9,24 @@
     <meta charset='utf-8'>
     <title>Randalls Registration form - win £50 when you sign up</title>
     <link rel="stylesheet" href="css/layout.css" />
+
+    <!-- [if lt IE 9]>
+    <script>
+        document.createElement('header');
+        document.createElement('section');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+
 </head>
 <body>
     <div class="content">
-        <div class="header">
+        <header>
             <h1>Randalls Rewards</h1>
             <div class="turns-left">Game <br>#<span>3</span></div>
             <img src="images/LuckyCard.png" alt="lucky card game" />
             <p>You've got <span class="remainging">3</span> plays of the game to find the matching golden Randalls cards... good luck</p>
-        </div>
+        </header>
         <section id="game">
             <section id="gameComplete" class="">
                 <p id="top"></p>
@@ -39,7 +48,7 @@
             <div class="clear"></div>
         </section> <!-- #game -->
         <div class="clear"></div>
-        <div class="footer">
+        <footer>
             <div class="left">
                 <p class="return"><a href="#">Return to Randalls website</a></p>
             </div>
@@ -47,7 +56,7 @@
                 <p>&#169; Randalls Group Jersey</p>
             </div>
             <div class="clear"></div>
-        </div>
+        </footer>
     </div>
 <script src="js/jquery.js"></script>
 <script src="js/cards.js"></script>

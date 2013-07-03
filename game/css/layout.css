@@ -309,6 +309,9 @@ div.footer .right p {
 	font-size: 13px;
 	font: myriad pro;
 }
+.oldie header, .oldie section, .oldie footer{
+	display: block;
+}
 
 .ie8 #cards {
 	height: 600px;
