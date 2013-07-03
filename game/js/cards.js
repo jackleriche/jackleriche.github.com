@@ -119,13 +119,10 @@ function checkPattern() {
 			if(document.webkitTransitionEnd){
 				$(".card-removed").bind("webkitTransitionEnd",	removeTookCards);
 			}else{
-
 				removeTookCards();
 			}
 		} else {
 		$(".card-flipped").removeClass("card-flipped");
-	} else {
-		alert('should flip back');
 	}
 }
 
