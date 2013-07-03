@@ -2,14 +2,16 @@
 <html lang=en>
 <head>
     <meta charset='utf-8'>
-    <title>Randells Registration form - win £50 when you sign up</title>
+    <title>Randalls Registration form - win £50 when you sign up</title>
     <link rel="stylesheet" href="css/layout.css" />
 </head>
 <body>
     <div class="content">
         <header>
-            <h1>Randells Rewards</h1>
-            <p>You've got <span class="remainging">3</span> plays of the ganme to find the matching golden Randells cards... good luck</p>
+            <h1>Randalls Rewards</h1>
+            <div class="turns-left">Game <br>#<span>3</span></div>
+            <img src="images/LuckyCard.png" alt="lucky card game" width="400" />
+            <p>You've got <span class="remainging">3</span> plays of the game to find the matching golden Randalls cards... good luck</p>
         </header>
         <section id="game">
             <section id="gameComplete" class="">
@@ -30,6 +32,15 @@
                 </div> <!-- .card -->
             </div> <!-- #cards -->
         </section> <!-- #game -->
+        <footer>
+            <div class="left">
+                <p class="return"><a href="#">Return to Randalls website</a></p>
+            </div>
+            <div class="right">
+                <p>&#169; Randalls Group Jersey</p>
+            </div>
+            <div class="clear"></div>
+        </footer>
     </div>
 <script src="js/jquery.js"></script>
 <script src="js/cards.js"></script>

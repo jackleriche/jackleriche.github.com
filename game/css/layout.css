@@ -6,19 +6,52 @@
 body {
 	text-align: center;
 	background: #242528;
-	color: #fff;
+	color: #8d8e90;
 	font-family: myriad pro;	
+}
+a {
+	color: #8d8e90;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
 }
 .content {
     width: 960px;
     margin: 0 auto;
     background: white;
 }
+.content header {
+	position: relative;
+}
+.content header .turns-left {
+	position: absolute;
+	font-family: myriad pro;
+	right: 60px;
+	top: 60px;
+	height: 59px;
+	width: 66px;
+	background: url(../images/masterSS.png) no-repeat -934px -190px;
+	font-size: 13px;
+	color: white;
+	padding-top: 22px;
+	text-align: center;
+	padding-left: 2px;
+	font-weight: thin;
+}
+
 .content header h1 {
-    height: 200px;
     width: 350px;
     text-indent: -9999px;
-    background: url("../images/masterSS.png") no-repeat;  
     background-size: 377%;
     margin: 0 auto;    
 }
@@ -74,6 +107,7 @@ body {
 /* Define the 3D perspective view and dimension of each card. */
 .card {
 	-webkit-perspective: 600;
+	perspective: 600;
 	width: 197px;
 	height: 125px;
 	position: absolute;
@@ -108,7 +142,7 @@ body {
 
 
 #gameComplete {
-	background: rgba(255,255,255,0.9);
+	background: rgba(255,255,255,0.8);
 	text-align: center; 
 	height: 100%;
 	position: absolute;
@@ -152,14 +186,13 @@ body {
 
 #gameComplete p#top {
 	font-size: 20px;
-	color:#006438;
 }
 
 #gameComplete span {
 	display: block;
-height: auto;
-width: auto;
-color: black;
+	height: auto;
+	width: auto;
+	color: black;
 }
 
 #gameComplete .share p {
@@ -202,6 +235,9 @@ color: black;
 	-webkit-transition-property: opacity, transform, box-shadow;
 	-webkit-transition-duration: .3s;
 	-webkit-backface-visibility: hidden;
+	transition-property: opacity, transform, box-shadow;
+	transition-duration: .3s;
+	backface-visibility: hidden;
 }
 
 .front {
@@ -211,18 +247,22 @@ color: black;
 .back {
 	background: #efefef url(../images/masterSS.png);
 	-webkit-transform: rotate3d(0,1,0,-180deg);
+	transform: rotate3d(0,1,0,-180deg);
 	z-index: 8;
 
 }
 .card:hover .face, .card-flipped .face {
 	-webkit-box-shadow: 0 0 10px #aaa;
+	box-shadow: 0 0 10px #aaa;
 }
 .card-flipped .front {
 	-webkit-transform: rotate3d(0,1,0,180deg);
+	transform: rotate3d(0,1,0,180deg);
 	z-index: 8;
 }
 .card-flipped .back {
 	-webkit-transform: rotate3d(0,1,0,0deg);
+	transform: rotate3d(0,1,0,0deg);
 	z-index: 10;
 }
 .card-removed {
@@ -251,4 +291,21 @@ color: black;
 	background: #006438;
 	color:#fff;
 	text-decoration:none;
+}
+
+footer {
+	width: 845px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+footer .return a { 
+	color:;
+	font-size: 13px;
+	font: myriad pro;
+	padding-left: 20px;
+	background: url(../images/masterSS.png) no-repeat -919px -271px;
+}
+footer .right p { 
+	font-size: 13px;
+	font: myriad pro;
 }

@@ -3,7 +3,7 @@
 var score,
 	cardsmatched,
 	turns = 3,
-	losingString = "You didn't find the golden pair but your new Randells loyalty card is on its way...",
+	losingString = "You didn't find the golden pair but your new Randalls loyalty card is on its way...",
 	winningString = "You found the golden pair.Your new Randalls loyalty card <br /> is on it’s way pre-charged with <strong>£50 worth</strong> of credit!",
 	isWinner = false;
 var ui = $("#gameUI");
@@ -12,7 +12,7 @@ var uiStats = $("#gameStats");
 var uiComplete = $("#gameComplete");
 var uiCards= $("#cards");
 var uiEndScreen = $('.endScreen');
-// var uiPlay = $("#gamePlay");
+var uiTurnsLeft = $(".turns-left span");
 var uiTimer = $("#timer");
 var deal = Math.random() < 0.5 ? true : false;
 
@@ -145,7 +145,8 @@ function isMatchPattern() {
 }
 
 function updateTurns(t){
-
+	uiTurnsLeft.html(t);
+	console.log(t);
 }
 
 // //check to see if all cardmatched variable is less than 8 if so remove card only otherwise remove card and end game 
