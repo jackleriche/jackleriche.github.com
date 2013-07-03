@@ -310,5 +310,8 @@ footer .right p {
 	font: myriad pro;
 }
 
-.ie8 
+.ie8 #cards {
+	height: 600px;
+	display: block;
+}
 
