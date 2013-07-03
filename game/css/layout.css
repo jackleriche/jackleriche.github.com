@@ -322,12 +322,14 @@ div.footer .right p {
 }
 .ie8 #gameComplete {
 	background:transparent;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000); 
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90ffffff,endColorstr=#90ffffff); 
     zoom: 1;
-    margin-top: 200px;
+    padding-top: 200px;
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
-
+.ie8 #gameComplete .share p, .ie8 #gameComplete span {
+	color: white;
+}
 
