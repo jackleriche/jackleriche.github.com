@@ -360,4 +360,7 @@ div.footer .right p {
     font-weight: bold;
 }
 
+.ie8 #gameComplete input[type=submit] {
+	top: 0;
+}
 
