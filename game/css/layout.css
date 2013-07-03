@@ -361,6 +361,6 @@ div.footer .right p {
 }
 
 .ie8 #gameComplete input[type=submit] {
-	top: 0;
+	top: 4px;
 }
 
