@@ -30,10 +30,10 @@ a:hover {
     margin: 0 auto;
     background: white;
 }
-.content header {
+.content div.header {
 	position: relative;
 }
-.content header .turns-left {
+.content div.header .turns-left {
 	position: absolute;
 	font-family: myriad pro;
 	right: 60px;
@@ -49,13 +49,13 @@ a:hover {
 	font-weight: thin;
 }
 
-.content header h1 {
+.content div.header h1 {
     width: 350px;
     text-indent: -9999px;
     background-size: 377%;
     margin: 0 auto;    
 }
-.content header p {
+.content div.header p {
     color: #8d8e90;
     
 }
