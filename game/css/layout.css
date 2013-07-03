@@ -142,10 +142,6 @@ a:hover {
 
 
 #gameComplete {
-	
-    background:transparent;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000); 
-    zoom: 1;
     
 	background: rgba(255,255,255,0.8);
 	text-align: center; 
@@ -324,8 +320,10 @@ div.footer .right p {
 	margin-left: 50px;
 	margin-top: 20px;
 }
-.ie8 div.footer {
-
+.ie8 #gameComplete {
+	background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); 
+    zoom: 1;
 }
 
 
