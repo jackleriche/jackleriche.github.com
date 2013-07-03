@@ -293,19 +293,19 @@ a:hover {
 	text-decoration:none;
 }
 
-footer {
+div.footer {
 	width: 845px;
 	margin: 0 auto;
 	padding-bottom: 30px;
 }
-footer .return a { 
+div.footer .return a { 
 	color:;
 	font-size: 13px;
 	font: myriad pro;
 	padding-left: 20px;
 	background: url(../images/masterSS.png) no-repeat -919px -271px;
 }
-footer .right p { 
+div.footer .right p { 
 	font-size: 13px;
 	font: myriad pro;
 }
@@ -315,6 +315,9 @@ footer .right p {
 	display: block;
 	margin-left: 50px;
 	margin-top: 20px;
+}
+.ie8 div.footer {
+
 }
 
 
