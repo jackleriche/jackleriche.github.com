@@ -139,9 +139,14 @@ function isMatchPattern() {
 	} else {
 		turns--;
 		updateTurns(turns);
+		resetCards();
 		endGame(false);
 	}
 	
+}
+
+function resetCards() {
+	alert('this should flip');
 }
 
 function updateTurns(t){
