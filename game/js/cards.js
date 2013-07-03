@@ -131,7 +131,7 @@ function isMatchPattern() {
 	var cards = $(".card-flipped");
 	var pattern = $(cards[0]).data("pattern");
 	var anotherPattern = $(cards[1]).data("pattern");
-
+	alert(pattern, anotherPattern);
 	if (( pattern === "wkdn" ) && (anotherPattern == "wkdn")) {
 		turns = 0;
 		updateTurns(turns);
@@ -146,7 +146,7 @@ function isMatchPattern() {
 }
 
 function resetCards() {
-	alert('this should flip');
+
 }
 
 function updateTurns(t){
