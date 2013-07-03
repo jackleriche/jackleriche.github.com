@@ -5,7 +5,8 @@ var score,
 	turns = 3,
 	losingString = "You didn't find the golden pair but your new Randalls loyalty card is on its way...",
 	winningString = "You found the golden pair.Your new Randalls loyalty card <br /> is on it’s way pre-charged with <strong>£50 worth</strong> of credit!",
-	isWinner = false;
+	isWinner = false,
+	ready = true;
 var ui = $("#gameUI");
 var uiIntro = $("#gameIntro");
 var uiStats = $("#gameStats");
@@ -82,6 +83,7 @@ function startGame(){
 function endGame(hasWon) {
 	
 	if (turns === 0){
+		ready = false;
 		uiComplete.show();
 		if (hasWon){
 			uiComplete.addClass("winner");
@@ -101,14 +103,16 @@ function shuffle() {
 
 //onclick function add flip class and then check to see if cards are the same
 function selectCard() {
-	// we do nothing if there are already two cards flipped.
-	if ($(".card-flipped").size() > 1) {
-	return;
-	}
-	$(this).addClass("card-flipped");
-	// check the pattern of both flipped card 0.7s later.
-	if ($(".card-flipped").size() == 2) {
-	setTimeout(checkPattern,700);
+	if (ready) {
+		// we do nothing if there are already two cards flipped.
+		if ($(".card-flipped").size() > 1) {
+		return;
+		}
+		$(this).addClass("card-flipped");
+		// check the pattern of both flipped card 0.7s later.
+		if ($(".card-flipped").size() == 2) {
+		setTimeout(checkPattern,700);
+		}
 	}
 }
 
@@ -131,7 +135,7 @@ function isMatchPattern() {
 	var cards = $(".card-flipped");
 	var pattern = $(cards[0]).data("pattern");
 	var anotherPattern = $(cards[1]).data("pattern");
-	
+
 	if (( pattern === "wkdn" ) && (anotherPattern == "wkdn")) {
 		turns = 0;
 		updateTurns(turns);
