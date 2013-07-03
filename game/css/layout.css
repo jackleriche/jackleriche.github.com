@@ -324,6 +324,10 @@ div.footer .right p {
 	background:transparent;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000); 
     zoom: 1;
+    margin-top: 200px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
