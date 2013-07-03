@@ -322,7 +322,7 @@ div.footer .right p {
 }
 .ie8 #gameComplete {
 	background:transparent;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); 
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000); 
     zoom: 1;
 }
 
