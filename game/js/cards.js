@@ -156,20 +156,7 @@ function resetCards() {
 
 function updateTurns(t){
 	uiTurnsLeft.html(t);
-	console.log(t);
 }
-
-// //check to see if all cardmatched variable is less than 8 if so remove card only otherwise remove card and end game 
-// function removeTookCards() {
-// 	if (cardsmatched < 1){
-// 		cardsmatched++;
-// 		$(".card-removed").remove();
-// 	}else{
-// 		$(".card-removed").remove();
-// 		uiCards.hide();
-// 		uiComplete.show();
-// 	}	
-// }
 
 
 				
