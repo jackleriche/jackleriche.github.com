@@ -313,6 +313,8 @@ footer .right p {
 .ie8 #cards {
 	height: 600px;
 	display: block;
-	margin-left: 40px;
+	margin-left: 50px;
+	margin-top: 20px;
 }
+
 
