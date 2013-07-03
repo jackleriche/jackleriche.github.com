@@ -142,6 +142,11 @@ a:hover {
 
 
 #gameComplete {
+	
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000); 
+    zoom: 1;
+    
 	background: rgba(255,255,255,0.8);
 	text-align: center; 
 	height: 100%;
