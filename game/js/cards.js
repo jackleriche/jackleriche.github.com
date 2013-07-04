@@ -3,7 +3,7 @@ var score,
 	cardsmatched,
 	turns = 3,
 	losingString = "You didn't find the golden pair but your new Randalls loyalty card is on its way...",
-	winningString = "You found the golden pair.Your new Randalls loyalty card <br /> is on it’s way pre-charged with <strong>£50 worth</strong> of credit!<br />Just enter your full name below and submit",
+	winningString = "You found the golden pair.Your new Randalls loyalty card <br /> is on it’s way pre-charged with <strong>£10 worth</strong> of credit!<br />Just enter your full name below and submit",
 	winnerSubmit = "<form><input type='text' name='fullname' placeholder='Enter your full name here...'><input type='submit' value='Submit'></form>",
 	isWinner = false,
 	ready = true;
