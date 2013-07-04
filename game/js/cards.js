@@ -1,4 +1,3 @@
-
 //create all the variables
 var score,
 	cardsmatched,
@@ -24,7 +23,7 @@ var deal = Math.random() < 0.5 ? true : false;
 var matchingGame = {};
 if(deal){
 	matchingGame.deck = ['agfh', 'agff','hgdt', 'hgdd','hdjf', 'hdjj','thbv', 'thbb','lukf', 'lukk','hysg', 'hyss',
-'ljgd', 'ljgg','wkdn', 'wkdn'];	
+'wkdn', 'wkdn','wkdn', 'wkdn'];	
 } else {
 	matchingGame.deck = ['agfh', 'agff','hgdt', 'hgdd','hdjf', 'hdjj','thbv', 'thbb','lukf', 'lukk','hysg', 'hyss',
 'ljgd', 'ljgg','kjgg', 'kjgh'];
