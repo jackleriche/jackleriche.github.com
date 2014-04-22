@@ -1,0 +1,42 @@
+{"audioSprite":[
+
+	{
+		"frameRate":44100,
+		"blank.wav":{
+			"start": 0,
+ 			"duration": 22050
+		},
+		"Pop.mp3":{
+			"start": 22050,
+ 			"duration": 6912
+		},
+		"blank.wav":{
+			"start": 28962,
+ 			"duration": 22050
+		},
+		"glossy_success_19.wav":{
+			"start": 51012,
+ 			"duration": 106814
+		},
+		"blank.wav":{
+			"start": 157826,
+ 			"duration": 22050
+		},
+		"Level_fail.mp3":{
+			"start": 179876,
+ 			"duration": 46080
+		},
+		"blank.wav":{
+			"start": 225956,
+ 			"duration": 22050
+		},
+		"Win_zing.wav":{
+			"start": 248006,
+ 			"duration": 107008
+		},
+		"blank.wav":{
+			"start": 355014,
+ 			"duration": 22050
+		}
+	} 
+]}
