@@ -15,7 +15,7 @@
     //thridParty
                 {"src": "src/thirdParty/greensocks/TweenMax.min.js","id": "srcTweenMax"},
                 {"src": "src/thirdParty/greensocks/TimelineLite.min.js","id": "srcTimeline"},
-                {"src": "src/thirdParty/createJS/easeljs-0.6.1.min.js","id": "srceaseljs"},
+                {"src": "/src/thirdParty/createJS/easeljs-0.6.1.min.js","id": "srceaseljs"},
                 {"src": "src/thirdParty/hammer.min.js","id": "hammer"},
                 {"src": "src/thirdParty/createJS/preload.js", "id": "preload"},
                 {"src": "src/thirdParty/createJS/soundjs-NEXT.min.js", "id": "sound"},
