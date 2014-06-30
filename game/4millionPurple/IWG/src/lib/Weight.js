@@ -212,7 +212,7 @@
             rowAssetsArray      = [],
             iconData            = turnData.v,
             rowContainer        = new createjs.Container();
-        rowContainer.name       = "rowContainer";
+        rowContainer.name       = "rowContainer"+itt;
         rowContainer.isRevealed = false;
         rowContainer.y          = (t.getGapY() * itt) + 55;
         rowContainer.x          = 110;
@@ -234,13 +234,11 @@
 
         // create new confetti  
         var confettiWinner = new Confetti(
-                [0, rowContainer.y -40, 382, 85],           // Container Co-ords
-                [-90, 0, 382, 85]                           // Mask Co-ords
+                [5, rowContainer.y -40, 375, 85],           // Container Co-ords
+                [-90, 0, 375, 85]                           // Mask Co-ords
             );
         t.getConfettiWinners().push(confettiWinner);
         rowContainer.addChild(confettiWinner.getContainer());
-
-        console.log(rowContainer.getBounds())
 
         for (var value in values) {
 
@@ -260,6 +258,7 @@
             container.token = value;
             container.row   = itt;
             container.addChild(token, symbol);
+
 
             container.on('click', function (ev) {
                 if (rowContainer.isRevealed == false) {
@@ -414,17 +413,25 @@
                 deposit: [bankAmount],
                 log: true
             });
+           
 
-            // revealTimelines[0].resume();
+
             var highlight = gameContainer;
             var highlightTimeline = new TimelineMax({
                 delay: 2.5,
                 onStart: highlightPrizeAmount,
-                onStartParams: [prize, rowArray] 
+                onStartParams: [prize, rowArray] ,
+                onCompleteParams: [gameContainer,this] ,
+                onComplete: function(gameContainer,self){
+                    // play confetti win reveal
+                    var confettiRow     = gameContainer.parent.name.slice(-1);
+                    var confettiWinner  = self.getConfettiWinners()[confettiRow];
+                    confettiWinner.playConfettiTimeline();       
+                }
             });
-
+            // fix for reveal
             highlightTimeline.to(highlight, 0.7, {
-                alpha: 0.3,
+                alpha: 0,
                 ease: "easeIn"
             });
             

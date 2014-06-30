@@ -178,67 +178,55 @@
             }
         }
 
-        checkIfValid(valid, 1);
-
-        checkTurnData();
-        
-        checkMatchThree(self);
-        checkEqualsSeven(self);
         checkMatchOne(self);
+        checkEqualsTen(self);
         checkYoursTheirs(self);
-        //checkDoubleMatch(self);
+        checkMatchTwo(self);
+        checkDoubleMatch(self);
 
         balanceInlineBank(self);
     }
-
-    function balanceInlineBank(self) {
-        if(self.getInlineBankCheck() != parseInt(self.getAmount()) ) {
-            core.IWG.ame('error', { mess: ['error on bank check']});
-        }
-    }
     
-    function checkMatchThree(self){
-        var game1 = self.getGame1();
+    function checkMatchOne(self){
+        var game1   = self.getGame1(),
+            s0      = 0;
         
         for (var i = 0; i < game1.go.length; i++){
             var turnData    = game1.go[i],
-                w           = parseInt(turnData.w),
-                d0          = parseInt(turnData.d0),
-                d1          = parseInt(turnData.d1),
-                d2          = parseInt(turnData.d2),
-                p           = parseInt(turnData.p);
-            
-            if( w === 1){
-                if  (d0 !== 7 || d1 !== 7 || d2 !== 7){
-                    core.IWG.ame('error', { mess: ['error on game1 ']});
+                t           = parseInt(turnData.t),
+                p           = parseInt(turnData.p),
+                w           = parseInt(turnData.w);
+                
+             if( w === 1 ){
+                if( t !== s0 ){
+                    core.IWG.ame('error', { mess: ['error on match1']});  
                 }
-                // if a winner then add to bank for final check on ticket later
+                // inline bank
                 var prize = parseInt(self.getPrizeList()[p]);
-                self.setInlineBankCheck(prize);                
+                self.setInlineBankCheck(prize);  
+
             } else {
-               if  (d0 == 7 && d1 == 7 && d2 == 7){
-                    core.IWG.ame('error', { mess: ['error on win game1 ']});
-                } 
+                if( t == s0 ){
+                    core.IWG.ame('error', { mess: ['error on game3 - match on loser']});  
+                }
             }
-                  
-        } 
+        }
     }
-    
-    function checkEqualsSeven(self){
+    function checkEqualsTen(self){
         var game2 = self.getGame2();
         for (var i = 0; i < game2.go.length; i++) {
             var iconData    = game2.go[i],
-                num1        = iconData.b0,
-                num2        = iconData.b1,
-                t           = iconData.t,
-                w           = iconData.w,
+                num1        = parseInt(iconData.b0),
+                num2        = parseInt(iconData.b1),
+                t           = parseInt(iconData.t),
+                w           = parseInt(iconData.w),
                 p           = parseInt(iconData.p);
             
-            if ( parseInt(num1) + parseInt(num2) != parseInt(t)) {
-                core.IWG.ame('error', { mess: ['error on number addition for game2']});
+            if ( num1 + num2 !== t ) {
+                core.IWG.ame('error', { mess: ['error on number addition for checkEquals']});
             }
-            if ( (parseInt(num1) + parseInt(num2) == 7) && (w != 1)) {
-                core.IWG.ame('error', { mess: ['error on win for game2']});
+            if ( num1 + num2 === t && w !== 1 ) {
+                core.IWG.ame('error', { mess: ['error on win for checkEquals']});
             }
             // if a winner then add to bank for final check on ticket later
             if(w == 1) {
@@ -248,42 +236,14 @@
 
         }
     }
-    
-    function checkMatchOne(self){
+    function checkYoursTheirs(self){
+        
         var game3   = self.getGame3(),
             s0      = parseInt(game3.s0);
         
-        for (var i = 0; i < game3.go.length; i++){
-            var turnData    = game3.go[i],
-                w           = parseInt(turnData.w),
-                icon        = 0,
-                p           = parseInt(turnData.p);
-
-
-            if( w === 1 ){
-//                if( icon !== s0 ){
-//                    core.IWG.ame('error', { mess: ['error on game3']});  
-//                }
-                // inline bank
-                var prize = parseInt(self.getPrizeList()[p]);
-                self.setInlineBankCheck(prize);  
-
-            } else {
-                if( icon == s0 ){
-                    core.IWG.ame('error', { mess: ['error on game3 - match on loser']});  
-                }
-            }
-        }
-    }
-
-    function checkYoursTheirs(self){
-        
-        var game4   = self.getGame4(),
-            s0      = parseInt(game4.s0);
-        
-        for( var i = 0; i < game4.go.length; i++){
+        for( var i = 0; i < game3.go.length; i++){
             
-            var turnData    = game4.go[i],
+            var turnData    = game3.go[i],
                 w           = parseInt(turnData.w),
                 y           = parseInt(turnData.y),
                 t           = parseInt(turnData.t),
@@ -291,52 +251,80 @@
             
             if (w === 1){
                 if ( y < t ){
-                    core.IWG.ame('error', { mess: ['error on game4']});
+                    core.IWG.ame('error', { mess: ['error on YoursTheirs']});
                 }
                 // inline bank
                 var prize = parseInt(self.getPrizeList()[p]);
                 self.setInlineBankCheck(prize); 
             } else {
                 if ( y > t ){
-                    core.IWG.ame('error', { mess: ['error on game4 - match on loser']});
+                    core.IWG.ame('error', { mess: ['error on YoursTheirs - match on loser']});
                 }
             }           
         }
     }
-
+    function checkMatchTwo(self){
+        var game4 = self.getGame4();
+        
+        for (var i = 0; i < game4.go.length; i++){
+            var turnData    = game4.go[i],
+                w           = parseInt(turnData.w),
+                d0          = parseInt(turnData.v0),
+                d1          = parseInt(turnData.v1),
+                p           = parseInt(turnData.p);
+            
+            if( w === 1){
+                if  (d0 !== d1 ){
+                    core.IWG.ame('error', { mess: ['error on game1 ']});
+                }
+                // if a winner then add to bank for final check on ticket later
+                var prize = parseInt(self.getPrizeList()[p]);
+                self.setInlineBankCheck(prize);                
+            } else {
+               if  (d0 === d1){
+                    core.IWG.ame('error', { mess: ['error on win game1 ']});
+                } 
+            }
+                  
+        } 
+    }
     function checkDoubleMatch(self){
-         var game5   = self.getGame5(),
+         var game5  = self.getGame5(),
             s0      = parseInt(game5.s0),
             s1      = parseInt(game5.s1);
    
+        //console.log(s0,s1);
+        
         for (var i = 0; i < game5.go.length; i++){
-            var f           = game5.go[i],
+            var turnData    = game5.go[i],
                 w           = parseInt(turnData.w),
-                icon        = parseInt(turnData.s),
+                s           = parseInt(turnData.s),
                 p           = parseInt(turnData.p);
+            
+            //console.log(turnData, w, s, p);
 
-            if( w === 1 ){
-                if( (icon !== s0) || (icon !== s1) ){
-                    core.IWG.ame('error', { mess: ['error on game5']});  
+            if( w === 1 ){                
+                if( (s !== s0) && (s !== s1) ){
+                    core.IWG.ame('error', { mess: ['error on doubleMatch']});  
                 }
                 // inline bank
                 var prize = parseInt(self.getPrizeList()[p]);
                 self.setInlineBankCheck(prize);  
 
             } else {
-                if( (icon == s0) || (icon == s1) ){
+                if( (s == s0) && (s == s1) ){
                     core.IWG.ame('error', { mess: ['error on game5 - match on loser']});  
                 }
             }
         }
      
     }
-
-    function checkIfValid(isValid, errCode) {
-
+    
+    function balanceInlineBank(self) {
+        if(self.getInlineBankCheck() != parseInt(self.getAmount()) ) {
+            core.IWG.ame('error', { mess: ['error on bank check']});
+        }
     }
-
-    function checkTurnData() {}
 
 
     iwg._class("iwg.lib.Ticket", Ticket);

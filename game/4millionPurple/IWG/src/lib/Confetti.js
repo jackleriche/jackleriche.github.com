@@ -37,6 +37,11 @@
             this.getConfettiTimeline = function () {
               return _confettiTimeline;
             }
+            this.playConfettiTimeline = function () {
+                for (var i = 0; i < _confettiTimeline.length; i++) {
+                 _confettiTimeline[i].resume();
+                }
+            }
 
 
             // Setters 
@@ -97,7 +102,7 @@
                         }, 1, true, ConfettiSS);
 
                 confettiClip.x     = R.randomFromInterval(-40,containerW);                
-                confettiClip.y     = R.randomFromInterval(-100,0);
+                confettiClip.y     = R.randomFromInterval(-100,-30);
       
                 confettiClip.gotoAndPlay(colour);          
 

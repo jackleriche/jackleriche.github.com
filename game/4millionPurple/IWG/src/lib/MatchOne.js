@@ -14,6 +14,8 @@
         Ticket = lib.Ticket,
         REMINDER,
         MoneyBagSS = lib.flassets.MoneyBagSS,
+        ConfettiSS = lib.flassets.ConfettiSS,
+        Confetti = lib.Confetti,
 
 
         MatchOne = function (x, y, gapY, gapX, slide, ticketData) {
@@ -29,6 +31,7 @@
                 _gameAssetArray = [],
                 _rowContainerArray = [],
                 _winRevealQueueArray = [],
+                _confettiWinners    = [],
                 _ref = {
                     0: "g1_fingers",
                     1: "g1_bars",
@@ -92,6 +95,9 @@
             }
             this.getReminder = function () {
                 return _reminder;
+            }
+            this.getConfettiWinners = function () {
+                return _confettiWinners;
             }
 
             // setters
@@ -216,7 +222,7 @@
             rowAssetsArray = [],
             iconData = turnData.v,
             rowContainer = new createjs.Container();
-        rowContainer.name = "rowContainer";
+        rowContainer.name = "rowContainer"+itt;
         rowContainer.isRevealed = false;
         rowContainer.isWinRevealed = false;
         t.addRowContainerArray(rowContainer);
@@ -247,10 +253,19 @@
             gapX = t.getGapX();
 
         var matchOneBgShape     = new createjs.Shape();
-        matchOneBgShape.graphics.beginFill("#fff").drawRect(-95, -56, 190, 152);
+        matchOneBgShape.graphics.beginFill("#fff").drawRect(-90, -70, 190, 160);
         matchOneBgShape.alpha   = 0;
         matchOneBgShape.name    = "matchOneBgShape";
         rowContainer.addChild(matchOneBgShape);
+
+        // create new confetti  
+        var confettiWinner = new Confetti(
+                [0, -70, 185, 150],           // Container Co-ords
+                [-90, 0, 185, 150]            // Mask Co-ords
+            );
+        t.getConfettiWinners().push(confettiWinner);
+        rowContainer.addChild(confettiWinner.getContainer());
+
 
         var container   = new createjs.Container(),
             spacingX    = gapX * value,
@@ -487,6 +502,11 @@
 
     function highlightPrizeAmount(prize, rowArray) {
         prize.getContainer().children[0].gotoAndStop("win" + Helper.fixPrizeValue(prize.prizeValue));
+
+        // play confetti win reveal
+                    var confettiRow     = prize.getContainer().row;
+                    var confettiWinner  = this.getConfettiWinners()[confettiRow];
+                    confettiWinner.playConfettiTimeline();    
     }
 
     MatchOne.prototype.checkMatchOneWin = function (highlight, prize, rowArray, allRowsArray) {
@@ -511,11 +531,12 @@
                 delay: 2,
                 repeat: 4,
                 yoyo: true,
+                onStartScope: this,
                 onStart: highlightPrizeAmount,
                 onStartParams: [prize, rowArray]
             });
             highlightTimeline.to(highlight, 0.7, {
-                alpha: 0.3,
+                alpha: 0,
                 ease: "easeIn"
             })
         }

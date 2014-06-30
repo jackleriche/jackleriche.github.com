@@ -310,9 +310,9 @@
             if (rowContainer.isRevealed == false) {
                 rowContainer.isRevealed = true;
                 var current = rowAssetsArray[ev.currentTarget.token];
-                MEvent.MATCHONEREVEAL.t = t;
-                MEvent.MATCHONEREVEAL.current = current;
-                iwg.IWGEM.dispatchEvent(MEvent.MATCHONEREVEAL);
+                MEvent.DOUBLEMATCHREVEAL.t = t;
+                MEvent.DOUBLEMATCHREVEAL.current = current;
+                iwg.IWGEM.dispatchEvent(MEvent.DOUBLEMATCHREVEAL);
                 t.stopReminder();
             }
         }, null, true);

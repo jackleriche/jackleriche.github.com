@@ -15,6 +15,8 @@
         Ticket = lib.Ticket,
         REMINDER,
         MoneyClipSS = lib.flassets.MoneyClipSS,
+        ConfettiSS = lib.flassets.ConfettiSS,
+        Confetti = lib.Confetti,
 
         MatchTwo = function (x, y, gapY, gapX, slide, ticketData) {
 
@@ -41,11 +43,14 @@
                 },
                 _gameAssetArray = [],
                 _rowContainerArray = [],
+                _confettiWinners    = [],
                 _isFinished = false,
                 _container = new createjs.Container(),
                 _reminder = null;
 
             MoneyClipSS.ss = new createjs.SpriteSheet(MoneyClipSS.spriteSheet);
+            ConfettiSS.ss = new createjs.SpriteSheet(ConfettiSS.spriteSheet);
+
 
 
             // getters
@@ -90,6 +95,9 @@
             }
             this.getReminder = function () {
                 return _reminder;
+            }
+            this.getConfettiWinners = function () {
+                return _confettiWinners;
             }
 
 
@@ -218,7 +226,7 @@
                 rowAssetsArray = [],
                 iconData = turnData.v,
                 rowContainer = new createjs.Container();
-            rowContainer.name = "rowContainer";
+            rowContainer.name = "rowContainer"+itt;
             rowContainer.isRevealed = false;
             rowContainer.y = (t.getGapY() * itt) + 45;
             rowContainer.x = 90;
@@ -237,6 +245,15 @@
             matchTwoBgShape.name = "matchTwoBgShape";
 
             rowContainer.addChild(matchTwoBgShape);
+
+             // create new confetti  
+            var confettiWinner = new Confetti(
+                    [5, rowContainer.y -55, 370, 100],           // Container Co-ords
+                    [-70, 0, 370, 100]                           // Mask Co-ords
+                );
+            t.getConfettiWinners().push(confettiWinner);
+            rowContainer.addChild(confettiWinner.getContainer());
+
 
             for (var i in values) {
     
@@ -440,10 +457,17 @@
                 repeat: 4,
                 yoyo: true,
                 onStart: highlightRowWinners,
-                onStartParams: [prize, rowArray]
+                onStartParams: [prize, rowArray],
+                onCompleteParams: [gameContainer,this] ,
+                onComplete: function(gameContainer,self){
+                    // play confetti win reveal
+                    var confettiRow     = gameContainer.parent.name.slice(-1);
+                    var confettiWinner  = self.getConfettiWinners()[confettiRow];
+                    confettiWinner.playConfettiTimeline();       
+                }
             });
             highlightBgTimeline.to(highlight, 0.7, {
-                alpha: 0.3,
+                alpha: 0,
                 ease: "easeInOut"
             })
         }
@@ -458,15 +482,13 @@
         highlightNumberWinners(rowArray);
         var rowParent = rowArray[0].getContainer().parent.parent;
         var rowName = rowParent.getChildByName("matchTworow");
-        Helper.moveToTop(rowName);
+       // Helper.moveToTop(rowName);
     }
 
     // highlight the 7's in this winning row
     function highlightNumberWinners(rowArray) {
         for (var i = 0; i < 3; i++) {
             var numberDisplay = rowArray[i].getContainer().children[0];
-            // set the 7's to gold
-            numberDisplay.gotoAndStop("number_win7");
         }
     }
     // Highlight this prize amount
