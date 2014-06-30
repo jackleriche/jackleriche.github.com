@@ -18,7 +18,7 @@
                 {"src": "src/thirdParty/createjs/easeljs-0.6.1.min.js","id": "srceaseljs"},
                 {"src": "src/thirdParty/hammer.min.js","id": "hammer"},
                 {"src": "src/thirdParty/createjs/preload.js", "id": "preload"},
-                {"src": "src/thirdParty/createJjs/soundjs-NEXT.min.js", "id": "sound"},
+                {"src": "src/thirdParty/createjs/soundjs-NEXT.min.js", "id": "sound"},
 
                 //images
                 {"src": "src/imports/img/exports/masterSS.png","id": "masterSS"},
