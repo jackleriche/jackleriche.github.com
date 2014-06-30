@@ -15,10 +15,10 @@
     //thridParty
                 {"src": "src/thirdParty/greensocks/TweenMax.min.js","id": "srcTweenMax"},
                 {"src": "src/thirdParty/greensocks/TimelineLite.min.js","id": "srcTimeline"},
-                {"src": "/src/thirdParty/createJS/easeljs-0.6.1.min.js","id": "srceaseljs"},
+                {"src": "src/thirdParty/createjs/easeljs-0.6.1.min.js","id": "srceaseljs"},
                 {"src": "src/thirdParty/hammer.min.js","id": "hammer"},
-                {"src": "src/thirdParty/createJS/preload.js", "id": "preload"},
-                {"src": "src/thirdParty/createJS/soundjs-NEXT.min.js", "id": "sound"},
+                {"src": "src/thirdParty/createjs/preload.js", "id": "preload"},
+                {"src": "src/thirdParty/createJjs/soundjs-NEXT.min.js", "id": "sound"},
 
                 //images
                 {"src": "src/imports/img/exports/masterSS.png","id": "masterSS"},
