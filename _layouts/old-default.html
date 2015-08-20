@@ -16,7 +16,7 @@
 		<!--     apple homescreen info     -->
         <link rel="apple-touch-icon-precomposed" href="/icon.png">
         <meta name="apple-mobile-web-app-title" content="#site name here">      
-        
+         
 
 		<!--     css     -->
         <link rel="stylesheet" href="/css/normalize.css">
@@ -33,42 +33,41 @@
         <script src="/js/vendor/bootstrap.js"></script>
         <script src="/js/vendor/twitter.js"></script>
         <script src="/js/header.js"></script>
+        <script src="/js/vendor/pixi.min.js"></script>
         
     </head>
     <body>
     <!--[if lt IE 7]>
     	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-    	<div class="strip"></div>
-    	<!-- {% include header.html %} -->    
-    	<header class="main">
+    	
+		<header class="main">
 			<nav class="container">
 				<p><a class="home" href="/" title="home"><img src="/img/home.png" alt="home" width="50" height="47"></a></p>
 			</nav>
-			<section class="{{ page.background }}">
-				<div class="container fixed {{ page.text-color }} ">
-					<time><a href="{{ page.url }}" title="{{ page.title }}">{{ page.date | date: "%d %b, %Y" }}</a></time>
-					<h1><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
-					<p><a href="{{ page.url }}" title="{{ page.title }}">{{ page.introText }}</a></p>	
+			{% for post in site.posts %}
+			{% if post.featured == true %}
+			<section class="{{ post.background }}">
+				<div class="container fixed {{ post.text-color }} ">
+					<time><a href="{{ post.url }}" title="{{ post.title }}">{{ post.date | date: "%d %b, %Y" }}</a></time>
+					<h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
+					<p><a href="{{ post.url }}" title="{{ post.title }}">{{ post.introText }}</a></p>	
 				</div>
 			</section>
-		</header>    	        
+			{% endif %} 				
+			{% endfor %}
+		</header>
+    	<div class="strip"></div>      
         <div class="content container">
         	
 	        <div class="row">
 	        	<section class="blog-holder span9">
-	        		{{ content }}
-                    <div class="word-count">
-	                    <p>word count : {{ page.content | number_of_words }}</p>
-                    </div>
-	        	</section>
-	    		{% include sidebar.html %}
+		    		{{ content }}
+		    	</section>
 	        </div>
 	    </div><!-- /.container -->
-
-  		{% include footer.html %}
-    
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    		
+    	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
