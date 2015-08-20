@@ -44,6 +44,6 @@ module.exports = function (grunt) {
 		
 	});	
 	
-	    grunt.registerTask('default', ["clean:tmp",'copy:toTMP', 'typescript', 'clean:ts', "copy:toBIN" ]);
+	    grunt.registerTask('default', ["clean:tmp",'copy:toTMP', 'typescript', 'clean:ts', "copy:toBIN", 'clean:tmp' ]);
 
 } 
