@@ -26,7 +26,7 @@ module com.camelot.iwg {
                 y: number,
             },
             center?: boolean
-        }, 
+        },  
         scale?: number,
         rotation?: number,
         ticketLabel?: any,
