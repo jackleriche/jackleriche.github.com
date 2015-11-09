@@ -132,10 +132,16 @@ var com;
                         x: 170,
                         y: 160
                     });
+                    var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
                     var text = new createjs.Text("--", "Bold 40px Arial", "black");
                     text.textAlign = "center";
                     text.x = 60;
-                    text.y = 35;
+                    if (is_firefox) {
+                        text.y = 40;
+                    }
+                    else {
+                        text.y = 35;
+                    }
                     tombollaBall.getStage().addChild(text);
                     this.addChild(tombollaBall);
                     tombollaBall.addAnimation("ballPop");

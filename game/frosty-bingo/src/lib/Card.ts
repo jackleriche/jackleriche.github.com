@@ -388,6 +388,8 @@ module com.camelot.iwg {
 			}
 			
 			var x 	= 47;
+            var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+            
 			for (var i = 0; i < numbers.length; i++){
 				
 				var numberObject = new CLICKABLEGAMEOBJECT(this.getName() + "-number-" + i, { w: 52, h: 34 }, 1, this);
@@ -423,11 +425,16 @@ module com.camelot.iwg {
 					alpha: 0
 				});	
 					
-				// number
+				// number 
 				var numberString:any = numbers[i],
 					text = new createjs.Text( numberString.toString() , "Bold 29px effra", "black");
 				text.name = "text";
-				text.y = -2;
+                if(is_firefox){
+                    text.y = 3;
+                } else {
+                    text.y = -2;
+                }
+				
 				numberObject.getStage().addChild(text);
 	
 				text.x 	= 26;

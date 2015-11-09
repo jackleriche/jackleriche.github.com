@@ -14,7 +14,8 @@ module com.camelot.iwg {
 	export class Instruction {
 		
 		private _children: Array<GameObject> = [];
-	
+	    private _iActive: boolean            = false;
+        
 		constructor(name) {
 			
 			this._subscribe();
@@ -24,6 +25,16 @@ module com.camelot.iwg {
 			
 		}	
 		
+        /*
+         *  name:           getIActive
+         *  description:    get the active state of the instuructions
+         *  params:     	null
+         *  return:         this._iActive      
+         */
+        public getIActive() {
+            return this._iActive;    
+        }
+        
 		/*
 		 *	name: 			_instructionSubscribe
 		 *	description:	
@@ -35,7 +46,7 @@ module com.camelot.iwg {
 			IWG.IWGEM.on( "showInstructions", this._showInstructions.bind(this) );
 			IWG.IWGEM.on( "hideInstructions", this._hideInstructions.bind(this) );
 			IWG.IWGEM.on( "setInstructions", this._setInstructions.bind(this) );
-			
+			IWG.IWGEM.on( "checkI", this._checkIActive.bind(this) );
 			IWG.IWGEM.on( "instructionPaneUp", this._pauseGame.bind(this) );
 			IWG.IWGEM.on( "instructionPaneDown", this._resumeGame.bind(this) );
 			
@@ -51,6 +62,7 @@ module com.camelot.iwg {
 			
 			IWG.IWGEM.on( "showInstructions" );
 			IWG.IWGEM.on( "hideInstructions" );
+            IWG.IWGEM.on( "checkI" );
 			IWG.IWGEM.on( "setInstructions" );
 			
 		}
@@ -62,7 +74,6 @@ module com.camelot.iwg {
 		 *	returns:		null
 		 */
 		private _setupButtonLayout() {
-						
 			var instructionButton = new CLICKABLEGAMEOBJECT("instructionButton", { w: 54, h: 54});
 			this._children.push(instructionButton);
 			
@@ -189,6 +200,7 @@ module com.camelot.iwg {
 			instructions.setEnabled(true);
 			instructions.animate("showPane");
 			IWG.IWGEM.trigger("showOverlay");
+            this._iActive = true;
 		}
 		
 		/*
@@ -208,7 +220,21 @@ module com.camelot.iwg {
 			instructions.setEnabled(false);
 			instructions.animate("hidePane");			
 			IWG.IWGEM.trigger("hideOverlay");
+            this._iActive = false;
 		}
+        
+        /*
+		 *	name: 			_checkIActive
+		 *	description:	checks if the pause screen is on and if instructions are up
+		 *	parmas:			null
+		 *	returns:		null
+		 */
+        private _checkIActive() {
+            var isPaused = GLOBAL.getInstance().getFromGlobal('pause').getPause();
+            if (!isPaused && this._iActive === true) {
+                IWG.IWGEM.trigger("pause");
+            }
+        }
 		
 		/*
 		 *	name: 			_pauseGame

@@ -5,6 +5,7 @@ var com;
     (function (camelot) {
         var iwg;
         (function (iwg) {
+            var CAMELOT = com.camelot, CORE = CAMELOT.core, IWG = CAMELOT.iwg;
             var Scale = (function () {
                 function Scale(parent) {
                     this._enabled = false;
@@ -29,11 +30,12 @@ var com;
                     this._scaleDiv.appendChild(iwgCanvas);
                 };
                 Scale.prototype.scaleFactor = function () {
-                    var w = window.innerWidth, h = window.innerHeight, ow = 960, oh = 640;
-                    this._scaleFactor = Math.min(h / oh, w / ow);
+                    var w = CORE.IWG.ame('get', 'gameWidth'), h = CORE.IWG.ame('get', 'gameHeight'), ow = 960, oh = 640;
+                    this._scaleFactor = Number(Math.min(h / oh, w / ow).toFixed(1));
+                    console.log(this._scaleFactor);
                 };
                 Scale.prototype.alignScaleDiv = function () {
-                    var background = document.getElementById('background'), marginLeft = (960 - window.innerWidth) / 2, marginTop = (640 - window.innerHeight) / 2;
+                    var background = document.getElementById('background'), marginLeft = (960 - CORE.IWG.ame('get', 'gameWidth')) / 2, marginTop = (640 - CORE.IWG.ame('get', 'gameHeight')) / 2;
                     this._scaleDiv.style.left = "-" + marginLeft + "px";
                     this._scaleDiv.style.top = "-" + marginTop + "px";
                     if (this._scaleFactor > 1) {

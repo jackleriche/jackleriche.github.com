@@ -283,6 +283,7 @@ var com;
                         return false;
                     }
                     var x = 47;
+                    var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
                     for (var i = 0; i < numbers.length; i++) {
                         var numberObject = new CLICKABLEGAMEOBJECT(this.getName() + "-number-" + i, { w: 52, h: 34 }, 1, this);
                         numberObject.setTicketLabel(Number(numbers[i]));
@@ -314,7 +315,12 @@ var com;
                         });
                         var numberString = numbers[i], text = new createjs.Text(numberString.toString(), "Bold 29px effra", "black");
                         text.name = "text";
-                        text.y = -2;
+                        if (is_firefox) {
+                            text.y = 3;
+                        }
+                        else {
+                            text.y = -2;
+                        }
                         numberObject.getStage().addChild(text);
                         text.x = 26;
                         text.textAlign = "center";

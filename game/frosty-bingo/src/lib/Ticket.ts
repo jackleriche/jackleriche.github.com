@@ -11,10 +11,11 @@
     mIWGd00014 - incorrect number added to the ticket
     mIWGd00015 - not valid position for a free square
     mIWGd00016 - too many/few card numbers
-    mIWGd00017 -
-    mIWGd00018 - 
-    mIWGd00019 - 
-    mIWGd00023 - 
+    mIWGd00017 - losing ticket - wT or amount has been changed
+    mIWGd00018 - disallowed value in amount - NaN
+    mIWGd00019 - amount is not vaild/tier is not vaild tier outcome
+    mIWGd00023 - card number NaN
+    mIWGd00024 - card number has decimal
  */
  
 module com.camelot.iwg {
@@ -209,10 +210,13 @@ module com.camelot.iwg {
          *  return:         void      
          */	
         public errorCheck(): void {
-            var prizeTotal;
+            var prizeTotal,
+                ignore           = false,
+                tier             = this._outcome.tier,
+                winAmount:number = 0.00;
             
             // check for a value thats been removed or added to the prize array
-            if (this._prizeList.length != 13){
+            if (this._prizeList.length != 14){
                 CORE.IWG.ame('error', {mess: ['mIWGd00007 prizelist length too long/short']});
             }
             
@@ -290,11 +294,18 @@ module com.camelot.iwg {
                 CORE.IWG.ame('error', {mess: ['mIWGd00011 card has > or < than one -1']});
             }   
             
+            // not a number added to prize list
+            for (var i = 0; i < this._prizeList.length; i++) {
+                if (isNaN(this._prizeList[i])){
+                    CORE.IWG.ame('error', {mess: ['mIWGd00013 incorrect prize value added/changed in prize list']});
+                }
+            }
+            
             // Incorrect prize value added/changed in prize list
             for (var i = 0; i < this._prizeList.length; i++) {
                 this._total += this._prizeList[i];
             }
-            if (this._total !== 311424) {
+            if (this._total !== 311439) {
                 CORE.IWG.ame('error', {mess: ['mIWGd00013 incorrect prize value added/changed in prize list']});
             }
             
@@ -324,6 +335,114 @@ module com.camelot.iwg {
                     CORE.IWG.ame('error', {mess: ['mIWGd00016 too many/few card numbers']});
                 }
             }
+            
+            // if its losing tier, but wT is not 0 or amount is not 0 then error
+            if (this._outcome.tier === 30 && (Number(this._params.wT) !== 0 || this._outcome.amount !== 0)){
+                CORE.IWG.ame('error', {mess: ['mIWGd00017 win on lose ticket']});
+            }
+            
+            // if amount is anything but a number then error
+            if (isNaN(this._outcome.amount)){
+                CORE.IWG.ame('error', {mess: ['mIWGd00018 disallowed value in amount']});
+            }
+            
+            // check the tiers for the values theyre suppose to be
+            switch(tier) {
+                case 1:
+                    winAmount   = 300000.00;
+                    break;
+                case 2:
+                    winAmount   = 10000.00;
+                    break; 
+                case 3:
+                    winAmount   = 1350.00;
+                    break;
+                case 4:
+                    winAmount   = 1000.00;
+                    break;
+                case 5:
+                case 6:
+                    winAmount   = 200.00;
+                    break;
+                case 7:
+                case 8:
+                    winAmount   = 100.00;
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                    winAmount   = 50.00;
+                    break;
+                case 13:
+                case 14:
+                    winAmount   = 30.00;
+                    break;
+                case 15:
+                case 16:
+                    winAmount   = 25.00;
+                    break;
+                case 17:
+                case 18:
+                case 19:
+                    winAmount   = 20.00;
+                    break;
+                case 20:
+                    winAmount   = 15.00;
+                    break;
+                case 21:
+                case 22:
+                case 23:
+                    winAmount   = 12.00;
+                    break; 
+                case 24:
+                case 25:
+                    winAmount   = 10.00;
+                    break;
+                case 26:
+                case 27:
+                case 28:
+                    winAmount   = 6.00;
+                    break;
+                case 29:
+                    winAmount   = 5.00;
+        	        break;
+                case 30:
+                    winAmount   = 3.00;
+        	        break;
+                case 31:
+                    winAmount   = 0.00;
+        	        break;      
+                default:
+                    ignore = true;
+             }
+             if (this._outcome.amount !== winAmount){
+                 CORE.IWG.ame('error', {mess: ['mIWGd00019 amount is not vaild/tier is not vaild tier outcome']});
+             }
+
+             // check for if the number in a card is NaN
+             for (var i = 0; i < this._cards.length; i++) {
+                 var cards = this._cards[i];
+                 for (var j = 0; j < cards.length; j++) {
+                     var cardNumbers = cards[j];
+                     if (isNaN(cardNumbers)){
+                         CORE.IWG.ame('error', {mess: ['mIWGd00023 card number NaN']});
+                     }
+                 }
+             }
+             
+             // check for if the number in a card has a decimal
+             for (var i = 0; i < this._cards.length; i++) {
+                 var cards = this._cards[i];
+                 for (var j = 0; j < cards.length; j++) {
+                     var cardNumbers = cards[j].toString();
+                     var n = cardNumbers.indexOf('.');
+                     if (n === 1) {
+                         CORE.IWG.ame('error', {mess: ['mIWGd00024 card number has decimal']});
+                     }
+                 }
+             }
+            
         }
         
         /*

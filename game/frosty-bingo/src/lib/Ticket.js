@@ -115,8 +115,8 @@ var com;
                     this.errorCheck();
                 };
                 Ticket.prototype.errorCheck = function () {
-                    var prizeTotal;
-                    if (this._prizeList.length != 13) {
+                    var prizeTotal, ignore = false, tier = this._outcome.tier, winAmount = 0.00;
+                    if (this._prizeList.length != 14) {
                         CORE.IWG.ame('error', { mess: ['mIWGd00007 prizelist length too long/short'] });
                     }
                     var bNumbers = [];
@@ -182,9 +182,14 @@ var com;
                         CORE.IWG.ame('error', { mess: ['mIWGd00011 card has > or < than one -1'] });
                     }
                     for (var i = 0; i < this._prizeList.length; i++) {
+                        if (isNaN(this._prizeList[i])) {
+                            CORE.IWG.ame('error', { mess: ['mIWGd00013 incorrect prize value added/changed in prize list'] });
+                        }
+                    }
+                    for (var i = 0; i < this._prizeList.length; i++) {
                         this._total += this._prizeList[i];
                     }
-                    if (this._total !== 311424) {
+                    if (this._total !== 311439) {
                         CORE.IWG.ame('error', { mess: ['mIWGd00013 incorrect prize value added/changed in prize list'] });
                     }
                     var matches = [];
@@ -206,6 +211,103 @@ var com;
                         var cards = this._cards[i].length;
                         if (cards !== 25) {
                             CORE.IWG.ame('error', { mess: ['mIWGd00016 too many/few card numbers'] });
+                        }
+                    }
+                    if (this._outcome.tier === 30 && (Number(this._params.wT) !== 0 || this._outcome.amount !== 0)) {
+                        CORE.IWG.ame('error', { mess: ['mIWGd00017 win on lose ticket'] });
+                    }
+                    if (isNaN(this._outcome.amount)) {
+                        CORE.IWG.ame('error', { mess: ['mIWGd00018 disallowed value in amount'] });
+                    }
+                    switch (tier) {
+                        case 1:
+                            winAmount = 300000.00;
+                            break;
+                        case 2:
+                            winAmount = 10000.00;
+                            break;
+                        case 3:
+                            winAmount = 1350.00;
+                            break;
+                        case 4:
+                            winAmount = 1000.00;
+                            break;
+                        case 5:
+                        case 6:
+                            winAmount = 200.00;
+                            break;
+                        case 7:
+                        case 8:
+                            winAmount = 100.00;
+                            break;
+                        case 9:
+                        case 10:
+                        case 11:
+                        case 12:
+                            winAmount = 50.00;
+                            break;
+                        case 13:
+                        case 14:
+                            winAmount = 30.00;
+                            break;
+                        case 15:
+                        case 16:
+                            winAmount = 25.00;
+                            break;
+                        case 17:
+                        case 18:
+                        case 19:
+                            winAmount = 20.00;
+                            break;
+                        case 20:
+                            winAmount = 15.00;
+                            break;
+                        case 21:
+                        case 22:
+                        case 23:
+                            winAmount = 12.00;
+                            break;
+                        case 24:
+                        case 25:
+                            winAmount = 10.00;
+                            break;
+                        case 26:
+                        case 27:
+                        case 28:
+                            winAmount = 6.00;
+                            break;
+                        case 29:
+                            winAmount = 5.00;
+                            break;
+                        case 30:
+                            winAmount = 3.00;
+                            break;
+                        case 31:
+                            winAmount = 0.00;
+                            break;
+                        default:
+                            ignore = true;
+                    }
+                    if (this._outcome.amount !== winAmount) {
+                        CORE.IWG.ame('error', { mess: ['mIWGd00019 amount is not vaild/tier is not vaild tier outcome'] });
+                    }
+                    for (var i = 0; i < this._cards.length; i++) {
+                        var cards = this._cards[i];
+                        for (var j = 0; j < cards.length; j++) {
+                            var cardNumbers = cards[j];
+                            if (isNaN(cardNumbers)) {
+                                CORE.IWG.ame('error', { mess: ['mIWGd00023 card number NaN'] });
+                            }
+                        }
+                    }
+                    for (var i = 0; i < this._cards.length; i++) {
+                        var cards = this._cards[i];
+                        for (var j = 0; j < cards.length; j++) {
+                            var cardNumbers = cards[j].toString();
+                            var n = cardNumbers.indexOf('.');
+                            if (n === 1) {
+                                CORE.IWG.ame('error', { mess: ['mIWGd00024 card number has decimal'] });
+                            }
                         }
                     }
                 };

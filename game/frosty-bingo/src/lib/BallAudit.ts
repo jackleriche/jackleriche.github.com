@@ -137,11 +137,16 @@ module com.camelot.iwg {
 			var bitmap = auditBall.getBitmap("auditBall");
 			bitmap.gotoAndStop('auditball_' + color);
 			
+            var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 			var numberWang = new createjs.Text(ballNumber, "bold 20px Arial", "black")
 			numberWang.name = 'numberWang';
 			numberWang.textAlign = "center";
 			numberWang.x = 23;
-			numberWang.y = 10;
+            if (is_firefox){
+                numberWang.y = 13;
+            } else {
+                numberWang.y = 10;   
+            }
 			numberWang.alpha = 0;
 			
 			

@@ -167,6 +167,7 @@ module com.camelot.iwg {
 
             // setup ticket
             TICKET.getInstance().setupTicket();
+           
             
             var mainLayout = new MAINLAYOUT();
             

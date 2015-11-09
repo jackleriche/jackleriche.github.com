@@ -10,20 +10,26 @@ var com;
             var Instruction = (function () {
                 function Instruction(name) {
                     this._children = [];
+                    this._iActive = false;
                     this._subscribe();
                     this._setupButtonLayout();
                     this._setupInstructionLayout();
                 }
+                Instruction.prototype.getIActive = function () {
+                    return this._iActive;
+                };
                 Instruction.prototype._subscribe = function () {
                     IWG.IWGEM.on("showInstructions", this._showInstructions.bind(this));
                     IWG.IWGEM.on("hideInstructions", this._hideInstructions.bind(this));
                     IWG.IWGEM.on("setInstructions", this._setInstructions.bind(this));
+                    IWG.IWGEM.on("checkI", this._checkIActive.bind(this));
                     IWG.IWGEM.on("instructionPaneUp", this._pauseGame.bind(this));
                     IWG.IWGEM.on("instructionPaneDown", this._resumeGame.bind(this));
                 };
                 Instruction.prototype._unsubscribe = function () {
                     IWG.IWGEM.on("showInstructions");
                     IWG.IWGEM.on("hideInstructions");
+                    IWG.IWGEM.on("checkI");
                     IWG.IWGEM.on("setInstructions");
                 };
                 Instruction.prototype._setupButtonLayout = function () {
@@ -111,6 +117,7 @@ var com;
                     instructions.setEnabled(true);
                     instructions.animate("showPane");
                     IWG.IWGEM.trigger("showOverlay");
+                    this._iActive = true;
                 };
                 Instruction.prototype._hideInstructions = function () {
                     GLOBAL.getInstance().addToGlobal('gameState', 'splash');
@@ -120,6 +127,13 @@ var com;
                     instructions.setEnabled(false);
                     instructions.animate("hidePane");
                     IWG.IWGEM.trigger("hideOverlay");
+                    this._iActive = false;
+                };
+                Instruction.prototype._checkIActive = function () {
+                    var isPaused = GLOBAL.getInstance().getFromGlobal('pause').getPause();
+                    if (!isPaused && this._iActive === true) {
+                        IWG.IWGEM.trigger("pause");
+                    }
                 };
                 Instruction.prototype._pauseGame = function () {
                     TweenMax.pauseAll();

@@ -1,6 +1,9 @@
 /// <reference path="../../../typings/tsd.d.ts" />
 module com.camelot.iwg {
-
+	
+	var CAMELOT: any 	= com.camelot,
+        CORE 			= CAMELOT.core,
+        IWG 			= CAMELOT.iwg;       
 	export class Scale {
 		
 		private _enabled: boolean = false;
@@ -59,12 +62,13 @@ module com.camelot.iwg {
 		 */
 		private scaleFactor() {
 			
-			var w       		= window.innerWidth ,           // screen width
-            h           		= window.innerHeight,           // screen height
+			var w       		= CORE.IWG.ame('get','gameWidth'),           // screen width
+            h           		= CORE.IWG.ame('get','gameHeight'),           // screen height
             ow          		= 960,                          // your default game width
             oh          		= 640;                          // your default game height
-            this._scaleFactor 	= Math.min(h / oh, w / ow);     
+            this._scaleFactor 	= Number(Math.min(h / oh, w / ow).toFixed(1));
 			
+			console.log(this._scaleFactor);
 		}
 		
 		/*
@@ -77,24 +81,20 @@ module com.camelot.iwg {
 			
 			// now position the scaleDiv correctly in the screen
 	        var background      = document.getElementById('background'),
-	            marginLeft      = (960 - window.innerWidth) / 2,
-	            marginTop       = (640 - window.innerHeight) / 2;
+	            marginLeft      = (960 - CORE.IWG.ame('get','gameWidth')) / 2,
+	            marginTop       = (640 - CORE.IWG.ame('get','gameHeight')) / 2;
 	            
 	        this._scaleDiv.style.left  = "-" + marginLeft + "px";
 	        this._scaleDiv.style.top   = "-" + marginTop + "px";
 	        
-	        //background.style.left  = "-" + (marginLeft + 160) +"px";
-	        //background.style.top   = "-" + (marginTop + 65) + "px";
-	
-	        if ( this._scaleFactor> 1 ){
+	        if ( this._scaleFactor > 1 ){
 	            this._scaleFactor = 1;
 	            this._scaleDiv.style.left  	= Math.abs(marginLeft) + "px";
 	            this._scaleDiv.style.top  	= Math.abs(marginTop) + "px";
 	        };
 	
-	        // move all elements into scaleDiv
+	        // scale scaleDiv
 	        TweenMax.to(this._scaleDiv, 0, { scaleX: this._scaleFactor, scaleY: this._scaleFactor });
-	       	//TweenMax.to( background , 0, { delay: 1, scaleX: this._scaleFactor, scaleY: this._scaleFactor });
 			
 		}
 				
