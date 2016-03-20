@@ -20,5 +20,5 @@ $(document).ready(function(){
    });  // end section function
 }); // close out script
 
-/* Create HTML5 element for IE */
+/* Create HTML5 element for IE */ 
 document.createElement("section");
