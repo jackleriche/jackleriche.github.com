@@ -1,0 +1,59 @@
+{
+"images": ["diamond.png"],
+"frames": [
+
+    [1172, 105, 115, 101],
+    [1289, 2, 115, 101],
+    [1172, 2, 115, 101],
+    [1055, 105, 115, 101],
+    [1055, 2, 115, 101],
+    [938, 105, 115, 101],
+    [938, 2, 115, 101],
+    [821, 105, 115, 101],
+    [821, 2, 115, 101],
+    [704, 105, 115, 101],
+    [704, 2, 115, 101],
+    [587, 105, 115, 101],
+    [587, 2, 115, 101],
+    [470, 105, 115, 101],
+    [470, 2, 115, 101],
+    [353, 105, 115, 101],
+    [353, 2, 115, 101],
+    [236, 105, 115, 101],
+    [236, 2, 115, 101],
+    [119, 105, 115, 101],
+    [119, 2, 115, 101],
+    [2, 105, 115, 101],
+    [2, 2, 115, 101]
+],
+"animations": {
+
+        "Diamand v1_b contrast2 115x101_00000":[0],
+        "Diamand v1_b contrast2 115x101_00001":[1],
+        "Diamand v1_b contrast2 115x101_00002":[2],
+        "Diamand v1_b contrast2 115x101_00003":[3],
+        "Diamand v1_b contrast2 115x101_00004":[4],
+        "Diamand v1_b contrast2 115x101_00005":[5],
+        "Diamand v1_b contrast2 115x101_00006":[6],
+        "Diamand v1_b contrast2 115x101_00007":[7],
+        "Diamand v1_b contrast2 115x101_00008":[8],
+        "Diamand v1_b contrast2 115x101_00009":[9],
+        "Diamand v1_b contrast2 115x101_00010":[10],
+        "Diamand v1_b contrast2 115x101_00011":[11],
+        "Diamand v1_b contrast2 115x101_00012":[12],
+        "Diamand v1_b contrast2 115x101_00013":[13],
+        "Diamand v1_b contrast2 115x101_00014":[14],
+        "Diamand v1_b contrast2 115x101_00015":[15],
+        "Diamand v1_b contrast2 115x101_00016":[16],
+        "Diamand v1_b contrast2 115x101_00017":[17],
+        "Diamand v1_b contrast2 115x101_00018":[18],
+        "Diamand v1_b contrast2 115x101_00019":[19],
+        "Diamand v1_b contrast2 115x101_00020":[20],
+        "Diamand v1_b contrast2 115x101_00021":[21],
+        "Diamand v1_b contrast2 115x101_00022":[22]
+},
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:abe325e362f822b828513a9dd3e56cfc:826018c17e0b59e9ebed7cd9a99c093b:705052c6a040f848fc5007c977cd7b91$",
+        "Created with TexturePacker (http://www.texturepacker.com) for EaselJS"
+]
+}

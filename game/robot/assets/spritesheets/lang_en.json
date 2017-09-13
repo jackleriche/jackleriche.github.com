@@ -1,0 +1,92 @@
+{"frames": {
+
+"END_LOSE_text":
+{
+	"frame": {"x":320,"y":161,"w":170,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":60},
+	"sourceSize": {"w":170,"h":60}
+},
+"END_WIN_text":
+{
+	"frame": {"x":1,"y":166,"w":243,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":57},
+	"sourceSize": {"w":243,"h":57}
+},
+"FINISH_button":
+{
+	"frame": {"x":394,"y":28,"w":121,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":121,"h":121},
+	"sourceSize": {"w":121,"h":121}
+},
+"instructions":
+{
+	"frame": {"x":1,"y":1,"w":698,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":698,"h":25},
+	"sourceSize": {"w":698,"h":25}
+},
+"PLAY_AGAIN_button":
+{
+	"frame": {"x":259,"y":28,"w":133,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":133,"h":131},
+	"sourceSize": {"w":133,"h":131}
+},
+"PLAY_button":
+{
+	"frame": {"x":1,"y":28,"w":256,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":136},
+	"sourceSize": {"w":256,"h":136}
+},
+"PRIZE_text":
+{
+	"frame": {"x":246,"y":166,"w":72,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":25},
+	"sourceSize": {"w":72,"h":25}
+},
+"REVEAL_ALL_button":
+{
+	"frame": {"x":492,"y":151,"w":169,"h":63},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":169,"h":63},
+	"sourceSize": {"w":169,"h":63}
+},
+"STAKE_panel_bottom":
+{
+	"frame": {"x":517,"y":28,"w":82,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":79},
+	"sourceSize": {"w":82,"h":79}
+},
+"STAKE_panel_top":
+{
+	"frame": {"x":601,"y":28,"w":82,"h":79},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":79},
+	"sourceSize": {"w":82,"h":79}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "lang_en.png",
+	"format": "RGBA8888",
+	"size": {"w":700,"h":224},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:da1c16b03fa38e4bb6255fc4f55f8fa6:c67fc1ace73f29ff8ef81a4e658f36ca:aab4fc2c42705f0c9bd9dac9176552ee$"
+}
+}

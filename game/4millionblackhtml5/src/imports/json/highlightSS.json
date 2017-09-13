@@ -1,0 +1,32 @@
+{
+
+"images": [
+    "highlightSS.png"
+],
+
+"frames": [
+    [1, 1, 835, 355, 0, 0, 0],
+    [1, 358, 409, 355, 0, 0, 0],
+    [412, 358, 319, 429, 0, 0, 0],
+    [1, 715, 268, 264, 0, 0, 0],
+    [733, 358, 306, 265, 0, 0, 0],
+    [733, 625, 306, 265, 0, 0, 0],
+    [838, 1, 268, 264, 0, 0, 0]
+],
+
+"animations": {
+    "panel2_highlight": [0],
+    "panel1_highlight": [1],
+    "box5_highlight": [2],
+    "box3_higlight": [3],
+    "box1_highlight": [4],
+    "box2_highlight": [5],
+    "box4_higlight": [6]
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:410acb6e00e089102229081a29a338c3:6b0a45b8ff4f2720071da8ad600539fd:c09d68a795891654ed60a21ee5e24967$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

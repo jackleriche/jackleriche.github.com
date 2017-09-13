@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ticket>
+	<outcome amount="50.00" prizeTier="10"/>
+	<params wT="1"/>
+	<prizes r0="2.00" r1="500.00" r2="20.00" r3="5.00" r4="1000.00" r5="250.00" c0="5000.00" c1="50000.00" c2="10.00" c3="7.00" c4="100.00" c5="50.00"/>
+	<row0 c0v="a" c0s="c" c1v="7" c1s="s" c2v="a" c2s="d" c3v="7" c3s="h" c4v="a" c4s="c" c5v="7" c5s="s"/>
+	<row1 c0v="2" c0s="d" c1v="8" c1s="s" c2v="6" c2s="h" c3v="8" c3s="h" c4v="2" c4s="c" c5v="8" c5s="s"/>
+	<row2 c0v="3" c0s="c" c1v="9" c1s="s" c2v="3" c2s="d" c3v="9" c3s="h" c4v="3" c4s="c" c5v="9" c5s="s"/>
+	<row3 c0v="4" c0s="c" c1v="j" c1s="s" c2v="4" c2s="d" c3v="j" c3s="s" c4v="4" c4s="d" c5v="j" c5s="s"/>
+	<row4 c0v="5" c0s="c" c1v="q" c1s="s" c2v="5" c2s="d" c3v="q" c3s="h" c4v="5" c4s="c" c5v="q" c5s="s"/>
+	<row5 c0v="6" c0s="c" c1v="k" c1s="s" c2v="6" c2s="h" c3v="k" c3s="h" c4v="6" c4s="h" c5v="k" c5s="s"/>
+
+	<turn v="3" w="0"/>
+	<turn v="14" w="0"/>
+	<turn v="7" w="0"/>
+	<turn v="16" w="0"/>
+	<turn v="12" w="0"/>
+	<turn v="13" w="0"/>
+</ticket>

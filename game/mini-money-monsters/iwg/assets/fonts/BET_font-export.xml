@@ -1,0 +1,29 @@
+﻿<font>
+	<info face="C:\Users\Tammi\Desktop\BET_font-export" size="80" />
+	<common lineHeight="80" scaleW="185" scaleH="181" pages="1" />
+	<pages>
+		<page id="0" file="BET_font-export.png" />
+	</pages>
+	<chars count="18">
+		<char id="43" x="124" y="0" width="30" height="29" xoffset="0" yoffset="36" xadvance="28" /><!-- + -->
+		<char id="88" x="0" y="54" width="43" height="54" xoffset="0" yoffset="26" xadvance="41" /><!-- X -->
+		<char id="163" x="45" y="0" width="40" height="57" xoffset="0" yoffset="23" xadvance="38" /><!-- £ -->
+		<char id="36" x="155" y="0" width="28" height="55" xoffset="0" yoffset="23" xadvance="26" /><!-- $ -->
+		<char id="49" x="159" y="113" width="25" height="53" xoffset="0" yoffset="23" xadvance="23" /><!-- 1 -->
+		<char id="50" x="44" y="58" width="37" height="50" xoffset="0" yoffset="25" xadvance="35" /><!-- 2 -->
+		<char id="51" x="86" y="0" width="37" height="55" xoffset="0" yoffset="25" xadvance="35" /><!-- 3 -->
+		<char id="52" x="121" y="113" width="37" height="59" xoffset="0" yoffset="21" xadvance="35" /><!-- 4 -->
+		<char id="53" x="0" y="0" width="44" height="53" xoffset="0" yoffset="25" xadvance="42" /><!-- 5 -->
+		<char id="54" x="0" y="109" width="41" height="54" xoffset="0" yoffset="25" xadvance="39" /><!-- 6 -->
+		<char id="55" x="42" y="109" width="40" height="54" xoffset="0" yoffset="24" xadvance="38" /><!-- 7 -->
+		<char id="56" x="83" y="113" width="37" height="56" xoffset="0" yoffset="22" xadvance="35" /><!-- 8 -->
+		<char id="57" x="83" y="58" width="39" height="54" xoffset="0" yoffset="22" xadvance="37" /><!-- 9 -->
+		<char id="48" x="123" y="56" width="36" height="56" xoffset="0" yoffset="23" xadvance="34" /><!-- 0 -->
+		<char id="44" x="160" y="56" width="20" height="26" xoffset="0" yoffset="61" xadvance="18" /><!-- , -->
+		<char id="46" x="0" y="164" width="22" height="16" xoffset="0" yoffset="63" xadvance="20" /><!-- . -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" /><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>

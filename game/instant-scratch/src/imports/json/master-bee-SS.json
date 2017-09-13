@@ -1,0 +1,22 @@
+{
+
+"images": [
+    "beeSS.png"
+],
+
+"frames": [
+    [1, 1, 960, 640, 0, 0, 0],
+    [963, 1, 500, 432, 0, 0, 0]
+],
+
+"animations": {
+    "gameBG": [0],
+    "scratchPanel": [1]
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:8e7f98b146d4c2fe1ad28010d6d23b65:66c26667be3a78c2064f93300e48a2ac:1e632f43e16e2abbc11b1614d2c7d944$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

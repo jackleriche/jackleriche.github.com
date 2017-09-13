@@ -1,0 +1,138 @@
+{
+	"useAssetPacks":true,
+	"supportedLanguages":{
+		"en":true,
+		"en_AU":false,
+		"en_CA":false,
+		"en_GB":true,
+		"en_US":false,
+
+		"fr":false,
+		"fr_FR":false,
+		"fr_BE":false,
+		"fr_CA":false,
+
+		"de":false,
+		"de_DE":false,
+
+		"it":false,
+		"it_IT":false,
+
+		"pt":false,
+		"pt_PT":false,
+		"pt_BR":true,
+
+		"es":false,
+		"es_ES":false,
+		"es_MX":true
+	},
+	"logoLanguages":{
+		"en":{
+			"large":"logo_en.png",
+			"small":"logo_en_small.png"
+		},
+		"en_AU":null,
+		"en_CA":null,
+		"en_GB":{
+			"large":"logo_en.png",
+			"small":"logo_en_small.png"
+		},
+		"en_US":null,
+
+		"fr":null,
+		"fr_FR":null,
+		"fr_BE":null,
+		"fr_CA":null,
+
+		"de":null,
+		"de_DE":null,
+
+		"it":null,
+		"it_IT":null,
+
+		"pt":null,
+		"pt_PT":null,
+		"pt_BR":{
+			"large":"logo_en.png",
+			"small":"logo_en_small.png"
+		},
+
+		"es":null,
+		"es_ES":null,
+		"es_MX":{
+			"large":"logo_es_mx.png",
+			"small":"logo_es_mx_small.png"
+		}
+	},
+	"assets":{
+		"empty":{
+			"useAssetPack":true,
+			"assetImgName":"lang_empty.png",
+			"assetImgJsonName":"lang_empty.json",
+			"extra":[
+			]
+		},
+		"en":{
+			"useAssetPack":true,
+			"assetImgName":"lang_en.png",
+			"assetImgJsonName":"lang_en.json",
+			"extra":[
+			]
+		},
+		"en_GB":{
+			"useAssetPack":true,
+			"assetImgName":"lang_en.png",
+			"assetImgJsonName":"lang_en.json",
+			"extra":[
+			]
+		},
+		"es_MX":{
+			"useAssetPack":true,
+			"assetImgName":"lang_es_MX.png",
+			"assetImgJsonName":"lang_es_MX.json",
+			"extra":[	
+			]
+		},
+		"pt_BR":{
+			"useAssetPack":true,
+			"assetImgName":"lang_pt_BR.png",
+			"assetImgJsonName":"lang_pt_BR.json",
+			"extra":[	
+			]
+		}
+	},
+	"messages":[
+		{
+			"key":"g_play",
+			"values":{			
+				"en":"PLAY"
+			}
+		},
+		{
+			"key":"g_endWin",
+			"values":{
+				"en":"Congratulations!{{line_break}}You have won{{line_break}}{{win_amount}}!"
+			}
+		},
+		{
+			"key":"g_endLose",
+			"values":{
+				"en":"Better luck next time"
+			}
+		},
+		{
+			"key":"g_instructions",
+			"values":{
+				"en":"Click on the gold bars to reveal prizes. Match 3 prizes to win."
+			}
+		}		
+	],
+	"errors":[
+		{
+			"key":"e_genericMessage",
+			"values":{
+				"en":"An error has occurred. Reload the game or contact customer support at {{phone_number}} if this message persists."
+			}
+		}
+	]
+}

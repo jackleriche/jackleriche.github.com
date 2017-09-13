@@ -1,0 +1,21 @@
+{
+"images": ["bg.png"],
+"frames": [
+
+    [644, 972, 640, 960], 
+    [2, 2, 648, 968], 
+    [652, 2, 616, 902], 
+    [2, 972, 640, 960]
+],
+"animations": {
+    
+        "bg":[0], 
+        "bg_innerglow":[1], 
+        "bg_sapphires_1":[2], 
+        "bg_stars":[3]
+},
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:a6c5b7d3772fc3f16db66f26a6c96550:b463c73a24a39c4dd344dbafd5c286f6:fda475f1469833f402cd7f3119be2bc2$",
+        "Created with TexturePacker (http://www.texturepacker.com) for EaselJS"
+]
+}

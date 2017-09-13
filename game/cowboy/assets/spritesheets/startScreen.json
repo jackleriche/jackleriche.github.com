@@ -1,0 +1,68 @@
+{"frames": [
+
+{
+	"filename": "buttonBackground",
+	"frame": {"x":2,"y":223,"w":221,"h":109},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":109},
+	"sourceSize": {"w":221,"h":109}
+},
+{
+	"filename": "cactus",
+	"frame": {"x":761,"y":2,"w":200,"h":336},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":336},
+	"sourceSize": {"w":200,"h":336}
+},
+{
+	"filename": "cowboyCash",
+	"frame": {"x":2,"y":2,"w":505,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":505,"h":152},
+	"sourceSize": {"w":505,"h":152}
+},
+{
+	"filename": "playText",
+	"frame": {"x":459,"y":254,"w":159,"h":67},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":159,"h":67},
+	"sourceSize": {"w":159,"h":67}
+},
+{
+	"filename": "skull",
+	"frame": {"x":286,"y":156,"w":171,"h":133},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":133},
+	"sourceSize": {"w":171,"h":133}
+},
+{
+	"filename": "sun",
+	"frame": {"x":509,"y":2,"w":250,"h":250},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":250},
+	"sourceSize": {"w":250,"h":250}
+},
+{
+	"filename": "winupto",
+	"frame": {"x":2,"y":156,"w":282,"h":65},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":282,"h":65},
+	"sourceSize": {"w":282,"h":65}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "startScreen.png",
+	"format": "RGBA8888",
+	"size": {"w":963,"h":340},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b6cfc2c7954fd9dd47516010659e68f3:47c2ce7eaf1842d30d6e1fcfb746af99:f66c390ba8f7f64b49146254f4843cc7$"
+}
+}

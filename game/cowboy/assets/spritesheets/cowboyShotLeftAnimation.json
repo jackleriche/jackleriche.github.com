@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "cowboyShotLeft_1",
+	"frame": {"x":261,"y":1605,"w":257,"h":407},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":81,"w":257,"h":407},
+	"sourceSize": {"w":340,"h":489}
+},
+{
+	"filename": "cowboyShotLeft_2",
+	"frame": {"x":281,"y":774,"w":245,"h":389},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":99,"w":245,"h":389},
+	"sourceSize": {"w":340,"h":489}
+},
+{
+	"filename": "cowboyShotLeft_3",
+	"frame": {"x":270,"y":1165,"w":246,"h":406},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":81,"w":246,"h":406},
+	"sourceSize": {"w":340,"h":489}
+},
+{
+	"filename": "cowboyShotLeft_4",
+	"frame": {"x":2,"y":1605,"w":257,"h":428},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":58,"w":257,"h":428},
+	"sourceSize": {"w":340,"h":489}
+},
+{
+	"filename": "cowboyShotLeft_5",
+	"frame": {"x":2,"y":1158,"w":266,"h":445},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":39,"w":266,"h":445},
+	"sourceSize": {"w":340,"h":489}
+},
+{
+	"filename": "cowboyShotLeft_6",
+	"frame": {"x":2,"y":774,"w":277,"h":382},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":101,"w":277,"h":382},
+	"sourceSize": {"w":340,"h":489}
+},
+{
+	"filename": "cowboyShotLeft_7",
+	"frame": {"x":2,"y":388,"w":289,"h":384},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":98,"w":289,"h":384},
+	"sourceSize": {"w":340,"h":489}
+},
+{
+	"filename": "cowboyShotLeft_8",
+	"frame": {"x":2,"y":2,"w":295,"h":384},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":97,"w":295,"h":384},
+	"sourceSize": {"w":340,"h":489}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "cowboyShotLeftAnimation.png",
+	"format": "RGBA8888",
+	"size": {"w":528,"h":2035},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:db4660877f39d1bf1c5156dce299ce3c:abfe266f84ed35510a61ba251711b8e4:a75175f8ed9256c67349fa4885fbd977$"
+}
+}

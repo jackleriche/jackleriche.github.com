@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: auto;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+canvas {
+    margin: 0 auto;
+    display: block;
+}
+
+#gameArea {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align:center;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 1px;
+}
+
+
+#fullScreenMask {
+    height: 200%;
+    position: absolute;
+    overflow: hidden;
+
+    opacity: 0.8;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#fullScreenMask p {
+    
+    font-family: Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    overflow-y: auto;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    padding: 15px;
+    
+    
+}
+
+#fullScreenMask.fs_off {
+    width: 1px;
+    opacity: 0;
+    height: 120%;
+}
+
+#fullScreenMask.fs_on {
+    width: 100%;
+    opacity: 0.7;
+    height: 200%;
+}
+
+#rotateDevice {
+    background: black url(../img/orientation.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-position: center center;
+    z-index: 100;
+}
+
+#rotateDevice.hide {
+    display: none;
+}
+#rotateDevice.show {
+    display: block;
+}
+
+#gameArea.show { 
+    z-index: 1;
+}
+#gameArea.hide {
+    z-index: -1;
+}
+
+#spinner {
+    width:100%;
+    height:100%;
+    background: black;
+    opacity: 0.6;
+    background-size: 100% auto;
+    background-position: center center;
+    z-index:49;    
+}
+
+#spinner.show {
+    display:block;
+}
+
+#spinner.hide {
+    display:none;
+}
+
+.circle {
+    /*border-radius: 50%;*/
+    border-radius:80px;
+    width: 200px;
+    height: 200px;
+}
+
+#spinnerCircle {
+    z-index: 50;
+    
+    width: 160px;
+    height: 160px;
+    
+    position: absolute;
+    bottom: 0px;
+    top: 20px;
+    left: 20px;
+    right: 0px;
+    margin: auto;
+
+    box-shadow: 0 6px 0 0 #59ebff;
+    
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+@media all and (orientation:portrait) {
+    
+    #fullScreenMask {
+        display: none;
+    }
+    
+    #error img {
+        float: none;
+        padding: 0 0 20px 0;
+        margin: 0 auto;
+        display: block;
+    }
+    #error p { 
+        display: block;
+    }
+    
+}

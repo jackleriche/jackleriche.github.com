@@ -1,0 +1,99 @@
+var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+/// <reference path="../imports/js/Sideplay.ts" />
+var com;
+(function (com) {
+    var camelot;
+    (function (camelot) {
+        var iwg;
+        (function (iwg) {
+            var CAMELOT = com.camelot, CORE = CAMELOT.core, IWG = CAMELOT.iwg, GLOBAL = IWG.Global, SPRITESHEETS = IWG.SpriteSheets, images = CORE.iwgLoadQ.images;
+            var Sound = (function (_super) {
+                __extends(Sound, _super);
+                function Sound() {
+                    _super.call(this, "sound", { x: 50, y: 50 }, 6);
+                    this._sound = true;
+                    this._extendSubscribe();
+                    this._init();
+                }
+                Sound.prototype._extendSubscribe = function () {
+                    IWG.IWGEM.on("soundShow", this._soundShow.bind(this));
+                    IWG.IWGEM.on("soundHide", this._soundHide.bind(this));
+                    IWG.IWGEM.on("soundOn", this._soundOn.bind(this));
+                    IWG.IWGEM.on("soundOff", this._soundOff.bind(this));
+                };
+                Sound.prototype._extendUnsubscribe = function () {
+                    IWG.IWGEM.off("soundShow");
+                    IWG.IWGEM.off("soundHide");
+                    IWG.IWGEM.off("soundOn");
+                    IWG.IWGEM.off("soundOff");
+                };
+                Sound.prototype._init = function () {
+                    var _this = this;
+                    GLOBAL.getInstance().addToGlobal("sound", this);
+                    this.addBitmap({
+                        name: "sound",
+                        pos: {
+                            x: 25,
+                            y: 25
+                        },
+                        frame: "sound_on",
+                        spriteSheet: SPRITESHEETS.getInstance().getSpriteSheet("masterSingleSS"),
+                        doReg: {
+                            center: true
+                        }
+                    });
+                    var hitbox = new createjs.Shape();
+                    hitbox.graphics.beginFill("#000").drawRect(0, 0, 100, 100);
+                    hitbox.alpha = 0.01;
+                    this.getStage().addChild(hitbox);
+                    this.getStage().update();
+                    this.setAction("click", function () {
+                        _this.soundButtonHandle();
+                    });
+                    this.setEnabled(true);
+                };
+                Sound.prototype.soundButtonHandle = function () {
+                    if (this._sound) {
+                        IWG.IWGEM.trigger('soundOff');
+                    }
+                    else {
+                        IWG.IWGEM.trigger('soundOn');
+                    }
+                    ;
+                };
+                Sound.prototype._soundShow = function () {
+                    this.getStage().visible = true;
+                    this.getBitmap('sound').alpha = 1;
+                    this.getStage().update();
+                };
+                Sound.prototype._soundHide = function () {
+                    this.getStage().visible = false;
+                    this.getBitmap('sound').alpha = 0;
+                    this.getStage().update();
+                };
+                Sound.prototype._soundOn = function () {
+                    this._sound = true;
+                    createjs.Sound.setMute(false);
+                    this.getBitmap('sound').gotoAndStop('sound_on');
+                    this.getStage().update();
+                };
+                Sound.prototype._soundOff = function () {
+                    this._sound = false;
+                    createjs.Sound.setMute(true);
+                    this.getBitmap('sound').gotoAndStop('sound_off');
+                    this.getStage().update();
+                };
+                Sound.prototype.getSoundActive = function () {
+                    return this._sound;
+                };
+                return Sound;
+            })(iwg.ClickableGameObject);
+            iwg.Sound = Sound;
+        })(iwg = camelot.iwg || (camelot.iwg = {}));
+    })(camelot = com.camelot || (com.camelot = {}));
+})(com || (com = {}));

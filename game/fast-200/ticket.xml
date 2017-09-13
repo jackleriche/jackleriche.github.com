@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?><ticket><outcome tier="8" amount="40.00" isWinner="1"/><params iP="3"/><prizeList a="200.00,100.00,40.00,20.00,10.00,5.00,4.00,2.00"/><games><g1 wS="13,19"><turn i="1" t="19" p="3" w="1"/><turn i="2" t="1" p="6" w="0"/><turn i="3" t="5" p="1" w="0"/><turn i="4" t="1" p="2" w="0"/><turn i="5" t="6" p="2" w="0"/><turn i="6" t="6" p="7" w="0"/><turn i="7" t="15" p="7" w="0"/><turn i="8" t="20" p="3" w="1" iW="1"/></g1></games></ticket>
+
+
+<!--<?xml version='1.0' encoding='UTF-8' ?><ticket><outcome tier="1" amount="200.00" isWinner="1"/><params iP="3"/><prizeList a="200.00,100.00,40.00,20.00,10.00,5.00,4.00,2.00"/><games><g1 wS="16,19"><turn i="1" t="19" p="5" w="1"/><turn i="2" t="19" p="5" w="1"/><turn i="3" t="16" p="1" w="1"/><turn i="4" t="20" p="3" w="1" iW="1"/><turn i="5" t="16" p="5" w="1"/><turn i="6" t="19" p="2" w="1"/><turn i="7" t="20" p="3" w="1" iW="1"/><turn i="8" t="16" p="5" w="1"/></g1></games></ticket>-->
+<!--
+
+high tier win
+<?xml version='1.0' encoding='UTF-8' ?><ticket><outcome tier="3" amount="200.00" isWinner="1"/><params iP="3"/><prizeList a="200.00,100.00,40.00,20.00,10.00,5.00,4.00,2.00"/><games><g1 wS="18,5"><turn i="1" t="6" p="5" w="0"/><turn i="2" t="6" p="3" w="0"/><turn i="3" t="15" p="6" w="0"/><turn i="4" t="12" p="4" w="0"/><turn i="5" t="8" p="1" w="0"/><turn i="6" t="11" p="4" w="0"/><turn i="7" t="18" p="0" w="1"/><turn i="8" t="7" p="1" w="0"/></g1></games></ticket>
+
+low tier win
+<?xml version='1.0' encoding='UTF-8' ?><ticket><outcome tier="14" amount="10.00" isWinner="1"/><params iP="3"/><prizeList a="200.00,100.00,40.00,20.00,10.00,5.00,4.00,2.00"/><games><g1 wS="6,17"><turn i="1" t="7" p="4" w="0"/><turn i="2" t="8" p="0" w="0"/><turn i="3" t="10" p="5" w="0"/><turn i="4" t="6" p="6" w="1"/><turn i="5" t="17" p="7" w="1"/><turn i="6" t="0" p="6" w="0"/><turn i="7" t="17" p="6" w="1"/><turn i="8" t="13" p="7" w="0"/></g1></games></ticket>
+
+lose
+<?xml version='1.0' encoding='UTF-8' ?><ticket><outcome tier="21" amount="0.00" isWinner="0"/><params iP="3"/><prizeList a="200.00,100.00,40.00,20.00,10.00,5.00,4.00,2.00"/><games><g1 wS="2,3"><turn i="1" t="8" p="4" w="0"/><turn i="2" t="7" p="2" w="0"/><turn i="3" t="1" p="7" w="0"/><turn i="4" t="16" p="6" w="0"/><turn i="5" t="15" p="1" w="0"/><turn i="6" t="17" p="4" w="0"/><turn i="7" t="12" p="3" w="0"/><turn i="8" t="8" p="7" w="0"/></g1></games></ticket>
+
+-->

@@ -1,0 +1,20 @@
+{
+
+"images": [
+    "splashBurstSs.png"
+],
+
+"frames": [
+    [1, 1, 1300, 870, 0, 0, 0]
+],
+
+"animations": {
+    "splash_burst": [0]
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:c642f5760ef4dd0db1927f785ea171b6:cfdbac76d24670174d9662243a29f6a3:13988948d0f8bee6dfcbb56bfff245ce$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

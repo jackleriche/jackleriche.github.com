@@ -1,0 +1,172 @@
+{"frames": {
+
+"arm_1":
+{
+	"frame": {"x":1,"y":1,"w":176,"h":257},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":62,"w":176,"h":257},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_2":
+{
+	"frame": {"x":1,"y":260,"w":182,"h":243},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":62,"w":182,"h":243},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_3":
+{
+	"frame": {"x":179,"y":1,"w":185,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":62,"w":185,"h":232},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_5":
+{
+	"frame": {"x":1,"y":505,"w":185,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":62,"w":185,"h":223},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_6":
+{
+	"frame": {"x":185,"y":235,"w":192,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":62,"w":192,"h":184},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_7":
+{
+	"frame": {"x":1,"y":730,"w":199,"h":155},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":61,"w":199,"h":155},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_8":
+{
+	"frame": {"x":188,"y":574,"w":202,"h":148},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":41,"w":202,"h":148},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_9":
+{
+	"frame": {"x":1,"y":1193,"w":201,"h":149},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":30,"w":201,"h":149},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_10":
+{
+	"frame": {"x":198,"y":1040,"w":200,"h":149},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":20,"w":200,"h":149},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_12":
+{
+	"frame": {"x":200,"y":887,"w":197,"h":150},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":9,"w":197,"h":150},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_13":
+{
+	"frame": {"x":202,"y":724,"w":197,"h":150},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":9,"w":197,"h":150},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_14":
+{
+	"frame": {"x":188,"y":421,"w":197,"h":151},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":6,"w":197,"h":151},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_15":
+{
+	"frame": {"x":1,"y":887,"w":197,"h":151},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":6,"w":197,"h":151},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_16":
+{
+	"frame": {"x":188,"y":421,"w":197,"h":151},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":6,"w":197,"h":151},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_17":
+{
+	"frame": {"x":204,"y":1191,"w":195,"h":150},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":195,"h":150},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_18":
+{
+	"frame": {"x":1,"y":1040,"w":195,"h":151},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":1,"w":195,"h":151},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_20":
+{
+	"frame": {"x":1,"y":1040,"w":195,"h":151},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":1,"w":195,"h":151},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_21":
+{
+	"frame": {"x":204,"y":1343,"w":195,"h":150},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":1,"w":195,"h":150},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_23":
+{
+	"frame": {"x":1,"y":1344,"w":195,"h":150},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":195,"h":150},
+	"sourceSize": {"w":204,"h":320}
+},
+"arm_24":
+{
+	"frame": {"x":188,"y":574,"w":202,"h":148},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":41,"w":202,"h":148},
+	"sourceSize": {"w":204,"h":320}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "arm.png",
+	"format": "RGBA8888",
+	"size": {"w":400,"h":1495},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:fe18ea922363fe36a8e24a1b1497f179:ab6712de727853cc611b2de5518e6928:77defc4fbbf7a88e82305d0f7ed478eb$"
+}
+}

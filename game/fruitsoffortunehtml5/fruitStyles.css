@@ -1,0 +1,12 @@
+canvas
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #10400e;
+	border: 1px solid #10400e;
+}
+body
+{
+	background-color: #444444;
+}

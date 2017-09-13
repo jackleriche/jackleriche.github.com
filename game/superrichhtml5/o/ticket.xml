@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' ?><ticket><outcome prizeTier="6" amount="1000.00" isWinner="1"/><params g3="4" g4="5" superWin="1208000.00"/><prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/><games><game n="matchOne"><turn n="t6" v="1|50000.00" p="-1" w="0"/><turn n="t7" v="0|1208000.00" p="-1" w="0"/><turn n="t8" v="5|5000.00" p="-1" w="0"/><turn n="t9" v="2|20.00" p="-1" w="0"/></game><game n="matchOneNumber"><turn n="t10" v="8|10.00" p="-1" w="0"/><turn n="t11" v="9|15.00" p="-1" w="0"/><turn n="t12" v="6|200.00" p="-1" w="0"/><turn n="t13" v="2|5.00" p="-1" w="0"/></game><game n="equalsSeven"><turn n="t3" v="6,2,8|20.00" p="-1" w="0" /><turn n="t4" v="2,3,5|40.00" p="-1" w="0" /><turn n="t5" v="6,1,7|1000.00" p="3" w="1" /></game><game n="matchTwo"><turn n="t0" v="3,4|5.00" p="-1" w="0"/><turn n="t1" v="5,0|5.00" p="-1" w="0"/><turn n="t2" v="6,2|5000.00" p="-1" w="0"/></game></games></ticket>
+
+<!--
+<?xml version='1.0' encoding='UTF-8' ?><ticket><outcome prizeTier="9" amount="200.00" isWinner="1"/><params g3="1" g4="4" superWin="1208000.00"/><prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/><games><game n="matchOne"><turn n="t6" v="0|5.00" p="-1" w="0"/><turn n="t7" v="3|5000.00" p="-1" w="0"/><turn n="t8" v="5|10.00" p="-1" w="0"/><turn n="t9" v="2|5.00" p="-1" w="0"/></game><game n="matchOneNumber"><turn n="t10" v="3|5.00" p="-1" w="0"/><turn n="t11" v="6|1208000.00" p="-1" w="0"/><turn n="t12" v="7|1208000.00" p="-1" w="0"/><turn n="t13" v="5|5000.00" p="-1" w="0"/></game><game n="equalsSeven"><turn n="t3" v="1,5,6|100.00" p="-1" w="0" /><turn n="t4" v="6,1,7|200.00" p="4" w="1" /><turn n="t5" v="5,6,11|15.00" p="-1" w="0" /></game><game n="matchTwo"><turn n="t0" v="4,0|10.00" p="-1" w="0"/><turn n="t1" v="7,1|200.00" p="-1" w="0"/><turn n="t2" v="5,6|1208000.00" p="-1" w="0"/></game></games></ticket>
+-->
+
+<!--
+<?xml version='1.0' encoding='UTF-8' ?><ticket>
+<outcome prizeTier="31" amount="10.00" isWinner="1"/><params g3="5" g4="2" superWin="1208000.00"/><prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/><games>
+<game n="matchOne">
+<turn n="t6" v="1|1208000.00" p="-1" w="0"/>
+<turn n="t7" v="5|5.00" p="10" w="1"/>
+<turn n="t8" v="2|200.00" p="-1" w="0"/>
+<turn n="t9" v="4|20.00" p="-1" w="0"/>
+</game>
+<game n="matchOneNumber">
+<turn n="t10" v="3|10.00" p="-1" w="0"/>
+<turn n="t11" v="6|1208000.00" p="-1" w="0"/>
+<turn n="t12" v="8|50000.00" p="-1" w="0"/>
+<turn n="t13" v="5|40.00" p="-1" w="0"/>
+</game>
+<game n="equalsSeven">
+<turn n="t3" v="6,1,7|5.00" p="10" w="1" />
+<turn n="t4" v="1,5,6|50.00" p="-1" w="0" />
+<turn n="t5" v="6,5,11|5.00" p="-1" w="0" />
+</game>
+<game n="matchTwo">
+<turn n="t0" v="2,6|5000.00" p="-1" w="0"/>
+<turn n="t1" v="3,7|15.00" p="-1" w="0"/>
+<turn n="t2" v="0,5|20.00" p="-1" w="0"/>
+</game></games></ticket>
+-->
+
+<!--
+<ticket>
+	<outcome prizeTier="31" amount="10.00" isWinner="1"/>
+	<params g3="3" g4="2" superWin="1208000.00"/>
+	<prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/>
+	<games>
+		<game n="matchOne">
+			<turn n="t6" v="4|5.00" p="-1" w="0"/>
+			<turn n="t7" v="5|1000.00" p="-1" w="0"/>
+			<turn n="t8" v="1|1208000.00" p="-1" w="0"/>
+			<turn n="t9" v="0|5000.00" p="-1" w="0"/>
+		</game>
+		<game n="matchOneNumber">
+			<turn n="t10" v="9|5.00" p="-1" w="0"/>
+			<turn n="t11" v="4|50000.00" p="-1" w="0"/>
+			<turn n="t12" v="2|5.00" p="10" w="1"/>
+			<turn n="t13" v="3|40.00" p="-1" w="0"/>
+		</game>
+		<game n="equalsSeven">
+			<turn n="t3" v="4,5,9|50000.00" p="-1" w="0" />
+			<turn n="t4" v="2,5,7|5.00" p="10" w="1" />
+			<turn n="t5" v="5,1,6|200.00" p="-1" w="0" />
+		</game>
+		<game n="matchTwo">
+			<turn n="t0" v="0,3|1208000.00" p="-1" w="0"/>
+			<turn n="t1" v="6,4|200.00" p="-1" w="0"/>
+			<turn n="t2" v="2,5|10.00" p="-1" w="0"/>
+		</game>
+	</games>
+</ticket>
+-->
+
+<!--
+
+<ticket><outcome prizeTier="31" amount="10.00" isWinner="1"/><params g3="3" g4="2" superWin="1208000.00"/>
+<prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/><games>
+<game n="matchOne">
+<turn n="t6" v="4|5.00" p="-1" w="0"/>
+<turn n="t7" v="5|1000.00" p="-1" w="0"/>
+<turn n="t8" v="1|1208000.00" p="-1" w="0"/>
+<turn n="t9" v="0|5000.00" p="-1" w="0"/>
+</game>
+<game n="matchOneNumber">
+<turn n="t10" v="9|5.00" p="-1" w="0"/>
+<turn n="t11" v="4|50000.00" p="-1" w="0"/>
+<turn n="t12" v="2|5.00" p="10" w="1"/>
+<turn n="t13" v="3|40.00" p="-1" w="0"/>
+</game>
+<game n="equalsSeven">
+<turn n="t3" v="4,5,9|50000.00" p="-1" w="0" />
+<turn n="t4" v="2,5,7|5.00" p="10" w="1" />
+<turn n="t5" v="5,1,6|200.00" p="-1" w="0" />
+</game>
+<game n="matchTwo">
+<turn n="t0" v="0,3|1208000.00" p="-1" w="0"/>
+<turn n="t1" v="6,6|200.00" p="-1" w="0"/>
+<turn n="t2" v="2,5|10.00" p="-1" w="0"/>
+</game>
+</games></ticket>
+
+-->
+<!-- <?xml version='1.0' encoding='UTF-8' ?><ticket><outcome prizeTier="1" amount="1208000.00" isWinner="1"/><params g3="1" g4="7" superWin="1208000.00"/><prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/><games><game n="matchOne"><turn n="t6" v="4|20.00" p="-1" w="0"/><turn n="t7" v="5|15.00" p="-1" w="0"/><turn n="t8" v="0|5.00" p="-1" w="0"/><turn n="t9" v="2|50000.00" p="-1" w="0"/></game><game n="matchOneNumber"><turn n="t10" v="4|5.00" p="-1" w="0"/><turn n="t11" v="6|200.00" p="-1" w="0"/><turn n="t12" v="7|1208000.00" p="0" w="1"/><turn n="t13" v="5|5000.00" p="-1" w="0"/></game><game n="equalsSeven"><turn n="t3" v="1,5,6|10.00" p="-1" w="0" /><turn n="t4" v="3,1,4|50000.00" p="-1" w="0" /><turn n="t5" v="6,4,10|1000.00" p="-1" w="0" /></game><game n="matchTwo"><turn n="t0" v="5,3|1208000.00" p="-1" w="0"/><turn n="t1" v="6,7|10.00" p="-1" w="0"/><turn n="t2" v="1,4|100.00" p="-1" w="0"/></game></games></ticket> -->
+
+<!-- <?xml version='1.0' encoding='UTF-8' ?><ticket><outcome prizeTier="1" amount="1208000.00" isWinner="1"/><params g3="5" g4="3" superWin="1208000.00"/><prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/><games><game n="matchOne"><turn n="t6" v="1|100.00" p="-1" w="0"/><turn n="t7" v="4|5000.00" p="-1" w="0"/><turn n="t8" v="2|15.00" p="-1" w="0"/><turn n="t9" v="0|5.00" p="-1" w="0"/></game><game n="matchOneNumber"><turn n="t10" v="2|1000.00" p="-1" w="0"/><turn n="t11" v="9|200.00" p="-1" w="0"/><turn n="t12" v="4|40.00" p="-1" w="0"/><turn n="t13" v="5|5000.00" p="-1" w="0"/></game><game n="equalsSeven"><turn n="t3" v="2,6,8|5.00" p="-1" w="0" /><turn n="t4" v="1,3,4|10.00" p="-1" w="0" /><turn n="t5" v="5,6,11|1208000.00" p="-1" w="0" /></game><game n="matchTwo"><turn n="t0" v="1,2|40.00" p="-1" w="0"/><turn n="t1" v="0,0|1208000.00" p="0" w="1"/><turn n="t2" v="3,7|20.00" p="-1" w="0"/></game></games></ticket> -->
+<!-- <?xml version='1.0' encoding='UTF-8' ?><ticket><outcome prizeTier="1" amount="1208000.00" isWinner="1"/><params g3="1" g4="7" superWin="1208000.00"/><prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/><games><game n="matchOne"><turn n="t6" v="4|20.00" p="-1" w="0"/><turn n="t7" v="5|15.00" p="-1" w="0"/><turn n="t8" v="0|5.00" p="-1" w="0"/><turn n="t9" v="2|50000.00" p="-1" w="0"/></game><game n="matchOneNumber"><turn n="t10" v="4|5.00" p="-1" w="0"/><turn n="t11" v="6|200.00" p="-1" w="0"/><turn n="t12" v="7|1208000.00" p="0" w="1"/><turn n="t13" v="5|5000.00" p="-1" w="0"/></game><game n="equalsSeven"><turn n="t3" v="1,5,6|10.00" p="-1" w="0" /><turn n="t4" v="3,1,4|50000.00" p="-1" w="0" /><turn n="t5" v="6,4,10|1000.00" p="-1" w="0" /></game><game n="matchTwo"><turn n="t0" v="5,3|1208000.00" p="-1" w="0"/><turn n="t1" v="6,7|10.00" p="-1" w="0"/><turn n="t2" v="1,4|100.00" p="-1" w="0"/></game></games></ticket> -->
+<!--
+<?xml version='1.0' encoding='UTF-8' ?>
+<ticket>
+	<outcome prizeTier="18" amount="100.00" isWinner="1"/>
+	<params g3="3" g4="1" superWin="1208000.00"/>
+	<prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/>
+	<games>
+		<game n="matchOne">
+			<turn n="t6" v="3|5.00" p="10" w="1"/>
+			<turn n="t7" v="3|10.00" p="9" w="1"/>
+src/lib			<turn n="t8" v="3|5.00" p="10" w="1"/>
+			<turn n="t9" v="3|10.00" p="9" w="1"/>
+		</game>
+		<game n="matchOneNumber">
+			<turn n="t10" v="1|5.00" p="10" w="1"/>
+			<turn n="t11" v="1|5.00" p="10" w="1"/>
+			<turn n="t12" v="1|5.00" p="10" w="1"/>
+			<turn n="t13" v="1|5.00" p="10" w="1"/>
+		</game>
+		<game n="equalsSeven">
+			<turn n="t3" v="4,3,7|5.00" p="10" w="1" />
+			<turn n="t4" v="6,1,7|5.00" p="10" w="1" />
+			<turn n="t5" v="3,4,7|10.00" p="9" w="1" />
+		</game>
+		<game n="matchTwo">
+			<turn n="t0" v="6,6|20.00" p="7" w="1"/>
+			<turn n="t1" v="2,2|5.00" p="10" w="1"/>
+			<turn n="t2" v="7,7|5.00" p="10" w="1"/>
+		</game>
+	</games>
+</ticket>
+-->
+
+<!--
+<ticket>
+	<outcome prizeTier="14" amount="100.00" isWinner="1"/>
+	<params g3="0" g4="1" superWin="1208000.00"/>
+	<prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/>
+	<games>
+	<game n="matchOne">
+			<turn n="t6" v="0|100.00" p="5" w="1"/>
+			<turn n="t7" v="3|5000.00" p="-1" w="0"/>
+			<turn n="t8" v="4|1000.00" p="-1" w="0"/>
+			<turn n="t9" v="5|1208000.00" p="-1" w="0"/>
+		</game>
+		<game n="matchOneNumber">
+			<turn n="t10" v="8|100.00" p="-1" w="0"/>
+			<turn n="t11" v="2|15.00" p="-1" w="0"/>
+			<turn n="t12" v="3|5.00" p="-1" w="0"/>
+			<turn n="t13" v="7|1000.00" p="-1" w="0"/>
+		</game>
+
+		<game n="equalsSeven">
+			<turn n="t3" v="5,1,6|200.00" p="-1" w="0" />
+			<turn n="t4" v="1,2,3|5.00" p="-1" w="0" />
+			<turn n="t5" v="5,6,11|100.00" p="-1" w="0" />
+		</game>
+		<game n="matchTwo">
+			<turn n="t0" v="5,0|40.00" p="-1" w="0"/>
+			<turn n="t1" v="2,3|5.00" p="-1" w="0"/>
+			<turn n="t2" v="4,5|40.00" p="-1" w="0"/>
+		</game>
+	</games>
+</ticket>
+-->
+
+
+<!--  -->
+<!--
+<ticket>
+	<outcome prizeTier="22" amount="40.00" isWinner="1"/>
+	<params g3="2" g4="8" superWin="1208000.00"/>
+	<prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/>
+	<games>
+		<game n="matchOne">
+			<turn n="t6" v="4|1000.00" p="-1" w="0"/>
+			<turn n="t7" v="0|5.00" p="-1" w="0"/>
+			<turn n="t8" v="5|20.00" p="-1" w="0"/>
+			<turn n="t9" v="3|50000.00" p="-1" w="0"/>
+		</game>
+		<game n="matchOneNumber">
+			<turn n="t10" v="3|200.00" p="-1" w="0"/>
+			<turn n="t11" v="8|10.00" p="9" w="1"/>
+			<turn n="t12" v="8|10.00" p="9" w="1"/>
+			<turn n="t13" v="2|5.00" p="-1" w="0"/>
+		</game>
+		<game n="equalsSeven">
+			<turn n="t3" v="4,3,7|10.00" p="9" w="1" />
+			<turn n="t4" v="4,1,5|40.00" p="-1" w="0" />
+			<turn n="t5" v="3,4,7|10.00" p="9" w="1" />
+		</game>
+		<game n="matchTwo">
+			<turn n="t0" v="1,6|10.00" p="-1" w="0"/>
+			<turn n="t1" v="7,3|1208000.00" p="-1" w="0"/>
+			<turn n="t2" v="4,0|1208000.00" p="-1" w="0"/>
+		</game>
+
+	</games>
+</ticket>
+-->
+
+<!--
+<ticket>
+	<outcome prizeTier="18" amount="100.00" isWinner="1"/>
+	<params g3="3" g4="1" superWin="1208000.00"/>
+	<prizeList a="1208000.00,50000.00,5000.00,1000.00,200.00,100.00,40.00,20.00,15.00,10.00,5.00"/>
+	<games>
+		<game n="matchOne">
+			<turn n="t6" v="3|5.00" p="10" w="1"/>
+			<turn n="t7" v="3|10.00" p="9" w="1"/>
+			<turn n="t8" v="3|5.00" p="10" w="1"/>
+			<turn n="t9" v="3|10.00" p="9" w="1"/>
+		</game>
+		<game n="matchOneNumber">
+			<turn n="t10" v="1|5.00" p="10" w="1"/>
+			<turn n="t11" v="1|5.00" p="10" w="1"/>
+			<turn n="t12" v="1|5.00" p="10" w="1"/>
+			<turn n="t13" v="1|5.00" p="10" w="1"/>
+		</game>
+		<game n="equalsSeven">
+			<turn n="t3" v="4,3,7|5.00" p="10" w="1" />
+			<turn n="t4" v="6,1,7|5.00" p="10" w="1" />
+			<turn n="t5" v="3,4,7|10.00" p="9" w="1" />
+		</game>
+		<game n="matchTwo">
+			<turn n="t0" v="6,6|20.00" p="7" w="1"/>
+			<turn n="t1" v="2,2|5.00" p="10" w="1"/>
+			<turn n="t2" v="7,7|5.00" p="10" w="1"/>
+		</game>
+	</games>
+</ticket>
+-->
+
