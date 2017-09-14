@@ -1,5 +1,7 @@
-auto: true
-server: true
 permalink: /:year/:month/:title
+
+gems: [jekyll-paginate]
+
 paginate: 5
+paginate_path: "page:num"
 
