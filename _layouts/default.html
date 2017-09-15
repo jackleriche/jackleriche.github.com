@@ -44,16 +44,15 @@
     	
 <!--     	{% include header.html %}     -->
 		<header class="main">
-			{% for post in site.posts %}
-			{% if post.featured == true %}
+			
+            {% for post in site.posts limit:1 %}
 			<section class="{{ post.background }}">
 				<div class="container fixed {{ post.text-color }} ">
 					<time><a href="{{ post.url }}" title="{{ post.title }}">{{ post.date | date: "%d %b, %Y" }}</a></time>
 					<h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
 					<p><a href="{{ post.url }}" title="{{ post.title }}">{{ post.introText }}</a></p>	
 				</div>
-			</section>
-			{% endif %} 				
+			</section> 				
 			{% endfor %}
 		</header>
     	<div class="strip"></div>      

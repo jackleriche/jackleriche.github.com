@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ticket>
-	<outcome amount="2.00" prizeTier="15"/>
-	<params wT="1"/>
-	<turn p="100.00" s0="1" s1="5" w="0"/>
-	<turn p="1.00" s0="0" s1="2" w="1"/>
-	<turn p="10.00" s0="6" s1="4" w="0"/>
-	<turn p="1.00" s0="3" s1="3" w="1"/>
-</ticket>
