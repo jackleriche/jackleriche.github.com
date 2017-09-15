@@ -5,5 +5,4 @@ gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "page:num"
 
-incremental: TRUE
 exclude: ['/portfolio/']
