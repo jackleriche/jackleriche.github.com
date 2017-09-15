@@ -1,0 +1,10 @@
+---
+layout: holder
+title: Portfolio
+page-class: portfolio
+---
+
+
+{% for game in site.games %} 
+<a href='{{ game.gamefile }}'>{{ game.title }}</a>
+{% endfor %} 
