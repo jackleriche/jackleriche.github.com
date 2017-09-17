@@ -83,9 +83,6 @@
 	    font-weight: 800;
 	    font-size: 96px;
     }
-    header.main section .fixed p a {
-	    
-    }
     
     header.main section .fixed a:hover {
 	    background: none;
@@ -233,7 +230,67 @@
 
 	footer { 
 		color: #fff; 
+	}
 
+	.portfolio-game {
+		min-height: 350px;
+	}
+	.portfolio-game figcaption {
+		padding: 10px 0;
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.portfolio-game a:hover figcaption {
+		color: white;
+		background: #fea002;
+	}
+	
+	.clear:after{
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	} 
+
+	.homepage {
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+
+	}
+	.fullscreen {
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.homepage section {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		padding: 60px;
+	}
+
+	.homepage section h1 {
+		color: white;
+		font-size: 72px;
+		margin-bottom: 40px;
+	}
+
+	.homepage section p, .homepage section a {
+		color: white;
+		font-size: 36px;
+		margin-bottom: 40px;
+	}
+	.homepage section a {
+		color: #fea002;
+	}
+	.homepage section a:hover {
+		color: white;
 	}
 
     /* RESPONSIVE CSS

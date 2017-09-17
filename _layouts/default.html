@@ -37,36 +37,28 @@
         <script type="text/javascript" src="https://blockchain.info/Resources/wallet/pay-now-button.js"></script>
         
     </head>
-    <body>
-    <!--[if lt IE 7]>
-    	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-    	
-<!--     	{% include header.html %}     -->
-		<header class="main">
-			
-            {% for post in site.posts limit:1 %}
-			<section class="{{ post.background }}">
-				<div class="container fixed {{ post.text-color }} ">
-					<time><a href="{{ post.url }}" title="{{ post.title }}">{{ post.date | date: "%d %b, %Y" }}</a></time>
-					<h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
-					<p><a href="{{ post.url }}" title="{{ post.title }}">{{ post.introText }}</a></p>	
-				</div>
-			</section> 				
-			{% endfor %}
-		</header>
-    	<div class="strip"></div>      
-        <div class="content container">
-        	
-	        <div class="row">
-	        	<section class="blog-holder span9">
-		    		{{ content }}
-		    	</section>
-	    		{% include sidebar.html %}
-	        </div>
-	    </div><!-- /.container -->
-	    
-	    {% include footer.html %}
+    <body id='homepage' class='homepage'>
+        <script>
+            
+            var num = Math.floor(Math.random() * (6 - 1)) + 1;
+
+            var img = new Image();
+            var div = document.getElementById('homepage');
+
+            img.onload = function() {
+                div.appendChild(img);
+            };
+
+            img.src = '/img/backgrounds/pic' + num +'.JPG';
+
+
+        </script>
+
+        <section>
+            <h1>AFK..... Travelling</h1>
+            <p>Currently in Maylasia, for more information please visit...</p>
+            <a href='http://www.thelongwayaround.co.uk'>The Long Way Around</a>
+        </section>
     		
     	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

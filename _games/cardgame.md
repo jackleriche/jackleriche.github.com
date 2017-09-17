@@ -1,5 +1,6 @@
 ---
 title: Card Game 
-gamefile: '/game/cardgame/index.html'
+gamefile: '/game/card-game/index.html'
+img: '/img/games/cardGame.PNG'
 ---
   

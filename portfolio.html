@@ -4,7 +4,37 @@ title: Portfolio
 page-class: portfolio
 ---
 
+<div class='row'>
 
-{% for game in site.games %} 
-<a href='{{ game.gamefile }}'>{{ game.title }}</a>
-{% endfor %} 
+    <section>
+        <h2>Games</h2>
+        {% for game in site.games %} 
+        <div class='span4 portfolio-game'>
+            <figure>
+                <a href='{{ game.gamefile }}'>
+                    <img src='{{ game.img }}' />
+                    <figcaption>{{ game.title }}</figcaption>
+                </a>
+            </figure>    
+        </div>
+        {% endfor %}
+
+    </section>
+    <div class='clear'></div>
+    <section>
+        <h2>Websites</h2>
+        {% for site in site.sites %} 
+        <div class='span4 portfolio-game'>
+            <figure>
+                <a href='{{ site.gamefile }}'>
+                    <img src='{{ site.img }}' />
+                    <figcaption>{{ site.title }}</figcaption>
+                </a>
+            </figure>    
+        </div>
+        {% endfor %}
+    </section>
+    
+
+</div>
+ 
