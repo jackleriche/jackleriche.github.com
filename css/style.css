@@ -241,9 +241,9 @@ author: Jack Le Riche
 		text-align: center;
 	}
 
-	.portfolio-game a:hover figure p {
+	.portfolio-game figure a:hover p {
 		color: white;
-		background: #fea002;
+		background: #fea002 !important;
 	}
 	
 	.clear:after{

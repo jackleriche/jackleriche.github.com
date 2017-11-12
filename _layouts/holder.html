@@ -6,7 +6,7 @@
     <head>
 		<!--     meta	 -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{ page.title }} - Jack Le Riche - Website/Game Developer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -41,12 +41,8 @@
     	
     	<div class="strip"></div>      
         <div class="content container">
-        	
-	        <div class="row">
-	        	<section class="blog-holder span12">
-                    {{ content }}
-		    	</section>
-	        </div>
+        
+            {{ content }}
 	    </div><!-- /.container -->
 	    
 	    {% include footer.html %}
