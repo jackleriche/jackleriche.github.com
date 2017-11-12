@@ -235,13 +235,13 @@ author: Jack Le Riche
 	.portfolio-game {
 		min-height: 350px;
 	}
-	.portfolio-game figcaption {
+	.portfolio-game figure p {
 		padding: 10px 0;
 		font-size: 24px;
 		text-align: center;
 	}
 
-	.portfolio-game a:hover figcaption {
+	.portfolio-game a:hover figure p {
 		color: white;
 		background: #fea002;
 	}

@@ -13,7 +13,7 @@ page-class: portfolio
             <figure>
                 <a href='{{ game.gamefile }}'>
                     <img src='{{ game.img }}' />
-                    <figcaption>{{ game.title }}</figcaption>
+                    <p>{{ game.title }}</p>
                 </a>
             </figure>    
         </div>
@@ -21,20 +21,5 @@ page-class: portfolio
 
     </section>
     <div class='clear'></div>
-    <section>
-        <!-- <h2>Websites</h2> -->
-        {% for site in site.sites %} 
-        <div class='span4 portfolio-game'>
-            <figure>
-                <a href='{{ site.gamefile }}'>
-                    <img src='{{ site.img }}' />
-                    <figcaption>{{ site.title }}</figcaption>
-                </a>
-            </figure>    
-        </div>
-        {% endfor %}
-    </section>
-    
-
 </div>
  
