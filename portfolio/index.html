@@ -20,6 +20,23 @@ page-class: portfolio
         {% endfor %}
 
     </section>
+
+    <div class='clear'></div>
+
+    <section>
+        <h2>Websites</h2>
+        {% for website in site.websites %} 
+        <div class='span4 portfolio-game'>
+            <figure>
+                <a href='{{ website.url }}'>
+                    <img src='{{ website.img }}' alt='{{ website.title }}'/>
+                    <p>{{ website.title }}</p>
+                </a>
+            </figure>    
+        </div>
+        {% endfor %}
+
+    </section>
     <div class='clear'></div>
 </div>
  

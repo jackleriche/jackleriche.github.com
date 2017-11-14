@@ -8,3 +8,4 @@ paginate_path: "page:num"
 
 collections:
   games:
+  websites:
