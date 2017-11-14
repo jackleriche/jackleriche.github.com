@@ -28,7 +28,7 @@ page-class: portfolio
         {% for website in site.websites %} 
         <div class='span4 portfolio-game'>
             <figure>
-                <a href='{{ website.goto }}'>
+                <a target='_blank' href='{{ website.goto }}'>
                     <img src='{{ website.img }}' alt='{{ website.title }}'/>
                     <p>{{ website.title }}</p>
                 </a>
