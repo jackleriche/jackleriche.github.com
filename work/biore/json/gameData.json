@@ -5,7 +5,7 @@
 		"@questionsLevel1":4,
 		"@questionsLevel1Video": true,
 		"@questionsLevel2":1,
-		"@videoBackground": "#5d91ca",
+		"@videoBackground": "#3b65a6",
 		"@vid1": "video/movie1.mp4",
 		"@vid2": "video/movie2.mp4"
 	}

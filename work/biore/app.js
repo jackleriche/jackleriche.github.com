@@ -1421,8 +1421,9 @@ function createVideo() {
         if ( aGameData['@videoBackground'] !== undefined ){
             videoBackground.style.background = aGameData['@videoBackground'];
         }
-        videoBackground.style.top = 0;
-        videoBackground.style.position = 'absolute';
+
+        videoBackground.style.width = canvas.style.width
+        videoBackground.style.height = '100%'
 
         // create Video
         var video   = document.createElement("video");
@@ -1434,9 +1435,11 @@ function createVideo() {
 
         video.autoplay = true;
         video.load();
+        toggleManualPause();
 
         video.onended = function() {
             killVideo();
+            toggleManualPause();
         }
 
         // add source to video
