@@ -1403,6 +1403,8 @@ function initQuestion() {
     previousTime = new Date().getTime();
     updateGameEvent();
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------    video stuff -------------------------------------------------------------------------------------------------------------------------------------*/
 var currentLevel = 0;
 function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
@@ -1427,13 +1429,24 @@ function createVideo() {
 
         // create Video
         var video   = document.createElement("video");
+        video.id    = 'videoSource';
         video.style.objectfit = 'cover';
         var source  = document.createElement('source');
 
         // add movie 
         source.src = aGameData[movie2play];
 
-        video.autoplay = true;
+        // add text if there is any
+        if ( aGameData[movie2play + 'text'] !== undefined ) {
+
+            var text = document.createElement('p');
+            text.innerHTML = aGameData[movie2play + 'text'];
+            videoBackground.appendChild(text);
+
+        }
+
+        video.autoplay = false;
+
         video.load();
         toggleManualPause();
 
@@ -1449,8 +1462,45 @@ function createVideo() {
         // add container to body
         var parent = document.getElementById('canvas');
         insertAfter( parent, videoBackground );
+
+        // add controls after everything is added to the document
+        createVideoControls();
         
     }
+};
+
+function createVideoControls(  ) {
+
+    // make the button
+    var button = document.createElement('BUTTON');
+    button.type = 'button';
+    button.id = 'play';
+
+    if (aGameData['@videoButtonColor'] ){
+        button.style.backgroundColor = aGameData['@videoButtonColor']
+    }
+
+    if (aGameData['@videoButtonText'] ){
+        // make the text
+        var text = document.createTextNode(aGameData['@videoButtonText']);       // Create a text node
+        button.appendChild(text);
+    }
+
+    //append button to div
+    var div = document.getElementById('video');
+    div.appendChild(button);
+
+    var video = document.getElementById('videoSource')
+    button.addEventListener("click", function() {
+        if (video.paused == true) {
+            // Play the video
+            video.play();
+            // remove the button
+            button.outerHTML = "";
+            delete button;
+        }
+    });
+
 };
 
 function killVideo() {
@@ -1461,6 +1511,8 @@ function killVideo() {
     //initLevelUp();
     butEventHandler('continue');
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------    video stuff end -------------------------------------------------------------------------------------------------------------------------------------*/
 
 function initLevelUp() {
     gameState = "levelUp";
