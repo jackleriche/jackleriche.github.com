@@ -1,0 +1,69 @@
+<ticket>
+  <outcome prizeTier='25' amount='15.00' />
+  <params 
+    wT='1' 
+    wAmount='15.00' 
+    win1Amount='2' 
+    win1X='5' 
+    win1IndexPos='7' 
+    win1Colour='bl' 
+    win2Amount='5' 
+    win2X='1' 
+    win2IndexPos='3' 
+    win2Colour='or' 
+    win3Amount='0' win3X='1' win3IndexPos='0' win3Colour='' ring1='or,la,wh,bl,or,fr,wh,or' ring2='fr,ye,bl,bl,re,wh,gr,or' ring3='bl,wh,bl,fr,or,bl,re,or' ring4='re,gr,or,pu,re,la,ye,wh' pzAmounts='70000,50,250,5,1000,10,100,2' multi='1,4,2,1,2,1,1,5' />
+  <turn name='go0' pzOffset='1' multiOffset='3' />
+  <turn name='go1' r1Offset='7' r2Offset='2' r3Offset='6' r4Offset='5' />
+</ticket>
+
+
+<!--
+<ticket>
+  <outcome prizeTier='25' amount='15.00' />
+  <params wT='1' wAmount='15.00' win1Amount='2' win1X='5' win1IndexPos='3' win1Colour='bl' win2Amount='5' win2X='1' win2IndexPos='7' win2Colour='or' win3Amount='0' win3X='1' win3IndexPos='0' win3Colour='' ring1='or,la,wh,bl,or,fr,wh,or' ring2='fr,ye,bl,bl,re,wh,gr,or' ring3='bl,wh,bl,fr,or,bl,re,or' ring4='re,gr,or,pu,re,la,ye,wh' pzAmounts='70000,50,250,5,1000,10,100,2' multi='1,4,2,1,2,1,1,5' />
+  <turn name='go0' pzOffset='1' multiOffset='3' />
+  <turn name='go1' r1Offset='7' r2Offset='2' r3Offset='6' r4Offset='5' />
+</ticket>
+-->
+
+<!--<ticket>
+  <outcome prizeTier='25' amount='15.00' />
+  <params wT='1' wAmount='15.00' win1Amount='2' win1X='5' win1IndexPos='2' win1Colour='re' win2Amount='5' win2X='1' win2IndexPos='6' win2Colour='pu' win3Amount='0' win3X='1' win3IndexPos='0' win3Colour='' ring1='fr,la,re,gr,re,or,pu,wh' ring2='re,or,re,pu,pu,ye,pu,or' ring3='or,ye,re,ye,or,fr,pu,la' ring4='gr,re,wh,ye,gr,re,wh,fr' pzAmounts='50,250,5,1000,10,100,2,70000' multi='1,2,1,4,2,1,5,1' />
+  <turn name='go0' pzOffset='2' multiOffset='7' />
+  <turn name='go1' r1Offset='4' r2Offset='1' r3Offset='5' r4Offset='6' />
+</ticket>-->
+
+
+
+<!--
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ticket>
+   <outcome prizeTier="1" amount="70000.00" />
+   <params wT="1" wAmount="70000.00" win1Amount="70000" win1X="1" win1IndexPos="0" win1Colour="wh" win2Amount="0" win2X="1" win2IndexPos="0" win2Colour="" win3Amount="0" win3X="1" win3IndexPos="0" win3Colour="" 
+   ring1="bl,fr,wh,or,ye,pu,pu,ye" 
+   ring2="wh,bl,or,wh,gr,fr,bl,pu" 
+   ring3="wh,wh,or,wh,pu,gr,re,fr" 
+   ring4="wh,pu,ye,ye,la,la,gr,la" 
+   pzAmounts="70000,50,250,5,1000,10,100,2" 
+   multi="1,5,1,4,1,2,1,2" />
+   <turn name="go0" pzOffset="3" multiOffset="1" />
+   <turn name="go1" r1Offset="2" r2Offset="5" r3Offset="7" r4Offset="6" />
+</ticket>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ticket>
+   <outcome prizeTier="2" amount="5000.00" />
+   <params wT="1" wAmount="5000.00" win1Amount="1000" win1X="5" win1IndexPos="0" win1Colour="pu" win2Amount="0" win2X="1" win2IndexPos="0" win2Colour="" win3Amount="0" win3X="1" win3IndexPos="0" win3Colour="" 
+   ring1="pu,re,la,ye,re,pu,fr,bl" 
+   ring2="pu,bl,fr,gr,bl,ye,or,ye" 
+   ring3="re,la,re,or,gr,bl,re,fr" 
+   ring4="pu,gr,ye,wh,gr,re,gr,pu" 
+   pzAmounts="1000,10,100,2,70000,50,250,5" 
+   multi="5,1,4,1,1,2,1,2" />
+   <turn name="go0" pzOffset="5" multiOffset="3" />
+   <turn name="go1" r1Offset="7" r2Offset="1" r3Offset="2" r4Offset="4" />
+</ticket>
+
+
+-->

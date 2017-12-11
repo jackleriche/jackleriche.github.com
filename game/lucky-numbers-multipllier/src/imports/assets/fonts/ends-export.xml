@@ -1,0 +1,25 @@
+<font>
+	<info face="D:\Work\A-Z\C\Camelot\Lucky Numbers Multiplier\Artwork\Pngs\fonts\ends-export" size="52" />
+	<common lineHeight="52" scaleW="128" scaleH="64" pages="1" />
+	<pages>
+		<page id="0" file="D:\Work\A-Z\C\Camelot\Lucky Numbers Multiplier\Artwork\Pngs\fonts\ends-export.png" />
+	</pages>
+	<chars count="14">
+		<char id="163" x="22" y="25" width="19" height="23" xoffset="0" yoffset="29" xadvance="19" /><!-- £ -->
+		<char id="44" x="0" y="50" width="8" height="11" xoffset="0" yoffset="46" xadvance="8" /><!-- , -->
+		<char id="48" x="0" y="25" width="20" height="23" xoffset="0" yoffset="29" xadvance="20" /><!-- 0 -->
+		<char id="49" x="102" y="25" width="13" height="23" xoffset="0" yoffset="29" xadvance="13" /><!-- 1 -->
+		<char id="50" x="63" y="25" width="18" height="23" xoffset="0" yoffset="29" xadvance="18" /><!-- 2 -->
+		<char id="51" x="83" y="0" width="18" height="23" xoffset="0" yoffset="29" xadvance="18" /><!-- 3 -->
+		<char id="52" x="0" y="0" width="20" height="23" xoffset="0" yoffset="29" xadvance="20" /><!-- 4 -->
+		<char id="53" x="43" y="0" width="18" height="23" xoffset="0" yoffset="29" xadvance="18" /><!-- 5 -->
+		<char id="54" x="43" y="25" width="18" height="23" xoffset="0" yoffset="29" xadvance="18" /><!-- 6 -->
+		<char id="55" x="83" y="25" width="17" height="23" xoffset="0" yoffset="29" xadvance="17" /><!-- 7 -->
+		<char id="56" x="22" y="0" width="19" height="23" xoffset="0" yoffset="29" xadvance="19" /><!-- 8 -->
+		<char id="57" x="63" y="0" width="18" height="23" xoffset="0" yoffset="29" xadvance="18" /><!-- 9 -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="19" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="152" /><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>

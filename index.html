@@ -8,6 +8,7 @@ page-class: homepage
 {% for post in site.posts %}
 
 {% if post.featured == false %}
+
 <article>
 	<time>{{ post.date | date: "%d %b, %Y" }}</time>
 	<h2><a href="{{ post.url }}" title="post__title">{{ post.title }}</a></h2>

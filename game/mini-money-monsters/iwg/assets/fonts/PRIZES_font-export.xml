@@ -1,0 +1,29 @@
+﻿<font>
+	<info face="C:\Users\Tammi\Desktop\greek_font-export" size="80" />
+	<common lineHeight="80" scaleW="77" scaleH="77" pages="1" />
+	<pages>
+		<page id="0" file="greek_font-export.png" />
+	</pages>
+	<chars count="18">
+		<char id="43" x="0" y="63" width="13" height="13" xoffset="0" yoffset="64" xadvance="11" /><!-- + -->
+		<char id="88" x="0" y="21" width="16" height="20" xoffset="0" yoffset="61" xadvance="14" /><!-- X -->
+		<char id="163" x="17" y="21" width="16" height="19" xoffset="0" yoffset="62" xadvance="14" /><!-- £ -->
+		<char id="36" x="64" y="21" width="12" height="20" xoffset="0" yoffset="60" xadvance="10" /><!-- $ -->
+		<char id="49" x="64" y="42" width="9" height="20" xoffset="0" yoffset="60" xadvance="7" /><!-- 1 -->
+		<char id="50" x="34" y="0" width="15" height="20" xoffset="0" yoffset="60" xadvance="13" /><!-- 2 -->
+		<char id="51" x="49" y="43" width="14" height="20" xoffset="0" yoffset="60" xadvance="12" /><!-- 3 -->
+		<char id="52" x="0" y="0" width="17" height="20" xoffset="0" yoffset="60" xadvance="15" /><!-- 4 -->
+		<char id="53" x="17" y="41" width="15" height="20" xoffset="0" yoffset="60" xadvance="13" /><!-- 5 -->
+		<char id="54" x="33" y="41" width="15" height="20" xoffset="0" yoffset="60" xadvance="13" /><!-- 6 -->
+		<char id="55" x="50" y="0" width="14" height="20" xoffset="0" yoffset="60" xadvance="12" /><!-- 7 -->
+		<char id="56" x="18" y="0" width="15" height="20" xoffset="0" yoffset="60" xadvance="13" /><!-- 8 -->
+		<char id="57" x="49" y="21" width="14" height="21" xoffset="0" yoffset="60" xadvance="12" /><!-- 9 -->
+		<char id="48" x="0" y="42" width="16" height="20" xoffset="0" yoffset="60" xadvance="14" /><!-- 0 -->
+		<char id="44" x="14" y="64" width="8" height="10" xoffset="0" yoffset="73" xadvance="6" /><!-- , -->
+		<char id="46" x="23" y="64" width="7" height="8" xoffset="0" yoffset="73" xadvance="5" /><!-- . -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" /><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>

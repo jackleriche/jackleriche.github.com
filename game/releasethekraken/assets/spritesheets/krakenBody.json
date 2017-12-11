@@ -1,0 +1,92 @@
+{"frames": {
+
+"KrakenBodyIdle_1":
+{
+	"frame": {"x":441,"y":2,"w":435,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":435,"h":362},
+	"sourceSize": {"w":960,"h":640}
+},
+"KrakenBodyIdle_10":
+{
+	"frame": {"x":441,"y":2,"w":435,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":435,"h":362},
+	"sourceSize": {"w":960,"h":640}
+},
+"KrakenBodyIdle_2":
+{
+	"frame": {"x":441,"y":366,"w":435,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":435,"h":362},
+	"sourceSize": {"w":960,"h":640}
+},
+"KrakenBodyIdle_3":
+{
+	"frame": {"x":441,"y":730,"w":435,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":435,"h":362},
+	"sourceSize": {"w":960,"h":640}
+},
+"KrakenBodyIdle_4":
+{
+	"frame": {"x":2,"y":1094,"w":436,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":436,"h":362},
+	"sourceSize": {"w":960,"h":640}
+},
+"KrakenBodyIdle_5":
+{
+	"frame": {"x":2,"y":2,"w":437,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":437,"h":362},
+	"sourceSize": {"w":960,"h":640}
+},
+"KrakenBodyIdle_6":
+{
+	"frame": {"x":2,"y":366,"w":437,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":437,"h":362},
+	"sourceSize": {"w":960,"h":640}
+},
+"KrakenBodyIdle_7":
+{
+	"frame": {"x":2,"y":730,"w":437,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":437,"h":362},
+	"sourceSize": {"w":960,"h":640}
+},
+"KrakenBodyIdle_8":
+{
+	"frame": {"x":440,"y":1094,"w":436,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":436,"h":362},
+	"sourceSize": {"w":960,"h":640}
+},
+"KrakenBodyIdle_9":
+{
+	"frame": {"x":2,"y":1458,"w":435,"h":362},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":222,"w":435,"h":362},
+	"sourceSize": {"w":960,"h":640}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "krakenBody.png",
+	"format": "RGBA8888",
+	"size": {"w":878,"h":1822},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2b7105c86a23b9146ffacf051346e2f9:8b666b5ae7825f3cd4a6213bb6f5e77e:adf1464e10c936426bee5c784e175c03$"
+}
+}

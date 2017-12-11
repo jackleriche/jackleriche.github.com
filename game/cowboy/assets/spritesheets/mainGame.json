@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "barrel_shadow",
+	"frame": {"x":229,"y":151,"w":90,"h":48},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":48},
+	"sourceSize": {"w":90,"h":48}
+},
+{
+	"filename": "barrell",
+	"frame": {"x":140,"y":61,"w":87,"h":106},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":106},
+	"sourceSize": {"w":87,"h":106}
+},
+{
+	"filename": "cactus",
+	"frame": {"x":2,"y":2,"w":136,"h":201},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":201},
+	"sourceSize": {"w":136,"h":201}
+},
+{
+	"filename": "door",
+	"frame": {"x":388,"y":2,"w":72,"h":73},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":73},
+	"sourceSize": {"w":72,"h":73}
+},
+{
+	"filename": "doorHole",
+	"frame": {"x":388,"y":77,"w":69,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":69,"h":70},
+	"sourceSize": {"w":69,"h":70}
+},
+{
+	"filename": "explosion",
+	"frame": {"x":140,"y":2,"w":236,"h":57},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":358,"y":528,"w":236,"h":57},
+	"sourceSize": {"w":960,"h":640}
+},
+{
+	"filename": "skull",
+	"frame": {"x":315,"y":61,"w":71,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":74},
+	"sourceSize": {"w":71,"h":74}
+},
+{
+	"filename": "sparkle",
+	"frame": {"x":321,"y":137,"w":60,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":60},
+	"sourceSize": {"w":60,"h":60}
+},
+{
+	"filename": "tumbleweed",
+	"frame": {"x":229,"y":61,"w":84,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":88},
+	"sourceSize": {"w":84,"h":88}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "mainGame.png",
+	"format": "RGBA8888",
+	"size": {"w":465,"h":205},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3aacf71fb787826247ff2acc40944730:62a834b7fb3dd66124246edb1b112d3a:dc89b25bcfd123d4c6c3dc7663aeda68$"
+}
+}

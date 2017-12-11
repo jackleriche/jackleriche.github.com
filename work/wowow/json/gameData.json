@@ -1,0 +1,12 @@
+{"text":{	
+	"@gameTime":60,
+	"@totalQuestions":20,
+	"@questionsToComplete":10,
+	"@scoreToGetCongrats":10,
+	"@successLinkURL":"http://www.wowow.co.jp/dramaw/meishi/",
+	"@failLinkURL":"http://www.wowow.co.jp/dramaw/meishi/",
+	"@facebookURL":"https://www.facebook.com/sharer/sharer.php?u=http://www.wowow.co.jp/dramaw/meishi/",
+	"@twitterURL":"https://twitter.com/intent/tweet?text=http://www.wowow.co.jp/dramaw/meishi/",	
+	"@fireworks":true
+	}
+}

@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Jack Le Riche> -- <Developer> -- <@jackleriche>
 
 # THANKS
 
-    <name>
+    <Jack>
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    jQuery, Modernizr,
+    Jekyll

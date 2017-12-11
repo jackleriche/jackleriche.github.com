@@ -4,7 +4,7 @@
 
 	
 
-
+author: Jack Le Riche
 
 
 -------------------------------------------------------
@@ -49,6 +49,9 @@
     header.main section.ubuntu {
 	    background: url(../img/backgrounds/new.jpg)
     }
+    header.main section.gameDev {
+	    background: url(../img/backgrounds/mario.png)
+    };
     
     header.main section .fixed {
 	    /* position: fixed; */
@@ -79,9 +82,6 @@
 	    width: 100%;
 	    font-weight: 800;
 	    font-size: 96px;
-    }
-    header.main section .fixed p a {
-	    
     }
     
     header.main section .fixed a:hover {
@@ -135,6 +135,41 @@
     aside section h3 {
 	    margin-top: 0;
     }
+	
+
+	#customize-list{
+		float:left;
+		margin-left:20px;
+		list-style:none;
+	}
+	#gr_updates_widget{
+		float:left;
+		border-radius: 5px;
+		background-color:#fff;
+		border:solid #683205 10px;
+		-webkit-box-shadow: 0px 0px 4px 1px #595959,
+		inset 0px 0px 0px 1px #7D730B;
+		-moz-box-shadow: 0px 0px 4px 1px #595959,
+		inset 0px 0px 0px 1px #7D730B;
+		box-shadow: 0px 0px 4px 1px #595959,
+		inset 0px 0px 0px 1px #7D730B;
+		padding:15px 0 0px 15px;
+		width:270px;
+		height:365px;
+	  }
+	  #gr_footer{
+		margin-bottom:0px;
+		height:30px;
+	  }
+	  #gr_updates_widget p{
+		padding:0px;
+		margin:0;
+		font-size:14px;
+	  }
+	  #gr_footer img{
+		width:100px;
+		float:left;
+	  }
     
     /* blog post */
     .blog-holder article { 
@@ -195,7 +230,67 @@
 
 	footer { 
 		color: #fff; 
+	}
 
+	.portfolio-game {
+		min-height: 350px;
+	}
+	.portfolio-game figure p {
+		padding: 10px 0;
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.portfolio-game figure a:hover p {
+		color: white;
+		background: #fea002 !important;
+	}
+	
+	.clear:after{
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	} 
+
+	.homepage {
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+
+	}
+	.fullscreen {
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.homepage section {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		padding: 60px;
+	}
+
+	.homepage section h1 {
+		color: white;
+		font-size: 72px;
+		margin-bottom: 40px;
+	}
+
+	.homepage section p, .homepage section a {
+		color: white;
+		font-size: 36px;
+		margin-bottom: 40px;
+	}
+	.homepage section a {
+		color: #fea002;
+	}
+	.homepage section a:hover {
+		color: white;
 	}
 
     /* RESPONSIVE CSS

@@ -1,0 +1,42 @@
+---
+layout: holder
+title: Portfolio
+page-class: portfolio
+---
+
+<div class='row'>
+
+    <section>
+        <h2>Games</h2>
+        {% for game in site.games %} 
+        <div class='span4 portfolio-game'>
+            <figure>
+                <a href='{{ game.gamefile }}'>
+                    <img src='{{ game.img }}' alt='{{ game.title }}'/>
+                    <p>{{ game.title }}</p>
+                </a>
+            </figure>    
+        </div>
+        {% endfor %}
+
+    </section>
+
+    <div class='clear'></div>
+
+    <section>
+        <h2>Websites</h2>
+        {% for website in site.websites %} 
+        <div class='span4 portfolio-game'>
+            <figure>
+                <a target='_blank' href='{{ website.goto }}'>
+                    <img src='{{ website.img }}' alt='{{ website.title }}'/>
+                    <p>{{ website.title }}</p>
+                </a>
+            </figure>    
+        </div>
+        {% endfor %}
+
+    </section>
+    <div class='clear'></div>
+</div>
+ 

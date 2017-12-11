@@ -1,0 +1,28 @@
+<font>
+	<info face="/Users/giancarloachler/Desktop\prizes_font-export" size="31" />
+	<common lineHeight="31" scaleW="64" scaleH="128" pages="1" />
+	<pages>
+		<page id="0" file="/Users/giancarloachler/Desktop\prizes_font-export.png" />
+	</pages>
+	<chars count="17">
+		<char id="88" x="0" y="0" width="22" height="23" xoffset="0" yoffset="8" xadvance="18" /><!-- X -->
+		<char id="36" x="20" y="96" width="19" height="27" xoffset="0" yoffset="6" xadvance="15" /><!-- $ -->
+		<char id="163" x="21" y="48" width="19" height="23" xoffset="0" yoffset="8" xadvance="15" /><!-- £ -->
+		<char id="48" x="0" y="24" width="21" height="23" xoffset="0" yoffset="8" xadvance="17" /><!-- 0 -->
+		<char id="49" x="41" y="24" width="15" height="23" xoffset="0" yoffset="8" xadvance="11" /><!-- 1 -->
+		<char id="50" x="40" y="72" width="18" height="23" xoffset="0" yoffset="8" xadvance="14" /><!-- 2 -->
+		<char id="51" x="0" y="96" width="19" height="23" xoffset="0" yoffset="8" xadvance="15" /><!-- 3 -->
+		<char id="52" x="0" y="48" width="20" height="23" xoffset="0" yoffset="8" xadvance="16" /><!-- 4 -->
+		<char id="53" x="23" y="0" width="18" height="23" xoffset="0" yoffset="8" xadvance="14" /><!-- 5 -->
+		<char id="54" x="20" y="72" width="19" height="23" xoffset="0" yoffset="8" xadvance="15" /><!-- 6 -->
+		<char id="55" x="40" y="96" width="17" height="23" xoffset="0" yoffset="8" xadvance="13" /><!-- 7 -->
+		<char id="56" x="0" y="72" width="19" height="23" xoffset="0" yoffset="8" xadvance="15" /><!-- 8 -->
+		<char id="57" x="22" y="24" width="18" height="23" xoffset="0" yoffset="8" xadvance="14" /><!-- 9 -->
+		<char id="44" x="41" y="48" width="11" height="13" xoffset="0" yoffset="21" xadvance="7" /><!-- , -->
+		<char id="46" x="42" y="0" width="10" height="10" xoffset="0" yoffset="21" xadvance="6" /><!-- . -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="11" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="88" /><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>

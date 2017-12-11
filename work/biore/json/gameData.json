@@ -1,0 +1,14 @@
+{
+	"text": {
+		"@totalQuestions":5,
+		"@gameTime":120,
+		"@questionsLevel1":4,
+		"@questionsLevel1Video": true,
+		"@questionsLevel2":1,
+		"@videoBackground": "#3b65a6",
+		"@videoButtonColor": "#e7006a",
+		"@videoButtonText": "動画からヒントを得る",
+		"@vid1text": "動画を見てヒントを得よう！",
+		"@vid1": "video/movie1.mp4"		
+	}
+}

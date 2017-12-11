@@ -1,0 +1,15 @@
+{
+"images": ["BackgroundSS.png"],
+"frames": [
+
+    [2, 2, 1500, 768]
+],
+"animations": {
+    
+        "bg":[0]
+},
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:6d873a35bb9f8cdab8d96c322ffab94c:5534f076aa96b92bdbda29e9a3833171:8f259fdf8d8acf353e45702b47eaeec1$",
+        "Created with TexturePacker (http://www.texturepacker.com) for EaselJS"
+]
+}

@@ -1,0 +1,84 @@
+canvas {
+    position: absolute !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+} 
+
+#background { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color:white;
+	width: 1200px;
+	height: 1000px;
+}
+
+#scaleDiv div.scene {
+    position: absolute;
+    overflow: hidden;
+}
+
+#scaleDiv div.scene canvas {
+    position: absolute;
+}
+.cursor {
+    cursor: pointer;  
+}
+@font-face {
+    font-family: 'effra';
+    src: url('imports/font/tnl_effra_he-webfont.eot');
+    src: url('imports/font/tnl_effra_he-webfont.eot?#iefix') format('embedded-opentype'),
+         url('imports/font/tnl_effra_he-webfont.woff2') format('woff2'),
+         url('imports/font/tnl_effra_he-webfont.woff') format('woff'),
+         url('imports/font/tnl_effra_he-webfont.ttf') format('truetype'),
+         url('imports/font/tnl_effra_he-webfont.svg#tnl_effraheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#scaleDiv p {
+    font-family: effra;
+    font-weight: bold;
+    font-size: 27px;
+    color: black;
+    
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    position: absolute;
+    
+    -webkit-text-stroke: 0px;
+    
+}
+
+#scaleDiv p.green {
+    color: #039640;
+    font-size: 16px;
+}
+#scaleDiv p.big {
+    font-size: 33px;
+}
+
+#scaleDiv #endGameMonitorScene p {
+    font-size: 25px; 
+}
+#scaleDiv #endGameMonitorScene p.green {
+    font-size: 20px;
+}
+
+#scaleDiv #endGameMonitorScene #ENDPRIZE {
+    font-size: 40px; 
+    text-align: center;
+    width: 226px;
+}
+
+#Camelot_Logo {
+    top: 80px;
+    height: 200px;
+}

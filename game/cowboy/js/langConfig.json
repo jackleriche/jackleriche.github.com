@@ -1,0 +1,69 @@
+{
+	"useAssetPacks":true,
+	"supportedLanguages":{
+		"en":true,
+		"fr":false,
+		"de":false,
+		"it":false,
+		"pt":false,
+		"es":true
+	},
+	"assets":{
+		"empty":{
+			"useAssetPack":true,
+			"assetImgName":"lang_empty.png",
+			"assetImgJsonName":"lang_empty.json",
+			"extra":[
+				{					
+					"assetImgName":"lang_empty2.png",
+					"assetImgJsonName":"lang_empty2.json"	
+				}
+			]
+		},
+		"en":{
+			"useAssetPack":false,
+			"assetImgName":"lang_en.png",
+			"assetImgJsonName":"lang_en.json",
+			"extra":[
+				{					
+					"assetImgName":"lang_empty2.png",
+					"assetImgJsonName":"lang_empty2.json"	
+				}
+			]
+		}
+	},
+	"messages":[
+		{
+			"key":"g_play",
+			"values":{			
+				"en":"PLAY"
+			}
+		},
+		{
+			"key":"g_endWin",
+			"values":{
+				"en":"Congratulations!{{line_break}}You have won{{line_break}}{{win_amount}}!"
+			}
+		},
+		{
+			"key":"g_endLose",
+			"values":{
+				"en":"Better luck next time"
+			}
+		},
+		{
+			"key":"g_instructions",
+			"values":{
+				"en":"Click on the gold bars to reveal prizes. Match 3 prizes to win."
+			}
+		}		
+	],
+	"errors":[
+		{
+			"key":"e_genericMessage",
+			"values":{
+				"en":"An error has occurred. Reload the game or contact customer support at {{phone_number}} if this message persists."
+			}
+		}
+	]
+}
