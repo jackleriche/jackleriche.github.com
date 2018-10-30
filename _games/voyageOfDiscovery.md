@@ -1,5 +1,5 @@
 ---
 title: Voyage of Discovery 
-gamefile: '/game/VoyageOfDiscovery/index.html'
+gamefile: '/game/voyageOfDiscovery/index.html'
 img: '/img/games/voyageOfDiscovery.png'
 ---
