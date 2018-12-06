@@ -1,0 +1,13 @@
+{
+    "boot" : {
+        "welcome": "Welcome to the Phaser 3 Typescript boilerplate"
+    },
+    "button" : {
+        "test": "Button Test!"
+    },
+    "endscreen": {
+        "winner": "Congratulations, you have won!",
+        "replay": "replay",
+        "exit": "exit"
+    }
+}
