@@ -11,7 +11,7 @@
     },
     "endscreen": {
         "winner": "Congratulations",
-        "loser": "Unlucky",
+        "loser": "Ouch!",
         "winner-subtitle": "you have won!!",
         "loser-subtitle": "better luck next time",
         "replay": "replay",
