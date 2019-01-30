@@ -1,7 +1,7 @@
 {
     "isWinner": true,
     "winIcon": 4,
-    "prizeAmount": 30,
+    "prizeAmount": 50,
     "turns": [
         {
             "id" : 0,
