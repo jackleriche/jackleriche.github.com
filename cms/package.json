@@ -24,15 +24,15 @@
     "strapi-hook-mongoose": "3.0.0-alpha.24.1"
   },
   "author": {
-    "name": "webreality",
-    "email": "",
-    "url": ""
+    "name": "Jack Le Riche",
+    "email": "me@jackleriche.co.uk",
+    "url": "http://www.jackleriche.co.uk"
   },
   "maintainers": [
     {
-      "name": "webreality",
-      "email": "",
-      "url": ""
+      "name": "Jack Le Riche",
+      "email": "me@jackleriche.co.uk",
+      "url": "http://www.jackleriche.co.uk"
     }
   ],
   "strapi": {
