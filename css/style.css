@@ -280,14 +280,15 @@ author: Jack Le Riche
 	.homepage section h1 {
 		color: white;
 		font-size: 5rem;
-		margin-bottom: 1rem;
+		line-height: 5rem;
+		margin-bottom: 2rem;
 	}
 
 	.homepage section p, .homepage section a {
 		color: white;
-		font-size: 3rem;
-		margin-bottom: 40px;
-		line-height: 3rem;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		line-height: 2rem;
 	}
 	.homepage section a {
 		color: #fea002;
