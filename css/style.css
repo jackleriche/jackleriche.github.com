@@ -258,6 +258,7 @@ author: Jack Le Riche
 		height: 100%;
 		overflow: hidden;
 		position: relative;
+		background-size: cover;
 
 	}
 	.fullscreen {
@@ -278,14 +279,15 @@ author: Jack Le Riche
 
 	.homepage section h1 {
 		color: white;
-		font-size: 72px;
-		margin-bottom: 40px;
+		font-size: 5rem;
+		margin-bottom: 1rem;
 	}
 
 	.homepage section p, .homepage section a {
 		color: white;
-		font-size: 36px;
+		font-size: 3rem;
 		margin-bottom: 40px;
+		line-height: 3rem;
 	}
 	.homepage section a {
 		color: #fea002;
