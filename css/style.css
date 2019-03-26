@@ -275,6 +275,7 @@ author: Jack Le Riche
 			background: rgba(112, 110, 110, 0.507);
 			top: 50%;
 			transform: translate(-50%, -50%);
+			text-align: center;
 	}
 
 	.homepage section h1 {
