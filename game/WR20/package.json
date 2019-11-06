@@ -1,0 +1,28 @@
+{
+  "name": "zdog-demo",
+  "version": "1.0.0",
+  "description": "base template for zdog",
+  "main": "index.ts",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.config.js --open",
+    "webpack:dev": "webpack --config webpack.dev.config.js"
+  },
+  "author": "Jack Le Riche",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "expose-loader": "^0.7.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jasmine": "^3.5.0",
+    "ts-loader": "^6.2.0",
+    "tslint": "^5.20.0",
+    "typescript": "3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "zdog": "^1.1.1"
+  },
+  "dependencies": {
+    "zfont": "^1.2.7"
+  }
+}
