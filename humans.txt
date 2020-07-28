@@ -3,26 +3,12 @@
 
 # TEAM
 
-<<<<<<< HEAD
+
     <Jack Le Riche> -- <Developer> -- <@jackleriche>
-
-# THANKS
-
-    <Jack>
-=======
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
->>>>>>> parent of bdb30a0... make work
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-<<<<<<< HEAD
+
     jQuery, Modernizr,
     Jekyll
-=======
-    jQuery, Modernizr
->>>>>>> parent of bdb30a0... make work
