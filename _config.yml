@@ -1,19 +1,13 @@
-<<<<<<< HEAD
+
 auto: true
 server: true
 permalink: /:year/:month/:title
 paginate: 5
 
-=======
-permalink: /:year/:month/:title
-
 plugins: [jekyll-paginate]
-
-paginate: 5
-paginate_path: "page:num"
 
 
 collections:
   games:
   websites:
->>>>>>> parent of 67b1b89... clean up
+
