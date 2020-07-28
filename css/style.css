@@ -255,9 +255,7 @@ author: Jack Le Riche
 	} 
 
 	.homepage {
-		height: 100%;
-		overflow: hidden;
-		position: relative;
+		height: 100vh;
 		background-size: cover;
 
 	}
