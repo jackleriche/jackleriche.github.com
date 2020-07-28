@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js {{ page.page-class }}"> <!--<![endif]-->
+    <head>
+		<!--     meta	 -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ page.title }} - Jack Le Riche - Website/Game Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <!--  	 favicon 	 -->
+        <link rel="shortcut icon" href="/icon.png">
+		<!--     apple homescreen info     -->
+        <link rel="apple-touch-icon-precomposed" href="/icon.png">
+        <meta name="apple-mobile-web-app-title" content="Jack Le Riche - HTML5 Game Maker">      
+         
+		<!--     css     -->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/bootstrap-responsive.css">
+        
+		<!--     js     -->        
+        <script src="/js/vendor/modernizr.js"></script>
+        <script src="/js/vendor/bootstrap.js"></script>
+        <script src="/js/vendor/twitter.js"></script>   
+        
+    </head>
+    <body id='homepage' class='homepage'>
+        <script>
+            
+            var num = Math.floor(Math.random() * (6 - 1)) + 1;
+
+            var img = new Image();
+            var div = document.getElementById('homepage');
+
+            img.onload = function() {
+                div.appendChild(img);
+            };
+
+            img.src = '/img/backgrounds/bg' + num +'.JPG';
+
+
+        </script>
+
+        <section>
+            <h1>AFK..... Travelling</h1>
+            <p>Currently in New Zealand, for more information please visit...</p>
+            <a href='http://www.thelongwayaround.co.uk'>The Long Way Around</a>
+        </section>
+    		
+    	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-28108296-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
