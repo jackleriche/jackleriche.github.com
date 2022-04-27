@@ -10,7 +10,7 @@
   "author": "Jack Le Riche",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.5.2",
     "grunt-contrib-connect": "^1.0.2"
   }
 }
